@@ -8,7 +8,7 @@
 <marker id="gold" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#aa7414"/></marker>
 </defs>
 <text x="45" y="55" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="32" font-weight="700" fill="#17324d" text-anchor="start">Fishplan · 系统水路</text>
-<text x="45" y="91" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="19" font-weight="400" fill="#62748a" text-anchor="start">v0.1 · 两个尺寸方案共用的结构思路 / 非比例示意，孔位、分仓和管径未定</text>
+<text x="45" y="91" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="19" font-weight="400" fill="#62748a" text-anchor="start">v0.1 · 底滤：过滤在下方柜内 / 管路拟经溢流区底部穿缸，孔位与管径未定</text>
 <rect x="145" y="145" width="720" height="245" rx="0" fill="#eaf7fc" stroke="#147dba" stroke-width="3"/>
 <rect x="165" y="155" width="145" height="225" rx="0" fill="#e0e7ed" stroke="#9cafbf" stroke-width="2"/>
 <text x="590" y="235" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="29" font-weight="600" fill="#17324d" text-anchor="middle">主缸</text>
@@ -33,13 +33,15 @@
 <path d="M 205 240 L 205 615 L 235 615 L 235 805" fill="none" stroke="#23866e" stroke-width="5" stroke-linejoin="round" marker-end="url(#green)"/>
 <text x="65" y="535" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="19" font-weight="400" fill="#23866e" text-anchor="start">主下水</text>
 <text x="65" y="562" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="17" font-weight="400" fill="#23866e" text-anchor="start">设调节</text>
-<path d="M 270 215 L 270 590 L 310 590 L 310 805" fill="none" stroke="#c64c52" stroke-width="4" stroke-linejoin="round" marker-end="url(#red)" stroke-dasharray="9 6"/>
+<path d="M 250 215 L 250 590 L 310 590 L 310 805" fill="none" stroke="#c64c52" stroke-width="4" stroke-linejoin="round" marker-end="url(#red)" stroke-dasharray="9 6"/>
 <text x="310" y="515" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="19" font-weight="400" fill="#c64c52" text-anchor="start">独立应急下水</text>
 <text x="310" y="545" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="17" font-weight="400" fill="#c64c52" text-anchor="start">主下水异常时承担排水</text>
-<path d="M 650 820 L 720 820 L 720 600 L 845 600 L 845 125 L 790 125 L 790 200" fill="none" stroke="#147dba" stroke-width="5" stroke-linejoin="round" marker-end="url(#blue)"/>
-<text x="885" y="340" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="19" font-weight="400" fill="#147dba" text-anchor="start">回水</text>
-<text x="885" y="375" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="17" font-weight="400" fill="#147dba" text-anchor="start">回水口位置</text>
-<text x="885" y="402" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="17" font-weight="400" fill="#147dba" text-anchor="start">决定反虹吸量</text>
+<path d="M 650 820 L 650 600 L 295 600 L 295 205 L 395 205" fill="none" stroke="#147dba" stroke-width="5" stroke-linejoin="round" marker-end="url(#blue)"/>
+<text x="350" y="345" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="18" font-weight="400" fill="#147dba" text-anchor="start">回水也在缸内出水</text>
+<text x="350" y="375" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="17" font-weight="400" fill="#147dba" text-anchor="start">穿缸处拟集中在溢流区内</text>
+<rect x="198" y="382" width="14" height="16" rx="0" fill="white" stroke="#23866e" stroke-width="2"/>
+<rect x="243" y="382" width="14" height="16" rx="0" fill="white" stroke="#c64c52" stroke-width="2"/>
+<rect x="288" y="382" width="14" height="16" rx="0" fill="white" stroke="#147dba" stroke-width="2"/>
 <rect x="750" y="680" width="80" height="225" rx="6" fill="#fff0c6" stroke="#aa7414" stroke-width="2"/>
 <text x="790" y="737" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="19" font-weight="400" fill="#aa7414" text-anchor="middle">有限</text>
 <text x="790" y="767" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="19" font-weight="400" fill="#aa7414" text-anchor="middle">补水</text>

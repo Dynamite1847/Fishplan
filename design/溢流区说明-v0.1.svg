@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1200" viewBox="0 0 1200 1200" role="img">
+<title>溢流区的作用</title><desc>主缸表层水越过带缝入口进入缸内角落的溢流区，再经主下水进入底缸；较高的独立管作应急。非比例剖面。</desc>
+<rect width="1200" height="1200" fill="#f4f7fa"/>
+<defs>
+<marker id="blue" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#147dba"/></marker>
+<marker id="green" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#23866e"/></marker>
+<marker id="red" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#c64c52"/></marker>
+<marker id="gold" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#aa7414"/></marker>
+</defs>
+<text x="45" y="55" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="32" font-weight="700" fill="#17324d" text-anchor="start">溢流区是什么？</text>
+<text x="45" y="92" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="21" font-weight="400" fill="#17324d" text-anchor="start">缸内角落隔出的一处排水区。过滤设备仍在下方底缸，所以这套是底滤。</text>
+<rect x="55" y="170" width="710" height="350" rx="0" fill="white" stroke="#147dba" stroke-width="3"/>
+<rect x="59" y="245" width="541" height="271" rx="0" fill="#e0f3fb" stroke="none" stroke-width="1"/>
+<rect x="615" y="290" width="146" height="226" rx="0" fill="#d8edf4" stroke="none" stroke-width="1"/>
+<rect x="600" y="270" width="15" height="250" rx="0" fill="#d0dae2" stroke="#17324d" stroke-width="1"/>
+<rect x="600" y="220" width="15" height="50" rx="0" fill="#d0dae2" stroke="#17324d" stroke-width="1"/>
+<rect x="599" y="232" width="17" height="6" rx="0" fill="white" stroke="none" stroke-width="1"/>
+<rect x="599" y="248" width="17" height="6" rx="0" fill="white" stroke="none" stroke-width="1"/>
+<rect x="599" y="263" width="17" height="6" rx="0" fill="white" stroke="none" stroke-width="1"/>
+<path d="M 65 245 L 590 245" fill="none" stroke="#147dba" stroke-width="2" stroke-linejoin="round" stroke-dasharray="9 6"/>
+<path d="M 620 290 L 755 290" fill="none" stroke="#147dba" stroke-width="2" stroke-linejoin="round" stroke-dasharray="9 6"/>
+<path d="M 535 245 Q 590 245 608 263 Q 625 290 645 290" fill="none" stroke="#147dba" stroke-width="4" stroke-linejoin="round" marker-end="url(#blue)"/>
+<text x="265" y="330" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="25" font-weight="600" fill="#17324d" text-anchor="middle">主缸：鱼和珊瑚在这里</text>
+<text x="265" y="370" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="20" font-weight="400" fill="#147dba" text-anchor="middle">回水泵不断把底缸水送回来</text>
+<text x="450" y="155" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="20" font-weight="400" fill="#17324d" text-anchor="middle">鱼梳 / 溢流堰：带缝的表层入口</text>
+<path d="M 545 158 L 601 213" fill="none" stroke="#17324d" stroke-width="2" stroke-linejoin="round"/>
+<path d="M 650 365 L 650 640" fill="none" stroke="#23866e" stroke-width="5" stroke-linejoin="round" marker-end="url(#green)"/>
+<path d="M 725 255 L 725 640" fill="none" stroke="#c64c52" stroke-width="4" stroke-linejoin="round" marker-end="url(#red)" stroke-dasharray="9 6"/>
+<rect x="643" y="512" width="14" height="16" rx="0" fill="white" stroke="#23866e" stroke-width="2"/>
+<rect x="718" y="512" width="14" height="16" rx="0" fill="white" stroke="#c64c52" stroke-width="2"/>
+<text x="650" y="675" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="20" font-weight="400" fill="#23866e" text-anchor="middle">主下水</text>
+<text x="765" y="675" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="20" font-weight="400" fill="#c64c52" text-anchor="middle">应急下水</text>
+<text x="710" y="713" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="22" font-weight="600" fill="#17324d" text-anchor="middle">穿过缸底 → 下方底缸</text>
+<text x="825" y="215" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="25" font-weight="600" fill="#17324d" text-anchor="start">溢流区负责：</text>
+<text x="825" y="265" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="23" font-weight="400" fill="#17324d" text-anchor="start">① 汇集表层水</text>
+<text x="825" y="305" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="23" font-weight="400" fill="#17324d" text-anchor="start">② 建立排水水位</text>
+<text x="825" y="345" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="23" font-weight="400" fill="#17324d" text-anchor="start">③ 容纳下水与备用管</text>
+<text x="825" y="410" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="20" font-weight="400" fill="#62748a" text-anchor="start">顶部入口控制流入</text>
+<text x="825" y="445" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="20" font-weight="400" fill="#62748a" text-anchor="start">内部管路引水下楼</text>
+<text x="825" y="500" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="20" font-weight="400" fill="#23866e" text-anchor="start">这里不是主要过滤仓</text>
+<text x="45" y="825" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="26" font-weight="600" fill="#17324d" text-anchor="start">正常循环</text>
+<text x="45" y="875" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="25" font-weight="400" fill="#147dba" text-anchor="start">主缸 → 溢流区 → 下水管 → 底缸 → 回水泵 → 主缸</text>
+<text x="45" y="950" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="23" font-weight="400" fill="#17324d" text-anchor="start">停泵后，经入口的排水随水位回落而停止；回水管还可能反虹吸。</text>
+<text x="45" y="995" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="23" font-weight="400" fill="#17324d" text-anchor="start">所以仍需独立应急下水、底缸容水余量及补水保护。</text>
+<text x="45" y="1100" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="20" font-weight="400" fill="#c64c52" text-anchor="start">非比例说明图，未画回水管。孔位与尺寸待设计，溢流区不能单独保证防漏。</text>
+</svg>
