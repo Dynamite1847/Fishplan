@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1800" viewBox="0 0 1800 1800" role="img">
+<title>07 · 可取滤篮与设备维护：条件细化</title>
+<rect width="1800" height="1800" fill="#f3f6f8"/>
+<defs>
+<marker id="blue" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#187eb4"/></marker>
+<marker id="green" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#23846d"/></marker>
+<marker id="red" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#c14e55"/></marker>
+<marker id="gold" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#a8771c"/></marker>
+<marker id="ink" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#19354b"/></marker>
+</defs>
+<text x="55" y="65" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="36" font-weight="700" fill="#19354b" text-anchor="start">07 · 可取滤篮与设备维护：条件细化</text>
+<text x="55" y="110" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="22" font-weight="400" fill="#647b8e" text-anchor="start">沿用v0.2外形，B内深318 / A内深268 · 标高从底缸内底面量，单位mm</text>
+<text x="70" y="180" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="28" font-weight="700" fill="#19354b" text-anchor="start">B版俯视：后方在上，正面在下</text>
+<rect x="75" y="230" width="698.4" height="572.4" rx="0" fill="white" stroke="#657c8f" stroke-width="3"/>
+<rect x="255.0" y="230" width="10.8" height="572.4" rx="0" fill="#c4ced6" stroke="none" stroke-width="2"/>
+<rect x="589.8000000000001" y="230" width="10.8" height="572.4" rx="0" fill="#c4ced6" stroke="none" stroke-width="2"/>
+<rect x="82.2" y="246.2" width="165.6" height="540.0" rx="0" fill="#edf5f7" stroke="#657c8f" stroke-width="2"/>
+<rect x="87.6" y="251.6" width="154.8" height="126.0" rx="0" fill="#d7e8f0" stroke="#187eb4" stroke-width="2"/>
+<circle cx="165.0" cy="311.0" r="28.8" fill="#23846d"/>
+<text x="165.0" y="361.4" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="19" font-weight="400" fill="#19354b" text-anchor="middle">后接水</text>
+<rect x="91.2" y="399.20000000000005" width="147.6" height="378.0" rx="0" fill="#fff0cd" stroke="#a8771c" stroke-width="2"/>
+<text x="165.0" y="545.0" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="19" font-weight="400" fill="#19354b" text-anchor="middle">前取滤篮</text>
+<text x="165.0" y="590.0" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="18" font-weight="400" fill="#19354b" text-anchor="middle">82×210</text>
+<rect x="309.0" y="244.4" width="198.0" height="162.0" rx="0" fill="#d7e9de" stroke="#23846d" stroke-width="2"/>
+<text x="408.0" y="307.4" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="20" font-weight="400" fill="#19354b" text-anchor="middle">9004本体</text>
+<text x="408.0" y="357.8" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="19" font-weight="400" fill="#19354b" text-anchor="middle">110×90</text>
+<circle cx="543.0" cy="302.0" r="28.8" fill="#c14e55"/>
+<text x="427.8" y="581.0" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="20" font-weight="400" fill="#c14e55" text-anchor="middle">D2直接入中仓</text>
+<text x="427.8" y="633.2" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="20" font-weight="400" fill="#c14e55" text-anchor="middle">不依赖滤篮</text>
+<rect x="631.2" y="410.0" width="108.0" height="185.4" rx="0" fill="#d4eafa" stroke="#187eb4" stroke-width="2"/>
+<text x="687.0" y="656.6" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="18" font-weight="400" fill="#19354b" text-anchor="middle">泵本体</text>
+<text x="687.0" y="703.4000000000001" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="18" font-weight="400" fill="#19354b" text-anchor="middle">60×103</text>
+<path d="M75 839.4 V855.4 M75 847.4 H255.0 M255.0 839.4 V855.4" fill="none" stroke="#647b8e" stroke-width="1.5" stroke-linejoin="round"/>
+<text x="165.0" y="834.4" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="20" font-weight="400" fill="#647b8e" text-anchor="middle">100净</text>
+<path d="M265.8 839.4 V855.4 M265.8 847.4 H589.8 M589.8 839.4 V855.4" fill="none" stroke="#647b8e" stroke-width="1.5" stroke-linejoin="round"/>
+<text x="427.8" y="834.4" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="20" font-weight="400" fill="#647b8e" text-anchor="middle">180净</text>
+<path d="M600.6 839.4 V855.4 M600.6 847.4 H773.4000000000001 M773.4000000000001 839.4 V855.4" fill="none" stroke="#647b8e" stroke-width="1.5" stroke-linejoin="round"/>
+<text x="687.0" y="834.4" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="20" font-weight="400" fill="#647b8e" text-anchor="middle">96净</text>
+<text x="875" y="250" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="28" font-weight="700" fill="#19354b" text-anchor="start">本体纸样可放入 ≠ 安装完成</text>
+<text x="875" y="310" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="23" font-weight="400" fill="#19354b" text-anchor="start">靠后玻璃磁吸，外磁座净空待核</text>
+<text x="875" y="365" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="23" font-weight="400" fill="#19354b" text-anchor="start">A版前取篮暂缩至82×160</text>
+<text x="875" y="420" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="23" font-weight="400" fill="#19354b" text-anchor="start">D1留在后区，换棉不拆管</text>
+<text x="875" y="475" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="23" font-weight="400" fill="#19354b" text-anchor="start">滤篮单独上提，滴水回到底缸</text>
+<text x="875" y="530" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="23" font-weight="400" fill="#19354b" text-anchor="start">先暂停ATO，完成后核对水位</text>
+<text x="875" y="585" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="23" font-weight="400" fill="#19354b" text-anchor="start">整模块拆洗另按停泵流程操作</text>
+<text x="70" y="960" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="27" font-weight="700" fill="#19354b" text-anchor="start">接水盒纵剖面：后接水 → 前滤篮 → 底缸内出水 / 堵塞旁通</text>
+<rect x="150" y="1236.0" width="900" height="264.0" rx="0" fill="#f7fafb" stroke="#657c8f" stroke-width="3"/>
+<rect x="155" y="1423.0" width="890" height="77.0" rx="0" fill="#dcefe6" stroke="none" stroke-width="2"/>
+<path d="M150 1423.0 H1050" fill="none" stroke="#187eb4" stroke-width="2" stroke-linejoin="round" stroke-dasharray="9 7"/>
+<rect x="171" y="1357.0" width="263" height="77.0" rx="0" fill="#d4eaf6" stroke="none" stroke-width="2"/>
+<path d="M172 1357.0 H432" fill="none" stroke="#187eb4" stroke-width="2" stroke-linejoin="round" stroke-dasharray="9 7"/>
+<text x="180" y="1170.0" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="19" font-weight="400" fill="#187eb4" text-anchor="start">后盒水面约265：待试水</text>
+<text x="1130" y="1460" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="22" font-weight="400" fill="#187eb4" text-anchor="start">235：本轮工作水深算例</text>
+<path d="M320 1192.0 V1390.0" fill="none" stroke="#23846d" stroke-width="8" stroke-linejoin="round" marker-end="url(#green)"/>
+<path d="M170 1236.0 V1434.0 H435 V1379.0" fill="none" stroke="#657c8f" stroke-width="4" stroke-linejoin="round"/>
+<path d="M435 1379.0 H500" fill="none" stroke="#187eb4" stroke-width="3" stroke-linejoin="round" marker-end="url(#blue)"/>
+<path d="M500 1324.0 V1390.0 H950 V1324.0" fill="none" stroke="#a8771c" stroke-width="4" stroke-linejoin="round"/>
+<path d="M560 1368.0 V1456.0" fill="none" stroke="#23846d" stroke-width="3" stroke-linejoin="round" marker-end="url(#green)"/>
+<path d="M870 1368.0 V1456.0" fill="none" stroke="#23846d" stroke-width="3" stroke-linejoin="round" marker-end="url(#green)"/>
+<path d="M720 1302.0 H1000 V1412.0" fill="none" stroke="#c14e55" stroke-width="3" stroke-linejoin="round" stroke-dasharray="9 7" marker-end="url(#red)"/>
+<text x="1130" y="1220" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="23" font-weight="700" fill="#19354b" text-anchor="start">标高候选（mm）</text>
+<text x="1130" y="1280" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="22" font-weight="400" fill="#c14e55" text-anchor="start">280：旁通堰口候选</text>
+<text x="1130" y="1340" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="22" font-weight="400" fill="#19354b" text-anchor="start">255：接水盒堰口候选</text>
+<text x="1130" y="1400" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="21" font-weight="400" fill="#19354b" text-anchor="start">250：滤篮底 / 主管末端例</text>
+<text x="70" y="1580" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="23" font-weight="400" fill="#c14e55" text-anchor="start">后盒正常水面不是堰口高度；滤棉堵塞后最高水位按实际流量验证，目标不超过300。</text>
+<text x="70" y="1630" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="23" font-weight="400" fill="#19354b" text-anchor="start">分隔挡板、模块固定、堰宽和出口未定稿；D2不穿滤棉，水路始终留在底缸内。</text>
+<text x="70" y="1690" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="22" font-weight="400" fill="#647b8e" text-anchor="start">这是维护与水路原型图，不是可直接裁切的亚克力展开图；尺寸与水位均需试装、试水。</text>
+</svg>

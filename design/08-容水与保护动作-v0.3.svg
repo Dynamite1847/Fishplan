@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1800" viewBox="0 0 1800 1800" role="img">
+<title>08 · 余量重新筛查与保护动作</title>
+<rect width="1800" height="1800" fill="#f3f6f8"/>
+<defs>
+<marker id="blue" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#187eb4"/></marker>
+<marker id="green" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#23846d"/></marker>
+<marker id="red" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#c14e55"/></marker>
+<marker id="gold" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#a8771c"/></marker>
+<marker id="ink" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#19354b"/></marker>
+</defs>
+<text x="55" y="65" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="36" font-weight="700" fill="#19354b" text-anchor="start">08 · 余量重新筛查与保护动作</text>
+<text x="55" y="110" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="22" font-weight="400" fill="#647b8e" text-anchor="start">加入模块额外储水2L、设备及模块实体占容2L；两者均为待测预算，安全水深400仍未验证</text>
+<text x="70" y="200" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="29" font-weight="700" fill="#19354b" text-anchor="start">20mm主缸降水假设：相减后差额（已留额外裕量3L）</text>
+<text x="100" y="275" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="27" font-weight="700" fill="#19354b" text-anchor="start">底缸初始水深</text>
+<text x="650" y="275" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="27" font-weight="700" fill="#19354b" text-anchor="start">A：400深</text>
+<text x="1080" y="275" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="27" font-weight="700" fill="#19354b" text-anchor="start">B：450深</text>
+<text x="100" y="350" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="29" font-weight="400" fill="#19354b" text-anchor="start">225 mm</text>
+<text x="650" y="350" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="31" font-weight="600" fill="#a8771c" text-anchor="start">+0.10 L</text>
+<text x="1080" y="350" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="31" font-weight="600" fill="#a8771c" text-anchor="start">+2.89 L</text>
+<text x="100" y="440" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="29" font-weight="400" fill="#19354b" text-anchor="start">235 mm</text>
+<text x="650" y="440" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="31" font-weight="600" fill="#c14e55" text-anchor="start">-0.94 L</text>
+<text x="1080" y="440" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="31" font-weight="600" fill="#a8771c" text-anchor="start">+1.66 L</text>
+<text x="100" y="530" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="29" font-weight="400" fill="#19354b" text-anchor="start">245 mm</text>
+<text x="650" y="530" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="31" font-weight="600" fill="#c14e55" text-anchor="start">-1.98 L</text>
+<text x="1080" y="530" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="31" font-weight="600" fill="#a8771c" text-anchor="start">+0.42 L</text>
+<text x="70" y="655" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="27" font-weight="400" fill="#c14e55" text-anchor="start">B版235水深：若主缸降水改为30mm，差额变成 -1.04L。</text>
+<text x="70" y="710" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="26" font-weight="400" fill="#19354b" text-anchor="start">正数也不是通过：真实接头、挡板、设备和回水口可能继续改变结果。</text>
+<text x="70" y="770" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="25" font-weight="400" fill="#19354b" text-anchor="start">A版需要重新优化模块/水位/容水布置；不能只删掉保护或省略占容。</text>
+<text x="70" y="890" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="29" font-weight="700" fill="#19354b" text-anchor="start">保护动作草案：定义检测对象，再选能完成动作的产品</text>
+<rect x="65" y="955" width="1665" height="110" rx="12" fill="white" stroke="#d6e0e7" stroke-width="1.5"/>
+<text x="95" y="995" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="25" font-weight="700" fill="#19354b" text-anchor="start">主缸异常高水位</text>
+<text x="95" y="1037" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="24" font-weight="400" fill="#19354b" text-anchor="start">停回水 + 停ATO；锁定原因，人工复核后恢复</text>
+<rect x="65" y="1090" width="1665" height="110" rx="12" fill="white" stroke="#d6e0e7" stroke-width="1.5"/>
+<text x="95" y="1130" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="25" font-weight="700" fill="#19354b" text-anchor="start">底缸 / 接水盘漏水</text>
+<text x="95" y="1172" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="24" font-weight="400" fill="#19354b" text-anchor="start">停回水 + 停ATO；警报持续，评估停加热/蛋分</text>
+<rect x="65" y="1225" width="1665" height="110" rx="12" fill="white" stroke="#d6e0e7" stroke-width="1.5"/>
+<text x="95" y="1265" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="25" font-weight="700" fill="#19354b" text-anchor="start">ATO红探头或超时</text>
+<text x="95" y="1307" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="24" font-weight="400" fill="#19354b" text-anchor="start">已核One 2 SE说明：停补水泵；不代表会停主回水</text>
+<rect x="65" y="1360" width="1665" height="110" rx="12" fill="white" stroke="#d6e0e7" stroke-width="1.5"/>
+<text x="95" y="1400" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="25" font-weight="700" fill="#19354b" text-anchor="start">停电后恢复</text>
+<text x="95" y="1442" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="24" font-weight="400" fill="#19354b" text-anchor="start">先恢复水路并稳定；高水位/漏水故障不能被盲目清除</text>
+<text x="70" y="1595" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="24" font-weight="400" fill="#c14e55" text-anchor="start">故障停泵后仍有回流，重力漏水不会自动消失；浅接水盘不等于整缸容水。</text>
+<text x="70" y="1660" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="23" font-weight="400" fill="#647b8e" text-anchor="start">未选定主缸高水位和地面漏水联动硬件；本图不是市电接线图或已完成的控制系统。</text>
+</svg>
