@@ -1,0 +1,94 @@
+{
+  "status": "conditional geometry only; no safety certification",
+  "updated": "2026-10-19",
+  "units": {
+    "dimensions": "mm",
+    "water": "L"
+  },
+  "assumptions": [
+    "6mm sump walls and glass thicknesses are calculation assumptions, not approved fabrication specs.",
+    "All compartments conservatively assumed at 225mm; usable rise to 400mm needs final baffle and pipe verification.",
+    "Reserve ignores equipment, pipe and fitting displacement.",
+    "20mm display drawdown, 3L extra backflow, 3.3L ATO and 3L margin are examples, not measured values."
+  ],
+  "variants": [
+    {
+      "display_outer_mm": [
+        600,
+        400,
+        400
+      ],
+      "frame_outer_mm": [
+        600,
+        400,
+        800
+      ],
+      "frame_inner_plan_mm": [
+        520,
+        320
+      ],
+      "sump_outer_mm": [
+        400,
+        280,
+        450
+      ],
+      "sump_assumed_inner_plan_mm": [
+        388,
+        268
+      ],
+      "sump_running_upper_depth_mm": 225,
+      "sump_provisional_safe_depth_mm": 400,
+      "sump_geometric_reserve_l": 18.1972,
+      "assumed_display_backflow_l": 4.8,
+      "assumed_extra_backflow_l": 3,
+      "assumed_max_ato_l": 3.3,
+      "example_additional_margin_l": 3,
+      "illustrative_remaining_before_equipment_displacement_l": 4.0972,
+      "cuts_mm": {
+        "600": 4,
+        "320": 6,
+        "720": 4
+      },
+      "extrusion_total_m": 7.2
+    },
+    {
+      "display_outer_mm": [
+        600,
+        450,
+        400
+      ],
+      "frame_outer_mm": [
+        600,
+        450,
+        800
+      ],
+      "frame_inner_plan_mm": [
+        520,
+        370
+      ],
+      "sump_outer_mm": [
+        400,
+        330,
+        450
+      ],
+      "sump_assumed_inner_plan_mm": [
+        388,
+        318
+      ],
+      "sump_running_upper_depth_mm": 225,
+      "sump_provisional_safe_depth_mm": 400,
+      "sump_geometric_reserve_l": 21.5922,
+      "assumed_display_backflow_l": 5.4,
+      "assumed_extra_backflow_l": 3,
+      "assumed_max_ato_l": 3.3,
+      "example_additional_margin_l": 3,
+      "illustrative_remaining_before_equipment_displacement_l": 6.8922,
+      "cuts_mm": {
+        "600": 4,
+        "370": 6,
+        "720": 4
+      },
+      "extrusion_total_m": 7.5
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1600" viewBox="0 0 1600 1600" role="img">
+<title>05 · 顶部功能与维护路径</title>
+<rect width="1600" height="1600" fill="#f3f6f8"/>
+<defs>
+<marker id="blue" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#187eb4"/></marker>
+<marker id="green" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#23846d"/></marker>
+<marker id="red" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#c14e55"/></marker>
+<marker id="gold" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#a8771c"/></marker>
+<marker id="ink" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#19354b"/></marker>
+</defs>
+<text x="55" y="65" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="36" font-weight="700" fill="#19354b" text-anchor="start">05 · 顶部功能与维护路径</text>
+<text x="55" y="110" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="22" font-weight="400" fill="#647b8e" text-anchor="start">借鉴用户观察到的模块化顶盖思路；开口、支架、风扇和承重盖均未定稿</text>
+<rect x="140" y="260" width="900" height="675" rx="0" fill="#e5f3f9" stroke="#187eb4" stroke-width="3"/>
+<rect x="152" y="272" width="300" height="190" rx="0" fill="#c9d6df" stroke="#657c8f" stroke-width="2"/>
+<text x="302" y="348" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="27" font-weight="400" fill="#19354b" text-anchor="middle">溢流检修盖</text>
+<text x="302" y="395" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="22" font-weight="400" fill="#19354b" text-anchor="middle">能独立打开、取鱼梳</text>
+<rect x="310" y="200" width="540" height="25" rx="5" fill="#2c465a" stroke="none" stroke-width="2"/>
+<text x="580" y="175" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="25" font-weight="400" fill="#19354b" text-anchor="middle">灯架独立，拆盖不拆灯</text>
+<rect x="840" y="275" width="160" height="100" rx="5" fill="#dce5ed" stroke="#657c8f" stroke-width="2"/>
+<text x="920" y="335" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="23" font-weight="400" fill="#19354b" text-anchor="middle">风扇接口</text>
+<rect x="470" y="780" width="180" height="110" rx="5" fill="#fff0c9" stroke="#a8771c" stroke-width="2"/>
+<text x="560" y="825" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="23" font-weight="400" fill="#a8771c" text-anchor="middle">可关闭喂食口</text>
+<text x="560" y="863" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="21" font-weight="400" fill="#a8771c" text-anchor="middle">后配喂食器</text>
+<circle cx="935" cy="530" r="33" fill="#187eb4"/>
+<text x="880" y="595" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="21" font-weight="400" fill="#187eb4" text-anchor="start">造浪 + 海葵防护</text>
+<text x="560" y="645" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="27" font-weight="400" fill="#19354b" text-anchor="middle">防跳 / 防猫盖分片与支撑待设计</text>
+<text x="1130" y="310" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="26" font-weight="700" fill="#19354b" text-anchor="start">维护从正面为主</text>
+<text x="1130" y="360" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="24" font-weight="400" fill="#19354b" text-anchor="start">左侧过道辅助</text>
+<text x="1130" y="430" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="24" font-weight="400" fill="#19354b" text-anchor="start">右侧电视柜</text>
+<text x="1130" y="470" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="23" font-weight="400" fill="#19354b" text-anchor="start">不作为取杯/取泵口</text>
+<text x="1130" y="560" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="24" font-weight="400" fill="#a8771c" text-anchor="start">接口不等于开玻璃孔</text>
+<text x="1130" y="610" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="24" font-weight="400" fill="#19354b" text-anchor="start">装好后仍须符合</text>
+<text x="1130" y="650" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="24" font-weight="400" fill="#19354b" text-anchor="start">600长及深度边界</text>
+<text x="140" y="1060" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="27" font-weight="600" fill="#19354b" text-anchor="start">柜内动作：滤篮前取 → 蛋分杯向上提 → 泵可拆出 → 补水盒前方拿取</text>
+<text x="140" y="1130" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="25" font-weight="400" fill="#19354b" text-anchor="start">避免：为了换棉拆承压接头、把控制器放接水盘底、用饰板挡住阀门。</text>
+<text x="140" y="1230" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="25" font-weight="400" fill="#c14e55" text-anchor="start">防猫盖：普通防跳网不能自动承受约5kg猫踩踏，盖子与固定需单独核验。</text>
+<text x="140" y="1320" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="24" font-weight="400" fill="#19354b" text-anchor="start">散热：风扇口与盖板不应妨碍必要通风；夏季冷水机仍需独立安装位置和噪声核验。</text>
+<text x="140" y="1450" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="23" font-weight="400" fill="#647b8e" text-anchor="start">这是一张接口和维护要求图，不是指定盖板材料、承重或照度的加工图。</text>
+</svg>

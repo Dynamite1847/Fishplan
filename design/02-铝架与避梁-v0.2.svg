@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1800" viewBox="0 0 1800 1800" role="img">
+<title>02 · 铝架构型、下料逻辑与孔位避让</title>
+<rect width="1800" height="1800" fill="#f3f6f8"/>
+<defs>
+<marker id="blue" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#187eb4"/></marker>
+<marker id="green" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#23846d"/></marker>
+<marker id="red" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#c14e55"/></marker>
+<marker id="gold" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#a8771c"/></marker>
+<marker id="ink" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#19354b"/></marker>
+</defs>
+<text x="55" y="65" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="36" font-weight="700" fill="#19354b" text-anchor="start">02 · 铝架构型、下料逻辑与孔位避让</text>
+<text x="55" y="110" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="22" font-weight="400" fill="#647b8e" text-anchor="start">B版600×450×800 / A版600×400×800 · 构型示例，供应商确认后才能下料</text>
+<text x="140" y="180" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="28" font-weight="700" fill="#19354b" text-anchor="start">上框俯视（B）</text>
+<rect x="140" y="230" width="690.0" height="517.5" rx="0" fill="#b9c7d1" stroke="#657c8f" stroke-width="2"/>
+<rect x="186.0" y="276.0" width="598.0" height="425.49999999999994" rx="0" fill="white" stroke="none" stroke-width="2"/>
+<rect x="462.0" y="276.0" width="46.0" height="425.49999999999994" rx="0" fill="#b9c7d1" stroke="#657c8f" stroke-width="2"/>
+<rect x="197.5" y="281.75" width="201.24999999999997" height="126.49999999999999" rx="0" fill="#fff0c9" stroke="#a8771c" stroke-width="2"/>
+<text x="297.54999999999995" y="336.95" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="21" font-weight="400" fill="#a8771c" text-anchor="middle">后左穿缸候选区</text>
+<text x="297.54999999999995" y="376.04999999999995" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="18" font-weight="400" fill="#a8771c" text-anchor="middle">孔位及接头包络待定</text>
+<path d="M140 197 V213 M140 205 H830.0 M830.0 197 V213" fill="none" stroke="#647b8e" stroke-width="1.5" stroke-linejoin="round"/>
+<text x="485.0" y="192" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="20" font-weight="400" fill="#647b8e" text-anchor="middle">600</text>
+<path d="M857.0 230 H873.0 M865.0 230 V747.5 M857.0 747.5 H873.0" fill="none" stroke="#647b8e" stroke-width="1.5" stroke-linejoin="round"/>
+<text x="878.0" y="488.75" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="20" font-weight="400" fill="#647b8e" text-anchor="start">450</text>
+<text x="140" y="800" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="23" font-weight="400" fill="#a8771c" text-anchor="start">黄色区域仅表示需避梁的位置关系，不是开孔模板。</text>
+<text x="140" y="840" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="22" font-weight="400" fill="#647b8e" text-anchor="start">接头螺母、工具、活接和台面孔都需避让，不只看玻璃孔中心。</text>
+<text x="1010" y="240" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="29" font-weight="700" fill="#19354b" text-anchor="start">构型示例下料</text>
+<text x="1010" y="310" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="30" font-weight="600" fill="#23846d" text-anchor="start">600 × 4</text>
+<text x="1010" y="345" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="22" font-weight="400" fill="#647b8e" text-anchor="start">上下框前后梁</text>
+<text x="1010" y="410" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="30" font-weight="600" fill="#23846d" text-anchor="start">370 × 6</text>
+<text x="1010" y="445" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="22" font-weight="400" fill="#647b8e" text-anchor="start">侧梁＋上下承托梁</text>
+<text x="1010" y="510" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="30" font-weight="600" fill="#23846d" text-anchor="start">720 × 4</text>
+<text x="1010" y="545" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="22" font-weight="400" fill="#647b8e" text-anchor="start">四角立柱，夹上下框</text>
+<text x="1010" y="610" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="30" font-weight="600" fill="#23846d" text-anchor="start">合计 7.50m</text>
+<text x="1010" y="645" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="22" font-weight="400" fill="#647b8e" text-anchor="start">不含斜撑与损耗</text>
+<text x="1010" y="750" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="27" font-weight="400" fill="#19354b" text-anchor="start">A版：370改320</text>
+<text x="1010" y="793" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="25" font-weight="400" fill="#23846d" text-anchor="start">合计7.20m</text>
+<rect x="85" y="925" width="1630" height="690" rx="16" fill="white" stroke="#dbe4eb" stroke-width="2"/>
+<text x="120" y="980" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="30" font-weight="700" fill="#19354b" text-anchor="start">必须一起确认</text>
+<text x="120" y="1040" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="23" font-weight="400" fill="#19354b" text-anchor="start">实际截面 / 惯性矩 / 连接 / 防侧摆：4040只是候选规格，不能单凭名称认定承重。</text>
+<text x="120" y="1113" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="23" font-weight="400" fill="#19354b" text-anchor="start">上层200kg、下层100kg及架体自重为拟核验工况，供应商说明长期挠度、节点及安全系数。</text>
+<text x="120" y="1186" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="23" font-weight="400" fill="#19354b" text-anchor="start">台面按缸厂支撑要求，开孔用接头模板；不能随意切掉整块角部。</text>
+<text x="120" y="1259" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="23" font-weight="400" fill="#19354b" text-anchor="start">木地板需要分散荷载与可靠调平；小脚、底板、接水盘和板件防潮一并设计。</text>
+<text x="120" y="1332" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="23" font-weight="400" fill="#19354b" text-anchor="start">正面保留取杯、取泵和底缸装入路径；背部或侧面的加固不得擅自省掉。</text>
+<text x="120" y="1405" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="23" font-weight="400" fill="#19354b" text-anchor="start">800为架体构型高度；若添加轮/脚底座h，需重新统一总高及立柱长度，不能直接叠上去。</text>
+<text x="120" y="1478" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="23" font-weight="400" fill="#19354b" text-anchor="start">未来面板内嵌或预留板厚，保持总长限制；饰板不作为初期结构稳定的必要条件。</text>
+<text x="55" y="1730" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="24" font-weight="400" fill="#c14e55" text-anchor="start">本图不能证明载荷合格；穿缸区、角码及中梁以缸厂/型材商同版图为准。</text>
+</svg>

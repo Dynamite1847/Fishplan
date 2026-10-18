@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1600" viewBox="0 0 1600 1600" role="img">
+<title>06 · 固定底座与可收回轮：选装比较</title>
+<rect width="1600" height="1600" fill="#f3f6f8"/>
+<defs>
+<marker id="blue" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#187eb4"/></marker>
+<marker id="green" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#23846d"/></marker>
+<marker id="red" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#c14e55"/></marker>
+<marker id="gold" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#a8771c"/></marker>
+<marker id="ink" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#19354b"/></marker>
+</defs>
+<text x="55" y="65" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="36" font-weight="700" fill="#19354b" text-anchor="start">06 · 固定底座与可收回轮：选装比较</text>
+<text x="55" y="110" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="22" font-weight="400" fill="#647b8e" text-anchor="start">默认固定运行；轮子用于按缸厂搬运要求排水后的检修，不用于推走满水缸抢险</text>
+<text x="90" y="210" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="27" font-weight="700" fill="#19354b" text-anchor="start">A · 固定承压底座（主方案）</text>
+<rect x="130" y="290" width="500" height="400" rx="0" fill="#e9eff3" stroke="#657c8f" stroke-width="10"/>
+<rect x="165" y="360" width="430" height="225" rx="0" fill="#d5eade" stroke="#23846d" stroke-width="2"/>
+<rect x="120" y="700" width="520" height="35" rx="0" fill="#d6c6ac" stroke="#657c8f" stroke-width="2"/>
+<path d="M380 305 V660" fill="none" stroke="#19354b" stroke-width="5" stroke-linejoin="round" marker-end="url(#ink)"/>
+<rect x="110" y="750" width="540" height="35" rx="0" fill="#bac7d1" stroke="#657c8f" stroke-width="2"/>
+<rect x="100" y="790" width="560" height="15" rx="0" fill="#d9e1e7" stroke="none" stroke-width="2"/>
+<text x="125" y="865" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="21" font-weight="400" fill="#19354b" text-anchor="start">接触面积、调平、防潮及巡检一起设计</text>
+<path d="M90 825 H700" fill="none" stroke="#647b8e" stroke-width="2" stroke-linejoin="round"/>
+<text x="880" y="210" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="27" font-weight="700" fill="#19354b" text-anchor="start">B · 可收回轮 + 独立支撑（选装）</text>
+<rect x="920" y="290" width="500" height="400" rx="0" fill="#e9eff3" stroke="#657c8f" stroke-width="10"/>
+<rect x="955" y="360" width="430" height="225" rx="0" fill="#d5eade" stroke="#23846d" stroke-width="2"/>
+<rect x="910" y="700" width="520" height="35" rx="0" fill="#d6c6ac" stroke="#657c8f" stroke-width="2"/>
+<path d="M1170 305 V660" fill="none" stroke="#19354b" stroke-width="5" stroke-linejoin="round" marker-end="url(#ink)"/>
+<path d="M960 735 V800" fill="none" stroke="#657c8f" stroke-width="12" stroke-linejoin="round"/>
+<rect x="925" y="800" width="70" height="20" rx="0" fill="#bac7d1" stroke="#657c8f" stroke-width="2"/>
+<circle cx="1020" cy="775" r="23" fill="#b0bec9"/>
+<path d="M1350 735 V800" fill="none" stroke="#657c8f" stroke-width="12" stroke-linejoin="round"/>
+<rect x="1315" y="800" width="70" height="20" rx="0" fill="#bac7d1" stroke="#657c8f" stroke-width="2"/>
+<circle cx="1410" cy="775" r="23" fill="#b0bec9"/>
+<text x="915" y="865" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="21" font-weight="400" fill="#19354b" text-anchor="start">正常由支撑落地，轮不作为唯一稳定手段</text>
+<path d="M880 825 H1490" fill="none" stroke="#647b8e" stroke-width="2" stroke-linejoin="round"/>
+<text x="90" y="1010" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="26" font-weight="400" fill="#19354b" text-anchor="start">若底座组件增加高度h：保持总目标约800时，架体和立柱长度必须重新计算。</text>
+<text x="90" y="1080" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="25" font-weight="400" fill="#c14e55" text-anchor="start">轮子额定载荷不代表玻璃缸可满水移动；偏载、侧向稳定及搬运方法另核验。</text>
+<text x="90" y="1160" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="25" font-weight="400" fill="#19354b" text-anchor="start">漏水时先停相关泵、控制水源并受控排水；不把推满缸列为应急动作。</text>
+<text x="90" y="1250" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="24" font-weight="400" fill="#19354b" text-anchor="start">轮子/调平脚的型号、安装板、载荷与支撑面积尚未选定，未包含在现有下料表中。</text>
+<text x="90" y="1380" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="23" font-weight="400" fill="#647b8e" text-anchor="start">功能示意，非承载认证；木地板还需检查支撑点压与轮子滚动损伤。</text>
+</svg>

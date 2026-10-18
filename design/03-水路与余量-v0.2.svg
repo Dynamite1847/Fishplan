@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1800" viewBox="0 0 1800 1800" role="img">
+<title>03 · 正常循环、备用排水与容水初筛</title>
+<rect width="1800" height="1800" fill="#f3f6f8"/>
+<defs>
+<marker id="blue" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#187eb4"/></marker>
+<marker id="green" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#23846d"/></marker>
+<marker id="red" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#c14e55"/></marker>
+<marker id="gold" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#a8771c"/></marker>
+<marker id="ink" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#19354b"/></marker>
+</defs>
+<text x="55" y="65" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="36" font-weight="700" fill="#19354b" text-anchor="start">03 · 正常循环、备用排水与容水初筛</text>
+<text x="55" y="110" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="22" font-weight="400" fill="#647b8e" text-anchor="start">砂和活石在主缸；过滤设备在下方底缸 · 主下水和应急下水保持独立</text>
+<rect x="110" y="200" width="1000" height="280" rx="0" fill="#e5f3f9" stroke="#187eb4" stroke-width="3"/>
+<rect x="130" y="215" width="200" height="250" rx="0" fill="#d4dfe6" stroke="#657c8f" stroke-width="2"/>
+<text x="665" y="340" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="27" font-weight="600" fill="#19354b" text-anchor="middle">主缸：回水持续送入，表层水日常就溢入</text>
+<text x="665" y="385" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="23" font-weight="400" fill="#187eb4" text-anchor="middle">不是等快漫缸时才启用的洗脸池应急孔</text>
+<path d="M420 260 H155" fill="none" stroke="#187eb4" stroke-width="4" stroke-linejoin="round" marker-end="url(#blue)"/>
+<path d="M170 300 V630 H210 V900" fill="none" stroke="#23846d" stroke-width="6" stroke-linejoin="round" marker-end="url(#green)"/>
+<path d="M220 255 V610 H310 V815" fill="none" stroke="#c14e55" stroke-width="5" stroke-linejoin="round" stroke-dasharray="9 7" marker-end="url(#red)"/>
+<rect x="162" y="470" width="16" height="20" rx="0" fill="white" stroke="#23846d" stroke-width="2"/>
+<rect x="212" y="470" width="16" height="20" rx="0" fill="white" stroke="#c14e55" stroke-width="2"/>
+<rect x="252" y="470" width="16" height="20" rx="0" fill="white" stroke="#187eb4" stroke-width="2"/>
+<rect x="130" y="730" width="820" height="310" rx="0" fill="#eef7f1" stroke="#23846d" stroke-width="3"/>
+<rect x="134" y="865" width="812" height="170" rx="0" fill="#cee8dc" stroke="none" stroke-width="2"/>
+<path d="M140 785 H940" fill="none" stroke="#c14e55" stroke-width="2" stroke-linejoin="round" stroke-dasharray="9 7"/>
+<path d="M140 865 H940" fill="none" stroke="#187eb4" stroke-width="2" stroke-linejoin="round" stroke-dasharray="9 7"/>
+<text x="610" y="772" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="23" font-weight="400" fill="#c14e55" text-anchor="middle">最高安全水位待核验</text>
+<text x="600" y="850" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="23" font-weight="400" fill="#187eb4" text-anchor="middle">初筛保守按全缸水深225</text>
+<text x="420" y="955" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="26" font-weight="600" fill="#23846d" text-anchor="middle">可取物理过滤 → 蛋分 → 回水区</text>
+<path d="M800 970 H1010 V570 H260 V275 H420" fill="none" stroke="#187eb4" stroke-width="5" stroke-linejoin="round" marker-end="url(#blue)"/>
+<rect x="1060" y="825" width="100" height="215" rx="8" fill="#fff0c9" stroke="#a8771c" stroke-width="2"/>
+<text x="1110" y="900" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="21" font-weight="400" fill="#a8771c" text-anchor="middle">有限</text>
+<text x="1110" y="935" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="21" font-weight="400" fill="#a8771c" text-anchor="middle">补水</text>
+<path d="M1110 985 V690 H860 V825" fill="none" stroke="#a8771c" stroke-width="3" stroke-linejoin="round" marker-end="url(#gold)"/>
+<text x="1200" y="260" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="26" font-weight="600" fill="#23846d" text-anchor="start">日常流量：主下水</text>
+<text x="1200" y="310" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="25" font-weight="600" fill="#c14e55" text-anchor="start">异常接流：独立备用管</text>
+<text x="1200" y="380" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="23" font-weight="400" fill="#19354b" text-anchor="start">管路拟经溢流区缸底</text>
+<text x="1200" y="420" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="23" font-weight="400" fill="#19354b" text-anchor="start">进入柜内，孔位待定</text>
+<text x="1200" y="520" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="24" font-weight="400" fill="#19354b" text-anchor="start">物理过滤堵塞时</text>
+<text x="1200" y="560" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="24" font-weight="400" fill="#19354b" text-anchor="start">旁通仍在底缸内部</text>
+<text x="1200" y="660" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="23" font-weight="400" fill="#19354b" text-anchor="start">鱼便：悬浮颗粒进过滤</text>
+<text x="1200" y="700" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="23" font-weight="400" fill="#19354b" text-anchor="start">沉积物留通道虹吸</text>
+<text x="1200" y="800" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="23" font-weight="400" fill="#19354b" text-anchor="start">最高水位 / 漏水保护</text>
+<text x="1200" y="840" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="23" font-weight="400" fill="#19354b" text-anchor="start">实际动作和复位须测试</text>
+<rect x="85" y="1130" width="1630" height="480" rx="16" fill="white" stroke="#dbe4eb" stroke-width="2"/>
+<text x="125" y="1190" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="30" font-weight="700" fill="#19354b" text-anchor="start">几何初筛，不是安全验收</text>
+<text x="125" y="1250" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="27" font-weight="600" fill="#19354b" text-anchor="start">400深方案 · 底缸高450</text>
+<text x="125" y="1310" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="26" font-weight="400" fill="#23846d" text-anchor="start">225→400水深几何余量：18.2 L</text>
+<text x="125" y="1360" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="23" font-weight="400" fill="#19354b" text-anchor="start">回流算例 4.8 + 3.0 L</text>
+<text x="125" y="1405" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="23" font-weight="400" fill="#19354b" text-anchor="start">最大误补3.3 L + 额外裕量3.0 L</text>
+<text x="125" y="1460" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="25" font-weight="400" fill="#a8771c" text-anchor="start">未扣设备占容的账面差额：4.1 L</text>
+<text x="925" y="1250" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="27" font-weight="600" fill="#19354b" text-anchor="start">450深方案 · 底缸高450</text>
+<text x="925" y="1310" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="26" font-weight="400" fill="#23846d" text-anchor="start">225→400水深几何余量：21.6 L</text>
+<text x="925" y="1360" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="23" font-weight="400" fill="#19354b" text-anchor="start">回流算例 5.4 + 3.0 L</text>
+<text x="925" y="1405" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="23" font-weight="400" fill="#19354b" text-anchor="start">最大误补3.3 L + 额外裕量3.0 L</text>
+<text x="925" y="1460" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="25" font-weight="400" fill="#a8771c" text-anchor="start">未扣设备占容的账面差额：6.9 L</text>
+<text x="125" y="1545" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="23" font-weight="400" fill="#c14e55" text-anchor="start">回流、水位和设备占容均待真实图纸计算、实物验证；改变补水容器/管路后重算。</text>
+<text x="55" y="1725" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="24" font-weight="400" fill="#c14e55" text-anchor="start">主虹吸与备用管需匹配真实回水量；止回阀和报警都不能代替底缸容水空间。</text>
+</svg>
