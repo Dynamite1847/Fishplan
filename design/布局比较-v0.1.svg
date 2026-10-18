@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1400" viewBox="0 0 1400 1400" role="img">
+<title>60×40与60×45底滤海缸概念布局比较</title><desc>两版使用相同平面比例。展示缸、架内底缸、补水位置和几何余量。非加工图。</desc>
+<rect width="1400" height="1400" fill="#f4f7fa"/>
+<defs>
+<marker id="blue" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#147dba"/></marker>
+<marker id="green" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#23866e"/></marker>
+<marker id="red" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#c64c52"/></marker>
+<marker id="gold" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#aa7414"/></marker>
+</defs>
+<text x="45" y="55" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="32" font-weight="700" fill="#17324d" text-anchor="start">Fishplan · 两版总体布局</text>
+<text x="45" y="91" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="19" font-weight="400" fill="#62748a" text-anchor="start">v0.1 / 2026-10-18 · 单位mm · 概念占位图，不能据此下料、开孔或采购</text>
+<rect x="35" y="115" width="650" height="1150" rx="14" fill="white" stroke="#dfe7ee" stroke-width="1"/>
+<text x="60" y="158" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="28" font-weight="700" fill="#17324d" text-anchor="start">A · 600 × 400</text>
+<text x="60" y="192" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="21" font-weight="400" fill="#147dba" text-anchor="start">40深优先方案</text>
+<text x="100" y="236" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="20" font-weight="600" fill="#17324d" text-anchor="start">主缸俯视 · 上方为后墙</text>
+<rect x="100" y="264" width="468.0" height="312.0" rx="0" fill="#eaf7fc" stroke="#147dba" stroke-width="3"/>
+<rect x="106" y="270" width="148.20000000000002" height="78.0" rx="0" fill="#d9e2ea" stroke="#9cafbf" stroke-width="1"/>
+<text x="180" y="302" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="17" font-weight="400" fill="#17324d" text-anchor="middle">溢流占位</text>
+<text x="180" y="327" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="16" font-weight="400" fill="#62748a" text-anchor="middle">尺寸待定</text>
+<text x="365" y="444.96" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="23" font-weight="400" fill="#17324d" text-anchor="middle">展示 / 造景空间</text>
+<text x="365" y="476.96" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="17" font-weight="400" fill="#62748a" text-anchor="middle">珊瑚、海葵留生长间距</text>
+<text x="335" y="606.0" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="18" font-weight="400" fill="#17324d" text-anchor="middle">正面：主要观赏与维护</text>
+<text x="90" y="444.96" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="17" font-weight="400" fill="#17324d" text-anchor="end">左</text>
+<text x="90" y="468.96" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="17" font-weight="400" fill="#17324d" text-anchor="end">过道</text>
+<text x="580" y="444.96" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="17" font-weight="400" fill="#17324d" text-anchor="start">右侧</text>
+<text x="580" y="468.96" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="17" font-weight="400" fill="#17324d" text-anchor="start">电视柜</text>
+<text x="100" y="665" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="20" font-weight="600" fill="#17324d" text-anchor="start">架内俯视 · 同比例</text>
+<rect x="100" y="690" width="468.0" height="312.0" rx="0" fill="#cbd6df" stroke="#17324d" stroke-width="2"/>
+<rect x="131.2" y="721.2" width="405.6" height="249.60000000000002" rx="0" fill="#fff" stroke="none" stroke-width="1"/>
+<rect x="135.1" y="725.1" width="397.8" height="241.8" rx="0" fill="#fff9e8" stroke="#d4b364" stroke-width="1"/>
+<rect x="139.0" y="732.9" width="312.0" height="218.4" rx="0" fill="#dff3ee" stroke="#23866e" stroke-width="2"/>
+<text x="295.0" y="836.0" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="22" font-weight="600" fill="#23866e" text-anchor="middle">底缸占位</text>
+<text x="295.0" y="868.0" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="18" font-weight="400" fill="#23866e" text-anchor="middle">400 × 280 × 400高</text>
+<text x="295.0" y="896.0" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="16" font-weight="400" fill="#62748a" text-anchor="middle">分仓 / 设备 / 水位待选型</text>
+<rect x="458.8" y="752.4" width="70.2" height="175.5" rx="4" fill="#fff0c6" stroke="#aa7414" stroke-width="2"/>
+<text x="493.90000000000003" y="803.1" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="17" font-weight="400" fill="#aa7414" text-anchor="middle">补水</text>
+<text x="493.90000000000003" y="826.5" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="17" font-weight="400" fill="#aa7414" text-anchor="middle">容器</text>
+<text x="493.90000000000003" y="849.9" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="17" font-weight="400" fill="#aa7414" text-anchor="middle">占位</text>
+<text x="330" y="1032.0" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="16" font-weight="400" fill="#aa7414" text-anchor="middle">黄色底层：接水盘占位；尚未核对成品规格</text>
+<text x="60" y="1120" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="21" font-weight="600" fill="#17324d" text-anchor="start">架内几何净空：520 × 320</text>
+<text x="60" y="1156" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="22" font-weight="600" fill="#23866e" text-anchor="start">底缸账面余量：15.6 L</text>
+<text x="60" y="1188" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="18" font-weight="400" fill="#62748a" text-anchor="start">按水深200→350估算，未扣设备占容</text>
+<text x="60" y="1222" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="18" font-weight="400" fill="#62748a" text-anchor="start">净空未扣角件、管件及施工余量</text>
+<rect x="710" y="115" width="650" height="1150" rx="14" fill="white" stroke="#dfe7ee" stroke-width="1"/>
+<text x="735" y="158" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="28" font-weight="700" fill="#17324d" text-anchor="start">B · 600 × 450</text>
+<text x="735" y="192" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="21" font-weight="400" fill="#147dba" text-anchor="start">适度扩深方案（候选优先）</text>
+<text x="775" y="236" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="20" font-weight="600" fill="#17324d" text-anchor="start">主缸俯视 · 上方为后墙</text>
+<rect x="775" y="264" width="468.0" height="351.0" rx="0" fill="#eaf7fc" stroke="#147dba" stroke-width="3"/>
+<rect x="781" y="270" width="148.20000000000002" height="78.0" rx="0" fill="#d9e2ea" stroke="#9cafbf" stroke-width="1"/>
+<text x="855" y="302" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="17" font-weight="400" fill="#17324d" text-anchor="middle">溢流占位</text>
+<text x="855" y="327" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="16" font-weight="400" fill="#62748a" text-anchor="middle">尺寸待定</text>
+<text x="1040" y="467.58" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="23" font-weight="400" fill="#17324d" text-anchor="middle">展示 / 造景空间</text>
+<text x="1040" y="499.58" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="17" font-weight="400" fill="#62748a" text-anchor="middle">珊瑚、海葵留生长间距</text>
+<text x="1010" y="645.0" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="18" font-weight="400" fill="#17324d" text-anchor="middle">正面：主要观赏与维护</text>
+<text x="765" y="467.58" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="17" font-weight="400" fill="#17324d" text-anchor="end">左</text>
+<text x="765" y="491.58" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="17" font-weight="400" fill="#17324d" text-anchor="end">过道</text>
+<text x="1255" y="467.58" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="17" font-weight="400" fill="#17324d" text-anchor="start">右侧</text>
+<text x="1255" y="491.58" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="17" font-weight="400" fill="#17324d" text-anchor="start">电视柜</text>
+<text x="775" y="665" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="20" font-weight="600" fill="#17324d" text-anchor="start">架内俯视 · 同比例</text>
+<rect x="775" y="690" width="468.0" height="351.0" rx="0" fill="#cbd6df" stroke="#17324d" stroke-width="2"/>
+<rect x="806.2" y="721.2" width="405.6" height="288.6" rx="0" fill="#fff" stroke="none" stroke-width="1"/>
+<rect x="810.1" y="725.1" width="397.8" height="280.8" rx="0" fill="#fff9e8" stroke="#d4b364" stroke-width="1"/>
+<rect x="814.0" y="732.9" width="312.0" height="257.40000000000003" rx="0" fill="#dff3ee" stroke="#23866e" stroke-width="2"/>
+<text x="970.0" y="855.5" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="22" font-weight="600" fill="#23866e" text-anchor="middle">底缸占位</text>
+<text x="970.0" y="887.5" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="18" font-weight="400" fill="#23866e" text-anchor="middle">400 × 330 × 400高</text>
+<text x="970.0" y="915.5" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="16" font-weight="400" fill="#62748a" text-anchor="middle">分仓 / 设备 / 水位待选型</text>
+<rect x="1133.8" y="752.4" width="70.2" height="175.5" rx="4" fill="#fff0c6" stroke="#aa7414" stroke-width="2"/>
+<text x="1168.9" y="803.1" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="17" font-weight="400" fill="#aa7414" text-anchor="middle">补水</text>
+<text x="1168.9" y="826.5" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="17" font-weight="400" fill="#aa7414" text-anchor="middle">容器</text>
+<text x="1168.9" y="849.9" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="17" font-weight="400" fill="#aa7414" text-anchor="middle">占位</text>
+<text x="1005" y="1071.0" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="16" font-weight="400" fill="#aa7414" text-anchor="middle">黄色底层：接水盘占位；尚未核对成品规格</text>
+<text x="735" y="1120" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="21" font-weight="600" fill="#17324d" text-anchor="start">架内几何净空：520 × 370</text>
+<text x="735" y="1156" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="22" font-weight="600" fill="#23866e" text-anchor="start">底缸账面余量：18.5 L</text>
+<text x="735" y="1188" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="18" font-weight="400" fill="#62748a" text-anchor="start">按水深200→350估算，未扣设备占容</text>
+<text x="735" y="1222" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="18" font-weight="400" fill="#62748a" text-anchor="start">净空未扣角件、管件及施工余量</text>
+<text x="45" y="1305" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="19" font-weight="400" fill="#17324d" text-anchor="start">两版架高均以800为起点；主缸400高只用于比较。面板后装，接口及厚度须提前协调。</text>
+<text x="45" y="1340" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="19" font-weight="400" fill="#c64c52" text-anchor="start">窄补水容器、接水盘、溢流区均为占位，未确认在售或可加工；图中容量不是安全认证。</text>
+</svg>

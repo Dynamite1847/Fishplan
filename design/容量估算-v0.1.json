@@ -1,0 +1,94 @@
+{
+  "status": "concept only; not validated safety capacity or structural design",
+  "units": {
+    "dimensions": "mm",
+    "volume": "L"
+  },
+  "assumptions": [
+    "Display wall/bottom 8mm and sump wall/bottom 6mm are calculation assumptions, not glass specifications.",
+    "Display water depth 350mm; sump operating depth 200mm; provisional sump maximum safe depth 350mm, measured from inside bottom.",
+    "Assumes all sump compartments can use the calculated reserve; ignores equipment and pipe displacement.",
+    "2L extra backflow, 3L/5L ATO and 3L additional margin are examples, not engineered or verified requirements.",
+    "Cabinet panel thickness, fittings, clearances and structural requirements remain unresolved."
+  ],
+  "cases": [
+    {
+      "depth_mm": 400,
+      "display_outer_mm": [
+        600,
+        400,
+        400
+      ],
+      "display_gross_l": 96.0,
+      "display_water_before_displacement_l": 78.4896,
+      "frame_concept_outer_mm": [
+        600,
+        400,
+        800
+      ],
+      "frame_geometric_inner_plan_mm": [
+        520,
+        320
+      ],
+      "sump_concept_outer_mm": [
+        400,
+        280,
+        400
+      ],
+      "sump_assumed_inner_plan_mm": [
+        388,
+        268
+      ],
+      "sump_geometric_water_at_200mm_l": 20.7968,
+      "sump_geometric_reserve_200_to_350mm_l": 15.5976,
+      "display_20mm_drawdown_outer_area_upper_estimate_l": 4.8,
+      "illustrative_budget_l": {
+        "additional_overflow_and_pipe_backflow": 2,
+        "ato_volume_case_1": 3,
+        "ato_volume_case_2": 5,
+        "extra_margin": 3
+      },
+      "illustrative_remaining_reserve_with_3l_ato_l": 2.797599999999999,
+      "illustrative_remaining_reserve_with_5l_ato_l": 0.7975999999999992
+    },
+    {
+      "depth_mm": 450,
+      "display_outer_mm": [
+        600,
+        450,
+        400
+      ],
+      "display_gross_l": 108.0,
+      "display_water_before_displacement_l": 88.7096,
+      "frame_concept_outer_mm": [
+        600,
+        450,
+        800
+      ],
+      "frame_geometric_inner_plan_mm": [
+        520,
+        370
+      ],
+      "sump_concept_outer_mm": [
+        400,
+        330,
+        400
+      ],
+      "sump_assumed_inner_plan_mm": [
+        388,
+        318
+      ],
+      "sump_geometric_water_at_200mm_l": 24.6768,
+      "sump_geometric_reserve_200_to_350mm_l": 18.5076,
+      "display_20mm_drawdown_outer_area_upper_estimate_l": 5.4,
+      "illustrative_budget_l": {
+        "additional_overflow_and_pipe_backflow": 2,
+        "ato_volume_case_1": 3,
+        "ato_volume_case_2": 5,
+        "extra_margin": 3
+      },
+      "illustrative_remaining_reserve_with_3l_ato_l": 5.1076,
+      "illustrative_remaining_reserve_with_5l_ato_l": 3.1075999999999997
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1200" viewBox="0 0 1200 1200" role="img">
+<title>DIY底滤海缸系统水路示意</title><desc>主缸、独立主下水及应急下水、底缸回水、有限补水容器、接水和配电位置的示意，非比例加工图。</desc>
+<rect width="1200" height="1200" fill="#f4f7fa"/>
+<defs>
+<marker id="blue" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#147dba"/></marker>
+<marker id="green" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#23866e"/></marker>
+<marker id="red" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#c64c52"/></marker>
+<marker id="gold" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#aa7414"/></marker>
+</defs>
+<text x="45" y="55" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="32" font-weight="700" fill="#17324d" text-anchor="start">Fishplan · 系统水路</text>
+<text x="45" y="91" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="19" font-weight="400" fill="#62748a" text-anchor="start">v0.1 · 两个尺寸方案共用的结构思路 / 非比例示意，孔位、分仓和管径未定</text>
+<rect x="145" y="145" width="720" height="245" rx="0" fill="#eaf7fc" stroke="#147dba" stroke-width="3"/>
+<rect x="165" y="155" width="145" height="225" rx="0" fill="#e0e7ed" stroke="#9cafbf" stroke-width="2"/>
+<text x="590" y="235" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="29" font-weight="600" fill="#17324d" text-anchor="middle">主缸</text>
+<text x="590" y="275" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="22" font-weight="400" fill="#17324d" text-anchor="middle">600 × 400 / 450 · 高度待定</text>
+<text x="590" y="310" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="18" font-weight="400" fill="#62748a" text-anchor="middle">展示空间与溢流占位需联合核对</text>
+<text x="237" y="188" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="20" font-weight="400" fill="#17324d" text-anchor="middle">溢流区</text>
+<path d="M 315 210 L 175 210" fill="none" stroke="#147dba" stroke-width="3" stroke-linejoin="round" marker-end="url(#blue)"/>
+<rect x="130" y="410" width="750" height="580" rx="0" fill="#fff" stroke="#9cafbf" stroke-width="12"/>
+<text x="500" y="455" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="21" font-weight="400" fill="#17324d" text-anchor="middle">铝架：约800高 · 正面保持可检修</text>
+<rect x="180" y="650" width="525" height="255" rx="0" fill="#eef8f4" stroke="#23866e" stroke-width="3"/>
+<rect x="183" y="785" width="519" height="117" rx="0" fill="#cdece3" stroke="none" stroke-width="1"/>
+<path d="M 185 700 L 700 700" fill="none" stroke="#c64c52" stroke-width="2" stroke-linejoin="round" stroke-dasharray="9 6"/>
+<path d="M 185 785 L 700 785" fill="none" stroke="#147dba" stroke-width="2" stroke-linejoin="round" stroke-dasharray="9 6"/>
+<text x="450" y="684" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="23" font-weight="600" fill="#23866e" text-anchor="middle">预留容水空间</text>
+<text x="450" y="731" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="18" font-weight="400" fill="#c64c52" text-anchor="middle">最高安全水位：待核算与测试</text>
+<text x="450" y="773" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="18" font-weight="400" fill="#147dba" text-anchor="middle">运行水位：随设备确认</text>
+<text x="255" y="855" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="19" font-weight="400" fill="#17324d" text-anchor="middle">物理过滤</text>
+<text x="435" y="855" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="19" font-weight="400" fill="#17324d" text-anchor="middle">蛋分 / 设备</text>
+<text x="625" y="855" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="19" font-weight="400" fill="#17324d" text-anchor="middle">回水</text>
+<path d="M 300 820 L 365 820" fill="none" stroke="#23866e" stroke-width="3" stroke-linejoin="round" marker-end="url(#green)"/>
+<path d="M 495 820 L 565 820" fill="none" stroke="#23866e" stroke-width="3" stroke-linejoin="round" marker-end="url(#green)"/>
+<path d="M 205 240 L 205 615 L 235 615 L 235 805" fill="none" stroke="#23866e" stroke-width="5" stroke-linejoin="round" marker-end="url(#green)"/>
+<text x="65" y="535" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="19" font-weight="400" fill="#23866e" text-anchor="start">主下水</text>
+<text x="65" y="562" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="17" font-weight="400" fill="#23866e" text-anchor="start">设调节</text>
+<path d="M 270 215 L 270 590 L 310 590 L 310 805" fill="none" stroke="#c64c52" stroke-width="4" stroke-linejoin="round" marker-end="url(#red)" stroke-dasharray="9 6"/>
+<text x="310" y="515" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="19" font-weight="400" fill="#c64c52" text-anchor="start">独立应急下水</text>
+<text x="310" y="545" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="17" font-weight="400" fill="#c64c52" text-anchor="start">主下水异常时承担排水</text>
+<path d="M 650 820 L 720 820 L 720 600 L 845 600 L 845 125 L 790 125 L 790 200" fill="none" stroke="#147dba" stroke-width="5" stroke-linejoin="round" marker-end="url(#blue)"/>
+<text x="885" y="340" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="19" font-weight="400" fill="#147dba" text-anchor="start">回水</text>
+<text x="885" y="375" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="17" font-weight="400" fill="#147dba" text-anchor="start">回水口位置</text>
+<text x="885" y="402" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="17" font-weight="400" fill="#147dba" text-anchor="start">决定反虹吸量</text>
+<rect x="750" y="680" width="80" height="225" rx="6" fill="#fff0c6" stroke="#aa7414" stroke-width="2"/>
+<text x="790" y="737" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="19" font-weight="400" fill="#aa7414" text-anchor="middle">有限</text>
+<text x="790" y="767" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="19" font-weight="400" fill="#aa7414" text-anchor="middle">补水</text>
+<text x="790" y="797" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="19" font-weight="400" fill="#aa7414" text-anchor="middle">容器</text>
+<path d="M 790 850 L 790 630 L 610 630 L 610 750" fill="none" stroke="#aa7414" stroke-width="3" stroke-linejoin="round" marker-end="url(#gold)"/>
+<text x="335" y="625" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="17" font-weight="400" fill="#aa7414" text-anchor="start">补水管：固定出口并处理虹吸</text>
+<rect x="685" y="475" width="155" height="105" rx="6" fill="#edf1f5" stroke="#9cafbf" stroke-width="2"/>
+<text x="762" y="515" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="18" font-weight="400" fill="#17324d" text-anchor="middle">配电 / 控制器</text>
+<text x="762" y="546" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="16" font-weight="400" fill="#62748a" text-anchor="middle">干燥高位待布局</text>
+<rect x="160" y="925" width="690" height="35" rx="0" fill="#fff4d6" stroke="#aa7414" stroke-width="2"/>
+<text x="505" y="950" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="18" font-weight="400" fill="#aa7414" text-anchor="middle">接水盘 + 漏水检测；容量及联动待设计</text>
+<text x="45" y="1035" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="22" font-weight="600" fill="#17324d" text-anchor="start">① 停泵：底缸接住回流水　② 堵管：独立应急下水接流量</text>
+<text x="45" y="1075" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="22" font-weight="600" fill="#17324d" text-anchor="start">③ 误补水：限量 + 保护　④ 漏水：接水、检测及经验证的停机</text>
+<text x="45" y="1125" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="19" font-weight="400" fill="#c64c52" text-anchor="start">图仅解释水路与功能位置，不代表缸架结构、玻璃孔位或设备已经兼容。</text>
+</svg>
