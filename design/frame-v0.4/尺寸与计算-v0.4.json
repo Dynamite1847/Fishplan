@@ -1,0 +1,830 @@
+{
+  "version": "v0.4",
+  "status": "assistant proposal; supplier structural review / wet tests outstanding",
+  "user_confirmed": [
+    "approximately 900 mm frame height, maintenance priority"
+  ],
+  "datum": "X left to right / Y front to back; origin assembly front-left; Z bare frame bottom, +22 above floor before level shims",
+  "assembly_footprint_mm": [
+    600,
+    450
+  ],
+  "bare_frame_mm": [
+    580,
+    430,
+    900
+  ],
+  "top_board_mm": [
+    600,
+    450,
+    18
+  ],
+  "bottom_board": {
+    "size_mm": [
+      580,
+      340,
+      18
+    ],
+    "min_mm": [
+      10,
+      52,
+      40
+    ],
+    "max_mm": [
+      590,
+      392,
+      58
+    ]
+  },
+  "tabletop_height_above_floor_mm": 940,
+  "whole_unit_height_with_400_tank_and_3_mat_mm": 1343,
+  "sump": {
+    "outside_mm": [
+      420,
+      310,
+      460
+    ],
+    "glass_assumption_mm": 6,
+    "min_mm": [
+      55,
+      60,
+      63
+    ],
+    "max_mm": [
+      475,
+      370,
+      523
+    ],
+    "cells_net_mm": [
+      100,
+      200,
+      96
+    ],
+    "baffles_mm": [
+      6,
+      6
+    ],
+    "actual_operating_water_max_mm": [
+      250,
+      235,
+      170
+    ],
+    "provisional_safe_depth_mm": 410
+  },
+  "ato": {
+    "outside_mm": [
+      65,
+      240,
+      180
+    ],
+    "wall_assumption_mm": 3,
+    "min_mm": [
+      480,
+      75,
+      63
+    ],
+    "max_mm": [
+      545,
+      315,
+      243
+    ],
+    "geometric_max_l": 2.443662,
+    "budget_l": 2.5,
+    "pump_fit_verified": false
+  },
+  "pipe_bay": {
+    "min_xy_mm": [
+      90,
+      245
+    ],
+    "max_xy_mm": [
+      280,
+      390
+    ],
+    "illustrative_envelopes": [
+      {
+        "id": "D1",
+        "center": [
+          130,
+          305
+        ],
+        "diameter": 80
+      },
+      {
+        "id": "D2",
+        "center": [
+          235,
+          305
+        ],
+        "diameter": 80
+      },
+      {
+        "id": "R1",
+        "center": [
+          180,
+          365
+        ],
+        "diameter": 50
+      }
+    ],
+    "note": "tool envelopes only; NOT glass drill or tabletop cut coordinates"
+  },
+  "catchtray": {
+    "outside_mm": [
+      600,
+      450,
+      35
+    ],
+    "wall_assumption_mm": 2,
+    "floor_assumption_mm": 3,
+    "frame_isolation_mm": 1,
+    "empty_gross_l": 8.506112,
+    "conservative_usable_estimate_l": 4.229312,
+    "hardware_reserved_l": 1,
+    "note": "planning only; not measured; no sump footprint deduction because tray lip is below equipment board"
+  },
+  "filter_module": {
+    "outside_xy_mm": [
+      92,
+      280
+    ],
+    "wall_mm": 3,
+    "rear_inside_depth_mm": 70,
+    "front_inside_depth_mm": 201,
+    "basket_xy_mm": [
+      82,
+      190
+    ],
+    "first_chamber_level_upper_mm": 250,
+    "module_water_level_upper_to_validate_mm": 270,
+    "extra_water_budget_l": 0.7
+  },
+  "headspace_mm": 337,
+  "skimmer_body_height_example_mm": 305,
+  "headspace_difference_mm": 32,
+  "members": [
+    {
+      "id": "T1",
+      "name": "前长梁",
+      "min_mm": [
+        10,
+        10,
+        860
+      ],
+      "max_mm": [
+        590,
+        50,
+        900
+      ],
+      "cut_length_mm": 580
+    },
+    {
+      "id": "T2",
+      "name": "后长梁",
+      "min_mm": [
+        10,
+        400,
+        860
+      ],
+      "max_mm": [
+        590,
+        440,
+        900
+      ],
+      "cut_length_mm": 580
+    },
+    {
+      "id": "T3",
+      "name": "左深梁",
+      "min_mm": [
+        10,
+        50,
+        860
+      ],
+      "max_mm": [
+        50,
+        400,
+        900
+      ],
+      "cut_length_mm": 350
+    },
+    {
+      "id": "T4",
+      "name": "右深梁",
+      "min_mm": [
+        550,
+        50,
+        860
+      ],
+      "max_mm": [
+        590,
+        400,
+        900
+      ],
+      "cut_length_mm": 350
+    },
+    {
+      "id": "B1",
+      "name": "前长梁",
+      "min_mm": [
+        10,
+        10,
+        0
+      ],
+      "max_mm": [
+        590,
+        50,
+        40
+      ],
+      "cut_length_mm": 580
+    },
+    {
+      "id": "B2",
+      "name": "后长梁",
+      "min_mm": [
+        10,
+        400,
+        0
+      ],
+      "max_mm": [
+        590,
+        440,
+        40
+      ],
+      "cut_length_mm": 580
+    },
+    {
+      "id": "B3",
+      "name": "左深梁",
+      "min_mm": [
+        10,
+        50,
+        0
+      ],
+      "max_mm": [
+        50,
+        400,
+        40
+      ],
+      "cut_length_mm": 350
+    },
+    {
+      "id": "B4",
+      "name": "右深梁",
+      "min_mm": [
+        550,
+        50,
+        0
+      ],
+      "max_mm": [
+        590,
+        400,
+        40
+      ],
+      "cut_length_mm": 350
+    },
+    {
+      "id": "T5",
+      "name": "上层偏右深梁",
+      "min_mm": [
+        330,
+        50,
+        860
+      ],
+      "max_mm": [
+        370,
+        400,
+        900
+      ],
+      "cut_length_mm": 350
+    },
+    {
+      "id": "B5",
+      "name": "下层左内深梁",
+      "min_mm": [
+        140,
+        50,
+        0
+      ],
+      "max_mm": [
+        180,
+        400,
+        40
+      ],
+      "cut_length_mm": 350
+    },
+    {
+      "id": "B6",
+      "name": "下层右内深梁",
+      "min_mm": [
+        420,
+        50,
+        0
+      ],
+      "max_mm": [
+        460,
+        400,
+        40
+      ],
+      "cut_length_mm": 350
+    },
+    {
+      "id": "P1",
+      "name": "立柱",
+      "min_mm": [
+        10,
+        10,
+        40
+      ],
+      "max_mm": [
+        50,
+        50,
+        860
+      ],
+      "cut_length_mm": 820
+    },
+    {
+      "id": "P2",
+      "name": "立柱",
+      "min_mm": [
+        550,
+        10,
+        40
+      ],
+      "max_mm": [
+        590,
+        50,
+        860
+      ],
+      "cut_length_mm": 820
+    },
+    {
+      "id": "P3",
+      "name": "立柱",
+      "min_mm": [
+        10,
+        400,
+        40
+      ],
+      "max_mm": [
+        50,
+        440,
+        860
+      ],
+      "cut_length_mm": 820
+    },
+    {
+      "id": "P4",
+      "name": "立柱",
+      "min_mm": [
+        550,
+        400,
+        40
+      ],
+      "max_mm": [
+        590,
+        440,
+        860
+      ],
+      "cut_length_mm": 820
+    }
+  ],
+  "external_gussets": [
+    {
+      "id": "G01",
+      "face": "front",
+      "horizontal_corner": "low",
+      "vertical_corner": "bottom",
+      "local_holes_uv_mm": [
+        [
+          80,
+          20
+        ],
+        [
+          130,
+          20
+        ],
+        [
+          20,
+          80
+        ],
+        [
+          20,
+          130
+        ]
+      ],
+      "thickness_mm": 6
+    },
+    {
+      "id": "G02",
+      "face": "front",
+      "horizontal_corner": "low",
+      "vertical_corner": "top",
+      "local_holes_uv_mm": [
+        [
+          80,
+          20
+        ],
+        [
+          130,
+          20
+        ],
+        [
+          20,
+          80
+        ],
+        [
+          20,
+          130
+        ]
+      ],
+      "thickness_mm": 6
+    },
+    {
+      "id": "G03",
+      "face": "front",
+      "horizontal_corner": "high",
+      "vertical_corner": "bottom",
+      "local_holes_uv_mm": [
+        [
+          80,
+          20
+        ],
+        [
+          130,
+          20
+        ],
+        [
+          20,
+          80
+        ],
+        [
+          20,
+          130
+        ]
+      ],
+      "thickness_mm": 6
+    },
+    {
+      "id": "G04",
+      "face": "front",
+      "horizontal_corner": "high",
+      "vertical_corner": "top",
+      "local_holes_uv_mm": [
+        [
+          80,
+          20
+        ],
+        [
+          130,
+          20
+        ],
+        [
+          20,
+          80
+        ],
+        [
+          20,
+          130
+        ]
+      ],
+      "thickness_mm": 6
+    },
+    {
+      "id": "G05",
+      "face": "back",
+      "horizontal_corner": "low",
+      "vertical_corner": "bottom",
+      "local_holes_uv_mm": [
+        [
+          80,
+          20
+        ],
+        [
+          130,
+          20
+        ],
+        [
+          20,
+          80
+        ],
+        [
+          20,
+          130
+        ]
+      ],
+      "thickness_mm": 6
+    },
+    {
+      "id": "G06",
+      "face": "back",
+      "horizontal_corner": "low",
+      "vertical_corner": "top",
+      "local_holes_uv_mm": [
+        [
+          80,
+          20
+        ],
+        [
+          130,
+          20
+        ],
+        [
+          20,
+          80
+        ],
+        [
+          20,
+          130
+        ]
+      ],
+      "thickness_mm": 6
+    },
+    {
+      "id": "G07",
+      "face": "back",
+      "horizontal_corner": "high",
+      "vertical_corner": "bottom",
+      "local_holes_uv_mm": [
+        [
+          80,
+          20
+        ],
+        [
+          130,
+          20
+        ],
+        [
+          20,
+          80
+        ],
+        [
+          20,
+          130
+        ]
+      ],
+      "thickness_mm": 6
+    },
+    {
+      "id": "G08",
+      "face": "back",
+      "horizontal_corner": "high",
+      "vertical_corner": "top",
+      "local_holes_uv_mm": [
+        [
+          80,
+          20
+        ],
+        [
+          130,
+          20
+        ],
+        [
+          20,
+          80
+        ],
+        [
+          20,
+          130
+        ]
+      ],
+      "thickness_mm": 6
+    },
+    {
+      "id": "G09",
+      "face": "left",
+      "horizontal_corner": "low",
+      "vertical_corner": "bottom",
+      "local_holes_uv_mm": [
+        [
+          80,
+          20
+        ],
+        [
+          130,
+          20
+        ],
+        [
+          20,
+          80
+        ],
+        [
+          20,
+          130
+        ]
+      ],
+      "thickness_mm": 6
+    },
+    {
+      "id": "G10",
+      "face": "left",
+      "horizontal_corner": "low",
+      "vertical_corner": "top",
+      "local_holes_uv_mm": [
+        [
+          80,
+          20
+        ],
+        [
+          130,
+          20
+        ],
+        [
+          20,
+          80
+        ],
+        [
+          20,
+          130
+        ]
+      ],
+      "thickness_mm": 6
+    },
+    {
+      "id": "G11",
+      "face": "left",
+      "horizontal_corner": "high",
+      "vertical_corner": "bottom",
+      "local_holes_uv_mm": [
+        [
+          80,
+          20
+        ],
+        [
+          130,
+          20
+        ],
+        [
+          20,
+          80
+        ],
+        [
+          20,
+          130
+        ]
+      ],
+      "thickness_mm": 6
+    },
+    {
+      "id": "G12",
+      "face": "left",
+      "horizontal_corner": "high",
+      "vertical_corner": "top",
+      "local_holes_uv_mm": [
+        [
+          80,
+          20
+        ],
+        [
+          130,
+          20
+        ],
+        [
+          20,
+          80
+        ],
+        [
+          20,
+          130
+        ]
+      ],
+      "thickness_mm": 6
+    },
+    {
+      "id": "G13",
+      "face": "right",
+      "horizontal_corner": "low",
+      "vertical_corner": "bottom",
+      "local_holes_uv_mm": [
+        [
+          80,
+          20
+        ],
+        [
+          130,
+          20
+        ],
+        [
+          20,
+          80
+        ],
+        [
+          20,
+          130
+        ]
+      ],
+      "thickness_mm": 6
+    },
+    {
+      "id": "G14",
+      "face": "right",
+      "horizontal_corner": "low",
+      "vertical_corner": "top",
+      "local_holes_uv_mm": [
+        [
+          80,
+          20
+        ],
+        [
+          130,
+          20
+        ],
+        [
+          20,
+          80
+        ],
+        [
+          20,
+          130
+        ]
+      ],
+      "thickness_mm": 6
+    },
+    {
+      "id": "G15",
+      "face": "right",
+      "horizontal_corner": "high",
+      "vertical_corner": "bottom",
+      "local_holes_uv_mm": [
+        [
+          80,
+          20
+        ],
+        [
+          130,
+          20
+        ],
+        [
+          20,
+          80
+        ],
+        [
+          20,
+          130
+        ]
+      ],
+      "thickness_mm": 6
+    },
+    {
+      "id": "G16",
+      "face": "right",
+      "horizontal_corner": "high",
+      "vertical_corner": "top",
+      "local_holes_uv_mm": [
+        [
+          80,
+          20
+        ],
+        [
+          130,
+          20
+        ],
+        [
+          20,
+          80
+        ],
+        [
+          20,
+          130
+        ]
+      ],
+      "thickness_mm": 6
+    }
+  ],
+  "cut_total_m": 8.05,
+  "water_scenarios": [
+    {
+      "display_drawdown_mm": 10,
+      "display_backflow_l": 2.7,
+      "reserve_l": 22.06392,
+      "additional_overflow_and_pipes_l": 5,
+      "max_ato_l": 2.5,
+      "module_high_storage_l": 0.7,
+      "other_solid_displacement_l": 2,
+      "extra_margin_l": 3,
+      "remaining_after_margin_l": 6.16392
+    },
+    {
+      "display_drawdown_mm": 20,
+      "display_backflow_l": 5.4,
+      "reserve_l": 22.06392,
+      "additional_overflow_and_pipes_l": 5,
+      "max_ato_l": 2.5,
+      "module_high_storage_l": 0.7,
+      "other_solid_displacement_l": 2,
+      "extra_margin_l": 3,
+      "remaining_after_margin_l": 3.46392
+    },
+    {
+      "display_drawdown_mm": 30,
+      "display_backflow_l": 8.1,
+      "reserve_l": 22.06392,
+      "additional_overflow_and_pipes_l": 5,
+      "max_ato_l": 2.5,
+      "module_high_storage_l": 0.7,
+      "other_solid_displacement_l": 2,
+      "extra_margin_l": 3,
+      "remaining_after_margin_l": 0.76392
+    }
+  ]
+}

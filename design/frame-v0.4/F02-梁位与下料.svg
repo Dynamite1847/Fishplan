@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1800" viewBox="0 0 1800 1800">
+<rect width="1800" height="1800" fill="#f7f9fb"/>
+<text x="65" y="83" font-family="PingFang SC,Microsoft YaHei,sans-serif" font-size="36" fill="#18354a" font-weight="700" text-anchor="start">F02 · 上下框梁位与型材下料</text>
+<text x="65" y="135" font-family="PingFang SC,Microsoft YaHei,sans-serif" font-size="23" fill="#576e7d" font-weight="400" text-anchor="start">X/Y从600×450总装前左角量；俯视图后方在上 · 全部4040同一配套系列</text>
+<rect x="80" y="270" width="648.0" height="486.00000000000006" fill="white" stroke="#576e7d" stroke-width="2" stroke-dasharray="10 7"/>
+<text x="80" y="243" font-family="PingFang SC,Microsoft YaHei,sans-serif" font-size="27" fill="#18354a" font-weight="700" text-anchor="start">上框：Z860～900</text>
+<rect x="90.8" y="702.0" width="626.4000000000001" height="43.2" fill="#d4dfe6" stroke="#18354a" stroke-width="2"/>
+<text x="404.0" y="730.6" font-family="PingFang SC,Microsoft YaHei,sans-serif" font-size="20" fill="#18354a" font-weight="400" text-anchor="middle">T1</text>
+<rect x="90.8" y="280.8" width="626.4000000000001" height="43.2" fill="#d4dfe6" stroke="#18354a" stroke-width="2"/>
+<text x="404.0" y="309.40000000000003" font-family="PingFang SC,Microsoft YaHei,sans-serif" font-size="20" fill="#18354a" font-weight="400" text-anchor="middle">T2</text>
+<rect x="90.8" y="324.0" width="43.2" height="378.0" fill="#d4dfe6" stroke="#18354a" stroke-width="2"/>
+<text x="112.4" y="520.0" font-family="PingFang SC,Microsoft YaHei,sans-serif" font-size="20" fill="#18354a" font-weight="400" text-anchor="middle">T3</text>
+<rect x="674.0" y="324.0" width="43.2" height="378.0" fill="#d4dfe6" stroke="#18354a" stroke-width="2"/>
+<text x="695.6" y="520.0" font-family="PingFang SC,Microsoft YaHei,sans-serif" font-size="20" fill="#18354a" font-weight="400" text-anchor="middle">T4</text>
+<rect x="436.40000000000003" y="324.0" width="43.2" height="378.0" fill="#d4dfe6" stroke="#18354a" stroke-width="2"/>
+<text x="458.00000000000006" y="520.0" font-family="PingFang SC,Microsoft YaHei,sans-serif" font-size="20" fill="#18354a" font-weight="400" text-anchor="middle">T5</text>
+<path d="M80,801.0 L728.0,801.0" stroke="#18354a" stroke-width="2" fill="none"/>
+<path d="M80,792.0 L80,810.0" stroke="#18354a" stroke-width="2" fill="none"/>
+<path d="M728.0,792.0 L728.0,810.0" stroke="#18354a" stroke-width="2" fill="none"/>
+<text x="404.0" y="788.0" font-family="PingFang SC,Microsoft YaHei,sans-serif" font-size="22" fill="#18354a" font-weight="400" text-anchor="middle">600 总装 / 580裸框</text>
+<text x="404.0" y="844.0" font-family="PingFang SC,Microsoft YaHei,sans-serif" font-size="21" fill="#18354a" font-weight="400" text-anchor="middle">前方 Y=0</text>
+<rect x="177.2" y="334.8" width="205.20000000000002" height="156.60000000000002" fill="#eef7ed" stroke="#21846b" stroke-width="2" stroke-dasharray="10 7"/>
+<circle cx="220.4" cy="426.6" r="43.2" fill="none" stroke="#21846b" stroke-width="2"/>
+<text x="220.4" y="432.6" font-family="PingFang SC,Microsoft YaHei,sans-serif" font-size="16" fill="#18354a" font-weight="400" text-anchor="middle">D1</text>
+<circle cx="333.8" cy="426.6" r="43.2" fill="none" stroke="#21846b" stroke-width="2"/>
+<text x="333.8" y="432.6" font-family="PingFang SC,Microsoft YaHei,sans-serif" font-size="16" fill="#18354a" font-weight="400" text-anchor="middle">D2</text>
+<circle cx="274.4" cy="361.8" r="27.0" fill="none" stroke="#21846b" stroke-width="2"/>
+<text x="274.4" y="367.8" font-family="PingFang SC,Microsoft YaHei,sans-serif" font-size="16" fill="#18354a" font-weight="400" text-anchor="middle">R1</text>
+<rect x="990" y="270" width="648.0" height="486.00000000000006" fill="white" stroke="#576e7d" stroke-width="2" stroke-dasharray="10 7"/>
+<text x="990" y="243" font-family="PingFang SC,Microsoft YaHei,sans-serif" font-size="27" fill="#18354a" font-weight="700" text-anchor="start">下框：Z0～40</text>
+<rect x="1000.8" y="702.0" width="626.4000000000001" height="43.2" fill="#d4dfe6" stroke="#18354a" stroke-width="2"/>
+<text x="1314.0" y="730.6" font-family="PingFang SC,Microsoft YaHei,sans-serif" font-size="20" fill="#18354a" font-weight="400" text-anchor="middle">B1</text>
+<rect x="1000.8" y="280.8" width="626.4000000000001" height="43.2" fill="#d4dfe6" stroke="#18354a" stroke-width="2"/>
+<text x="1314.0" y="309.40000000000003" font-family="PingFang SC,Microsoft YaHei,sans-serif" font-size="20" fill="#18354a" font-weight="400" text-anchor="middle">B2</text>
+<rect x="1000.8" y="324.0" width="43.2" height="378.0" fill="#d4dfe6" stroke="#18354a" stroke-width="2"/>
+<text x="1022.4" y="520.0" font-family="PingFang SC,Microsoft YaHei,sans-serif" font-size="20" fill="#18354a" font-weight="400" text-anchor="middle">B3</text>
+<rect x="1584.0" y="324.0" width="43.2" height="378.0" fill="#d4dfe6" stroke="#18354a" stroke-width="2"/>
+<text x="1605.6" y="520.0" font-family="PingFang SC,Microsoft YaHei,sans-serif" font-size="20" fill="#18354a" font-weight="400" text-anchor="middle">B4</text>
+<rect x="1141.2" y="324.0" width="43.2" height="378.0" fill="#d4dfe6" stroke="#18354a" stroke-width="2"/>
+<text x="1162.8" y="520.0" font-family="PingFang SC,Microsoft YaHei,sans-serif" font-size="20" fill="#18354a" font-weight="400" text-anchor="middle">B5</text>
+<rect x="1443.6" y="324.0" width="43.2" height="378.0" fill="#d4dfe6" stroke="#18354a" stroke-width="2"/>
+<text x="1465.2" y="520.0" font-family="PingFang SC,Microsoft YaHei,sans-serif" font-size="20" fill="#18354a" font-weight="400" text-anchor="middle">B6</text>
+<path d="M990,801.0 L1638.0,801.0" stroke="#18354a" stroke-width="2" fill="none"/>
+<path d="M990,792.0 L990,810.0" stroke="#18354a" stroke-width="2" fill="none"/>
+<path d="M1638.0,792.0 L1638.0,810.0" stroke="#18354a" stroke-width="2" fill="none"/>
+<text x="1314.0" y="788.0" font-family="PingFang SC,Microsoft YaHei,sans-serif" font-size="22" fill="#18354a" font-weight="400" text-anchor="middle">600 总装 / 580裸框</text>
+<text x="1314.0" y="844.0" font-family="PingFang SC,Microsoft YaHei,sans-serif" font-size="21" fill="#18354a" font-weight="400" text-anchor="middle">前方 Y=0</text>
+<rect x="1000.8" y="332.64" width="626.4000000000001" height="367.20000000000005" fill="none" stroke="#b77a17" stroke-width="3" stroke-dasharray="10 7"/>
+<text x="80" y="990" font-family="PingFang SC,Microsoft YaHei,sans-serif" font-size="29" fill="#18354a" font-weight="700" text-anchor="start">下料清单（净切长，锯缝及余料由供方排料）</text>
+<text x="90" y="1065" font-family="PingFang SC,Microsoft YaHei,sans-serif" font-size="22" fill="#18354a" font-weight="400" text-anchor="start">T1/T2/B1/B2</text>
+<text x="720" y="1065" font-family="PingFang SC,Microsoft YaHei,sans-serif" font-size="25" fill="#18354a" font-weight="400" text-anchor="start">前后长梁</text>
+<text x="1050" y="1065" font-family="PingFang SC,Microsoft YaHei,sans-serif" font-size="27" fill="#18354a" font-weight="400" text-anchor="start">580 × 4根</text>
+<text x="1450" y="1065" font-family="PingFang SC,Microsoft YaHei,sans-serif" font-size="26" fill="#18354a" font-weight="400" text-anchor="start">2.32m</text>
+<text x="90" y="1145" font-family="PingFang SC,Microsoft YaHei,sans-serif" font-size="22" fill="#18354a" font-weight="400" text-anchor="start">T3/T4/T5/B3/B4/B5/B6</text>
+<text x="720" y="1145" font-family="PingFang SC,Microsoft YaHei,sans-serif" font-size="25" fill="#18354a" font-weight="400" text-anchor="start">深梁</text>
+<text x="1050" y="1145" font-family="PingFang SC,Microsoft YaHei,sans-serif" font-size="27" fill="#18354a" font-weight="400" text-anchor="start">350 × 7根</text>
+<text x="1450" y="1145" font-family="PingFang SC,Microsoft YaHei,sans-serif" font-size="26" fill="#18354a" font-weight="400" text-anchor="start">2.45m</text>
+<text x="90" y="1225" font-family="PingFang SC,Microsoft YaHei,sans-serif" font-size="22" fill="#18354a" font-weight="400" text-anchor="start">P1/P2/P3/P4</text>
+<text x="720" y="1225" font-family="PingFang SC,Microsoft YaHei,sans-serif" font-size="25" fill="#18354a" font-weight="400" text-anchor="start">立柱</text>
+<text x="1050" y="1225" font-family="PingFang SC,Microsoft YaHei,sans-serif" font-size="27" fill="#18354a" font-weight="400" text-anchor="start">820 × 4根</text>
+<text x="1450" y="1225" font-family="PingFang SC,Microsoft YaHei,sans-serif" font-size="26" fill="#18354a" font-weight="400" text-anchor="start">3.28m</text>
+<text x="80" y="1330" font-family="PingFang SC,Microsoft YaHei,sans-serif" font-size="26" fill="#18354a" font-weight="700" text-anchor="start">合计15根 / 8.05m（不含损耗）；柱夹在上下框之间：40 + 820 + 40 = 900。</text>
+<text x="80" y="1400" font-family="PingFang SC,Microsoft YaHei,sans-serif" font-size="25" fill="#18354a" font-weight="400" text-anchor="start">上内梁T5中心X350；下内梁B5/B6中心X160 / X440。</text>
+<text x="80" y="1452" font-family="PingFang SC,Microsoft YaHei,sans-serif" font-size="24" fill="#b77a17" font-weight="400" text-anchor="start">底缸板580×340：X10～590 / Y52～392，压在四根下层深梁上。</text>
+<text x="80" y="1504" font-family="PingFang SC,Microsoft YaHei,sans-serif" font-size="24" fill="#21846b" font-weight="400" text-anchor="start">管件工具包络区X90～280 / Y245～390；绿圆不是玻璃开孔。</text>
+<text x="80" y="1556" font-family="PingFang SC,Microsoft YaHei,sans-serif" font-size="24" fill="#18354a" font-weight="400" text-anchor="start">12套90°角码仅连接三根内深梁的T形节点，每端左右各一套。</text>
+<text x="80" y="1608" font-family="PingFang SC,Microsoft YaHei,sans-serif" font-size="23" fill="#b64141" font-weight="400" text-anchor="start">牌号、壁厚、槽型、角码和螺母必须按同一供方系列核对；“4040”本身不足以采购。</text>
+<text x="65" y="1732" font-family="PingFang SC,Microsoft YaHei,sans-serif" font-size="22" fill="#576e7d" font-weight="400" text-anchor="start">Fishplan v0.4 · 2026-10-19 · mm · 助手设计提案 / 待供方核验，禁止直接据此加工</text>
+</svg>

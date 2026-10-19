@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1800" viewBox="0 0 1800 1800">
+<rect width="1800" height="1800" fill="#f7f9fb"/>
+<text x="65" y="83" font-family="PingFang SC,Microsoft YaHei,sans-serif" font-size="36" fill="#18354a" font-weight="700" text-anchor="start">F01 · 铝架总装与真实高度</text>
+<text x="65" y="135" font-family="PingFang SC,Microsoft YaHei,sans-serif" font-size="23" fill="#576e7d" font-weight="400" text-anchor="start">总装占地600×450；裸型材框580×430×900 · 正面与右侧，比例一致</text>
+<rect x="155" y="300" width="626.4000000000001" height="972.0000000000001" fill="none" stroke="#576e7d" stroke-width="1"/>
+<rect x="155" y="1228.8000000000002" width="626.4000000000001" height="43.2" fill="#d4dfe6" stroke="#18354a" stroke-width="2"/>
+<rect x="155" y="300.0" width="626.4000000000001" height="43.2" fill="#d4dfe6" stroke="#18354a" stroke-width="2"/>
+<rect x="155.0" y="343.2" width="43.2" height="885.6" fill="#d4dfe6" stroke="#18354a" stroke-width="2"/>
+<rect x="738.2" y="343.2" width="43.2" height="885.6" fill="#d4dfe6" stroke="#18354a" stroke-width="2"/>
+<polygon points="155.0,1272.0 371.0,1272.0 155.0,1056.0" fill="#e7eef3" stroke="#167faf" stroke-width="2"/>
+<circle cx="241.4" cy="1250.4" r="4.86" fill="none" stroke="#167faf" stroke-width="2"/>
+<circle cx="295.4" cy="1250.4" r="4.86" fill="none" stroke="#167faf" stroke-width="2"/>
+<circle cx="176.6" cy="1185.6" r="4.86" fill="none" stroke="#167faf" stroke-width="2"/>
+<circle cx="176.6" cy="1131.6" r="4.86" fill="none" stroke="#167faf" stroke-width="2"/>
+<polygon points="155.0,300.0 371.0,300.0 155.0,516.0" fill="#e7eef3" stroke="#167faf" stroke-width="2"/>
+<circle cx="241.4" cy="321.6" r="4.86" fill="none" stroke="#167faf" stroke-width="2"/>
+<circle cx="295.4" cy="321.6" r="4.86" fill="none" stroke="#167faf" stroke-width="2"/>
+<circle cx="176.6" cy="386.4" r="4.86" fill="none" stroke="#167faf" stroke-width="2"/>
+<circle cx="176.6" cy="440.4" r="4.86" fill="none" stroke="#167faf" stroke-width="2"/>
+<polygon points="781.4000000000001,1272.0 565.4000000000001,1272.0 781.4000000000001,1056.0" fill="#e7eef3" stroke="#167faf" stroke-width="2"/>
+<circle cx="695.0000000000001" cy="1250.4" r="4.86" fill="none" stroke="#167faf" stroke-width="2"/>
+<circle cx="641.0000000000001" cy="1250.4" r="4.86" fill="none" stroke="#167faf" stroke-width="2"/>
+<circle cx="759.8000000000001" cy="1185.6" r="4.86" fill="none" stroke="#167faf" stroke-width="2"/>
+<circle cx="759.8000000000001" cy="1131.6" r="4.86" fill="none" stroke="#167faf" stroke-width="2"/>
+<polygon points="781.4000000000001,300.0 565.4000000000001,300.0 781.4000000000001,516.0" fill="#e7eef3" stroke="#167faf" stroke-width="2"/>
+<circle cx="695.0000000000001" cy="321.6" r="4.86" fill="none" stroke="#167faf" stroke-width="2"/>
+<circle cx="641.0000000000001" cy="321.6" r="4.86" fill="none" stroke="#167faf" stroke-width="2"/>
+<circle cx="759.8000000000001" cy="386.4" r="4.86" fill="none" stroke="#167faf" stroke-width="2"/>
+<circle cx="759.8000000000001" cy="440.4" r="4.86" fill="none" stroke="#167faf" stroke-width="2"/>
+<rect x="144.2" y="280.56" width="648.0" height="19.44" fill="#e6d3ac" stroke="#18354a" stroke-width="2"/>
+<rect x="155" y="1209.3600000000001" width="626.4000000000001" height="19.44" fill="#e6d3ac" stroke="#18354a" stroke-width="2"/>
+<rect x="203.6" y="707.1600000000001" width="453.6" height="496.8" fill="none" stroke="#21846b" stroke-width="3" stroke-dasharray="10 7"/>
+<rect x="198.2" y="516.0" width="540.0" height="540.0" fill="none" stroke="#b77a17" stroke-width="2" stroke-dasharray="10 7"/>
+<text x="468.20000000000005" y="840.0" font-family="PingFang SC,Microsoft YaHei,sans-serif" font-size="23" fill="#b77a17" font-weight="400" text-anchor="middle">正面装入窗口</text>
+<text x="468.20000000000005" y="877.8000000000001" font-family="PingFang SC,Microsoft YaHei,sans-serif" font-size="23" fill="#b77a17" font-weight="400" text-anchor="middle">500宽 × 500高</text>
+<text x="468.20000000000005" y="915.6" font-family="PingFang SC,Microsoft YaHei,sans-serif" font-size="20" fill="#21846b" font-weight="400" text-anchor="middle">底缸先抬至Z210，再向内下降</text>
+<path d="M155,1319.0 L781.4000000000001,1319.0" stroke="#18354a" stroke-width="2" fill="none"/>
+<path d="M155,1310.0 L155,1328.0" stroke="#18354a" stroke-width="2" fill="none"/>
+<path d="M781.4000000000001,1310.0 L781.4000000000001,1328.0" stroke="#18354a" stroke-width="2" fill="none"/>
+<text x="468.20000000000005" y="1306.0" font-family="PingFang SC,Microsoft YaHei,sans-serif" font-size="22" fill="#18354a" font-weight="400" text-anchor="middle">580 裸框</text>
+<path d="M120,300 L120,1272.0" stroke="#18354a" stroke-width="2" fill="none"/>
+<path d="M111,300 L129,300" stroke="#18354a" stroke-width="2" fill="none"/>
+<path d="M111,1272.0 L129,1272.0" stroke="#18354a" stroke-width="2" fill="none"/>
+<text x="107" y="786.0" font-family="PingFang SC,Microsoft YaHei,sans-serif" font-size="22" fill="#18354a" font-weight="400" text-anchor="end">900</text>
+<text x="155" y="248" font-family="PingFang SC,Microsoft YaHei,sans-serif" font-size="28" fill="#18354a" font-weight="700" text-anchor="start">正视图（前方）</text>
+<rect x="1100" y="300" width="464.40000000000003" height="972.0000000000001" fill="none" stroke="#576e7d" stroke-width="1"/>
+<rect x="1100" y="1228.8000000000002" width="464.40000000000003" height="43.2" fill="#d4dfe6" stroke="#18354a" stroke-width="2"/>
+<rect x="1100" y="300.0" width="464.40000000000003" height="43.2" fill="#d4dfe6" stroke="#18354a" stroke-width="2"/>
+<rect x="1100.0" y="343.2" width="43.2" height="885.6" fill="#d4dfe6" stroke="#18354a" stroke-width="2"/>
+<rect x="1521.2" y="343.2" width="43.2" height="885.6" fill="#d4dfe6" stroke="#18354a" stroke-width="2"/>
+<polygon points="1100.0,1272.0 1316.0,1272.0 1100.0,1056.0" fill="#e7eef3" stroke="#167faf" stroke-width="2"/>
+<circle cx="1186.4" cy="1250.4" r="4.86" fill="none" stroke="#167faf" stroke-width="2"/>
+<circle cx="1240.4" cy="1250.4" r="4.86" fill="none" stroke="#167faf" stroke-width="2"/>
+<circle cx="1121.6" cy="1185.6" r="4.86" fill="none" stroke="#167faf" stroke-width="2"/>
+<circle cx="1121.6" cy="1131.6" r="4.86" fill="none" stroke="#167faf" stroke-width="2"/>
+<polygon points="1100.0,300.0 1316.0,300.0 1100.0,516.0" fill="#e7eef3" stroke="#167faf" stroke-width="2"/>
+<circle cx="1186.4" cy="321.6" r="4.86" fill="none" stroke="#167faf" stroke-width="2"/>
+<circle cx="1240.4" cy="321.6" r="4.86" fill="none" stroke="#167faf" stroke-width="2"/>
+<circle cx="1121.6" cy="386.4" r="4.86" fill="none" stroke="#167faf" stroke-width="2"/>
+<circle cx="1121.6" cy="440.4" r="4.86" fill="none" stroke="#167faf" stroke-width="2"/>
+<polygon points="1564.4,1272.0 1348.4,1272.0 1564.4,1056.0" fill="#e7eef3" stroke="#167faf" stroke-width="2"/>
+<circle cx="1478.0" cy="1250.4" r="4.86" fill="none" stroke="#167faf" stroke-width="2"/>
+<circle cx="1424.0" cy="1250.4" r="4.86" fill="none" stroke="#167faf" stroke-width="2"/>
+<circle cx="1542.8000000000002" cy="1185.6" r="4.86" fill="none" stroke="#167faf" stroke-width="2"/>
+<circle cx="1542.8000000000002" cy="1131.6" r="4.86" fill="none" stroke="#167faf" stroke-width="2"/>
+<polygon points="1564.4,300.0 1348.4,300.0 1564.4,516.0" fill="#e7eef3" stroke="#167faf" stroke-width="2"/>
+<circle cx="1478.0" cy="321.6" r="4.86" fill="none" stroke="#167faf" stroke-width="2"/>
+<circle cx="1424.0" cy="321.6" r="4.86" fill="none" stroke="#167faf" stroke-width="2"/>
+<circle cx="1542.8000000000002" cy="386.4" r="4.86" fill="none" stroke="#167faf" stroke-width="2"/>
+<circle cx="1542.8000000000002" cy="440.4" r="4.86" fill="none" stroke="#167faf" stroke-width="2"/>
+<rect x="1089.2" y="280.56" width="486.00000000000006" height="19.44" fill="#e6d3ac" stroke="#18354a" stroke-width="2"/>
+<rect x="1145.36" y="1209.3600000000001" width="367.20000000000005" height="19.44" fill="#e6d3ac" stroke="#18354a" stroke-width="2"/>
+<rect x="1154.0" y="707.1600000000001" width="334.8" height="496.8" fill="none" stroke="#21846b" stroke-width="3" stroke-dasharray="10 7"/>
+<path d="M1100,1319.0 L1564.4,1319.0" stroke="#18354a" stroke-width="2" fill="none"/>
+<path d="M1100,1310.0 L1100,1328.0" stroke="#18354a" stroke-width="2" fill="none"/>
+<path d="M1564.4,1310.0 L1564.4,1328.0" stroke="#18354a" stroke-width="2" fill="none"/>
+<text x="1332.2" y="1306.0" font-family="PingFang SC,Microsoft YaHei,sans-serif" font-size="22" fill="#18354a" font-weight="400" text-anchor="middle">430 裸框</text>
+<path d="M1065,300 L1065,1272.0" stroke="#18354a" stroke-width="2" fill="none"/>
+<path d="M1056,300 L1074,300" stroke="#18354a" stroke-width="2" fill="none"/>
+<path d="M1056,1272.0 L1074,1272.0" stroke="#18354a" stroke-width="2" fill="none"/>
+<text x="1052" y="786.0" font-family="PingFang SC,Microsoft YaHei,sans-serif" font-size="22" fill="#18354a" font-weight="400" text-anchor="end">900</text>
+<text x="1100" y="248" font-family="PingFang SC,Microsoft YaHei,sans-serif" font-size="28" fill="#18354a" font-weight="700" text-anchor="start">右侧视图</text>
+<text x="70" y="1390" font-family="PingFang SC,Microsoft YaHei,sans-serif" font-size="27" fill="#18354a" font-weight="700" text-anchor="start">自下而上：18承压底板 + 3盘底 + 1隔离条 + 900裸架 + 18台面 = 940</text>
+<text x="70" y="1442" font-family="PingFang SC,Microsoft YaHei,sans-serif" font-size="24" fill="#18354a" font-weight="400" text-anchor="start">主缸400高、垫3厚时，缸顶约1343；调平垫片另计。900不是整柜最终高度。</text>
+<text x="70" y="1496" font-family="PingFang SC,Microsoft YaHei,sans-serif" font-size="24" fill="#21846b" font-weight="400" text-anchor="start">绿色虚线：底缸420×310×460；正面装入后降到Z63，顶部Z523。</text>
+<text x="70" y="1548" font-family="PingFang SC,Microsoft YaHei,sans-serif" font-size="24" fill="#18354a" font-weight="400" text-anchor="start">16块外置200三角板：每个空间角两块，前后、左右两个方向同时加固。</text>
+<text x="70" y="1600" font-family="PingFang SC,Microsoft YaHei,sans-serif" font-size="24" fill="#b64141" font-weight="400" text-anchor="start">角板挡住正面四角：不能仍把500×820柱间矩形当作完全无遮挡窗口。</text>
+<text x="70" y="1650" font-family="PingFang SC,Microsoft YaHei,sans-serif" font-size="23" fill="#b64141" font-weight="400" text-anchor="start">架体稳定、节点抗滑移、玻璃支撑及板材承载尚待供方核验；本图不是承重证明。</text>
+<text x="65" y="1732" font-family="PingFang SC,Microsoft YaHei,sans-serif" font-size="22" fill="#576e7d" font-weight="400" text-anchor="start">Fishplan v0.4 · 2026-10-19 · mm · 助手设计提案 / 待供方核验，禁止直接据此加工</text>
+</svg>

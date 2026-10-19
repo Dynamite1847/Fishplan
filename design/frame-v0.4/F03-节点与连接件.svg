@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1800" viewBox="0 0 1800 1800">
+<rect width="1800" height="1800" fill="#f7f9fb"/>
+<text x="65" y="83" font-family="PingFang SC,Microsoft YaHei,sans-serif" font-size="36" fill="#18354a" font-weight="700" text-anchor="start">F03 · 外置三角节点板与紧固件</text>
+<text x="65" y="135" font-family="PingFang SC,Microsoft YaHei,sans-serif" font-size="23" fill="#576e7d" font-weight="400" text-anchor="start">节点提案：200×200×6直角三角板 ×16；每块4孔 · 最终材料/沉头/紧固力矩由供方确认</text>
+<rect x="145" y="986.0" width="720.0" height="144.0" fill="#d4dfe6" stroke="#576e7d" stroke-width="2"/>
+<rect x="145" y="410.0" width="144.0" height="720.0" fill="#d4dfe6" stroke="#576e7d" stroke-width="2"/>
+<polygon points="145,1130 865.0,1130 145,410.0" fill="#e6eff6" stroke="#167faf" stroke-width="2"/>
+<circle cx="433.0" cy="1058.0" r="16.2" fill="white" stroke="#18354a" stroke-width="2"/>
+<circle cx="433.0" cy="1058.0" r="29.7" fill="none" stroke="#576e7d" stroke-width="2"/>
+<text x="458.0" y="1033.0" font-family="PingFang SC,Microsoft YaHei,sans-serif" font-size="22" fill="#167faf" font-weight="400" text-anchor="start">H1</text>
+<circle cx="613.0" cy="1058.0" r="16.2" fill="white" stroke="#18354a" stroke-width="2"/>
+<circle cx="613.0" cy="1058.0" r="29.7" fill="none" stroke="#576e7d" stroke-width="2"/>
+<text x="638.0" y="1033.0" font-family="PingFang SC,Microsoft YaHei,sans-serif" font-size="22" fill="#167faf" font-weight="400" text-anchor="start">H2</text>
+<circle cx="217.0" cy="842.0" r="16.2" fill="white" stroke="#18354a" stroke-width="2"/>
+<circle cx="217.0" cy="842.0" r="29.7" fill="none" stroke="#576e7d" stroke-width="2"/>
+<text x="242.0" y="817.0" font-family="PingFang SC,Microsoft YaHei,sans-serif" font-size="22" fill="#167faf" font-weight="400" text-anchor="start">H3</text>
+<circle cx="217.0" cy="662.0" r="16.2" fill="white" stroke="#18354a" stroke-width="2"/>
+<circle cx="217.0" cy="662.0" r="29.7" fill="none" stroke="#576e7d" stroke-width="2"/>
+<text x="242.0" y="637.0" font-family="PingFang SC,Microsoft YaHei,sans-serif" font-size="22" fill="#167faf" font-weight="400" text-anchor="start">H4</text>
+<path d="M145,1195 L865.0,1195" stroke="#18354a" stroke-width="2" fill="none"/>
+<path d="M145,1186 L145,1204" stroke="#18354a" stroke-width="2" fill="none"/>
+<path d="M865.0,1186 L865.0,1204" stroke="#18354a" stroke-width="2" fill="none"/>
+<text x="505.0" y="1182" font-family="PingFang SC,Microsoft YaHei,sans-serif" font-size="22" fill="#18354a" font-weight="400" text-anchor="middle">200</text>
+<path d="M100,410.0 L100,1130.0" stroke="#18354a" stroke-width="2" fill="none"/>
+<path d="M91,410.0 L109,410.0" stroke="#18354a" stroke-width="2" fill="none"/>
+<path d="M91,1130.0 L109,1130.0" stroke="#18354a" stroke-width="2" fill="none"/>
+<text x="87" y="770.0" font-family="PingFang SC,Microsoft YaHei,sans-serif" font-size="22" fill="#18354a" font-weight="400" text-anchor="end">200</text>
+<text x="145" y="1238" font-family="PingFang SC,Microsoft YaHei,sans-serif" font-size="23" fill="#18354a" font-weight="400" text-anchor="start">局部原点：直角顶点；u沿横梁向内，v沿立柱向内。</text>
+<text x="145" y="1280" font-family="PingFang SC,Microsoft YaHei,sans-serif" font-size="22" fill="#18354a" font-weight="400" text-anchor="start">H1 (80,20)  H2 (130,20)  H3 (20,80)  H4 (20,130)</text>
+<text x="1030" y="310" font-family="PingFang SC,Microsoft YaHei,sans-serif" font-size="29" fill="#18354a" font-weight="700" text-anchor="start">孔与表面</text>
+<text x="1030" y="375" font-family="PingFang SC,Microsoft YaHei,sans-serif" font-size="23" fill="#18354a" font-weight="400" text-anchor="start">4 × Ø9通孔，配M8</text>
+<text x="1030" y="425" font-family="PingFang SC,Microsoft YaHei,sans-serif" font-size="23" fill="#18354a" font-weight="400" text-anchor="start">90°沉头，按实际螺钉头加工</text>
+<text x="1030" y="475" font-family="PingFang SC,Microsoft YaHei,sans-serif" font-size="23" fill="#18354a" font-weight="400" text-anchor="start">沉头大径暂按Ø16.5复核</text>
+<text x="1030" y="525" font-family="PingFang SC,Microsoft YaHei,sans-serif" font-size="23" fill="#18354a" font-weight="400" text-anchor="start">外侧齐平；不得用凸头顶到盘壁</text>
+<text x="1030" y="575" font-family="PingFang SC,Microsoft YaHei,sans-serif" font-size="23" fill="#18354a" font-weight="400" text-anchor="start">建议6061-T6板，材质须确认</text>
+<text x="1030" y="625" font-family="PingFang SC,Microsoft YaHei,sans-serif" font-size="23" fill="#18354a" font-weight="400" text-anchor="start">孔/外形去毛刺，隔离海水飞溅</text>
+<text x="1030" y="750" font-family="PingFang SC,Microsoft YaHei,sans-serif" font-size="24" fill="#18354a" font-weight="700" text-anchor="start">每块板：4螺钉 + 4配套T螺母</text>
+<text x="1030" y="805" font-family="PingFang SC,Microsoft YaHei,sans-serif" font-size="24" fill="#18354a" font-weight="400" text-anchor="start">16块：64组安装，另备8组</text>
+<text x="1030" y="860" font-family="PingFang SC,Microsoft YaHei,sans-serif" font-size="24" fill="#b64141" font-weight="400" text-anchor="start">M8×16沉头仅为长度候选</text>
+<text x="1030" y="910" font-family="PingFang SC,Microsoft YaHei,sans-serif" font-size="23" fill="#b64141" font-weight="400" text-anchor="start">6板厚后的有效啮合/不顶底待核</text>
+<text x="1030" y="1010" font-family="PingFang SC,Microsoft YaHei,sans-serif" font-size="25" fill="#18354a" font-weight="700" text-anchor="start">板装在四面外表面：</text>
+<text x="1030" y="1065" font-family="PingFang SC,Microsoft YaHei,sans-serif" font-size="22" fill="#18354a" font-weight="400" text-anchor="start">前 Y4～10 / 后 Y440～446</text>
+<text x="1030" y="1115" font-family="PingFang SC,Microsoft YaHei,sans-serif" font-size="22" fill="#18354a" font-weight="400" text-anchor="start">左 X4～10 / 右 X590～596</text>
+<text x="1030" y="1165" font-family="PingFang SC,Microsoft YaHei,sans-serif" font-size="22" fill="#18354a" font-weight="400" text-anchor="start">相邻两板在空间角边缘相接</text>
+<text x="80" y="1400" font-family="PingFang SC,Microsoft YaHei,sans-serif" font-size="24" fill="#18354a" font-weight="700" text-anchor="start">外轮廓：X4～596 / Y4～446 → 含板592×442；落在600×450台面/盘范围内。</text>
+<text x="80" y="1455" font-family="PingFang SC,Microsoft YaHei,sans-serif" font-size="24" fill="#18354a" font-weight="400" text-anchor="start">四个底角板不跨过Z0；上角不高过Z900。板不伸进柱间，底板不用切角。</text>
+<text x="80" y="1510" font-family="PingFang SC,Microsoft YaHei,sans-serif" font-size="24" fill="#18354a" font-weight="400" text-anchor="start">内梁连接：12套同系列4040角码，安装共24螺钉+24螺母；采购14套含2备用。</text>
+<text x="80" y="1565" font-family="PingFang SC,Microsoft YaHei,sans-serif" font-size="24" fill="#b64141" font-weight="400" text-anchor="start">节点可制造、能拧紧不等于整架安全；必须复核槽口抗拉、抗滑移与双向侧摆。</text>
+<text x="80" y="1620" font-family="PingFang SC,Microsoft YaHei,sans-serif" font-size="23" fill="#576e7d" font-weight="400" text-anchor="start">DXF为单块板2D几何；不是已批准的激光/铣削加工单，孔口做法需供方回图。</text>
+<text x="65" y="1732" font-family="PingFang SC,Microsoft YaHei,sans-serif" font-size="22" fill="#576e7d" font-weight="400" text-anchor="start">Fishplan v0.4 · 2026-10-19 · mm · 助手设计提案 / 待供方核验，禁止直接据此加工</text>
+</svg>
