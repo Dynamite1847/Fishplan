@@ -1,0 +1,66 @@
+"""Open/style/reopen-check native model in FreeCAD GUI. Run with FreeCAD."""
+from pathlib import Path
+import traceback, json, math
+import FreeCAD as App
+import FreeCADGui as Gui
+from PySide import QtCore, QtWidgets
+
+root=Path(__file__).resolve().parents[1]
+out=root/'design/freecad-v0.5'
+try:
+    doc=App.openDocument(str(out/'Fishplan-v0.5.FCStd'))
+    Gui.activateWorkbench('PartWorkbench')
+    for o in doc.Objects:
+        if hasattr(o,'ViewObject') and o.ViewObject:
+            o.ViewObject.Visibility=False
+    def show(group,color,transparency=0):
+        for o in doc.getObject(group).Group:
+            o.ViewObject.Visibility=True
+            o.ViewObject.ShapeColor=color
+            o.ViewObject.LineColor=(.18,.24,.29)
+            o.ViewObject.LineWidth=1.0
+            o.ViewObject.Transparency=transparency
+            o.ViewObject.DisplayMode='Flat Lines'
+    show('Frame',(.76,.79,.82));show('Nodes',(.18,.42,.60))
+    show('Boards',(.76,.65,.46));show('Tanks',(.48,.76,.81),82)
+    show('Brackets',(.25,.51,.69),65);show('Equipment',(.43,.65,.64),60)
+    doc.D04.ViewObject.ShapeColor=(.25,.46,.57)
+    doc.D04.ViewObject.Transparency=40
+    doc.E01.ViewObject.ShapeColor=(.78,.68,.43)
+    doc.E01.ViewObject.Transparency=15
+    doc.E02.ViewObject.ShapeColor=(.23,.39,.47)
+    doc.E02.ViewObject.Transparency=15
+    doc.E03.ViewObject.Transparency=85
+    for n in ('Tool_D1','Tool_D2','Tool_R1'):
+        doc.getObject(n).ViewObject.ShapeColor=(.80,.44,.24)
+        doc.getObject(n).ViewObject.Transparency=85
+    # Native recompute after reopening verifies the saved dependency graph.
+    doc.Parameters.FrameDepth=470;doc.recompute()
+    assert abs(doc.T3.CutLength.Value-390)<1e-6
+    assert abs(doc.A01.Shape.BoundBox.YLength-470)<1e-6
+    doc.Parameters.FrameDepth=450;doc.recompute()
+    assert abs(doc.T3.CutLength.Value-370)<1e-6
+    view=Gui.activeDocument().activeView()
+    view.setAnimationEnabled(False)
+    view.setCameraType('Orthographic')
+    mat=App.Matrix()
+    axes=[(1/math.sqrt(2),1/math.sqrt(2),0),(-1/math.sqrt(6),1/math.sqrt(6),2/math.sqrt(6)),(1/math.sqrt(3),-1/math.sqrt(3),1/math.sqrt(3))]
+    for j,axis in enumerate(axes,1):
+        for i,value in enumerate(axis,1):setattr(mat,f'A{i}{j}',value)
+    view.setCameraOrientation(App.Rotation(mat).Q)
+    (root/'tmp/freecad/camera.json').write_text(json.dumps({'requested':list(App.Rotation(mat).Q),'actual':list(view.getCameraOrientation().Q)}))
+    Gui.activeDocument().activeView().fitAll()
+    QtWidgets.QApplication.processEvents()
+    doc.save()
+    view.saveImage(str(out/'总装预览.png'),1800,1800,'White')
+    for group in ('Tanks','Equipment','Brackets','Boards'):
+        for o in doc.getObject(group).Group:o.ViewObject.Visibility=False
+    view.fitAll();QtWidgets.QApplication.processEvents()
+    view.saveImage(str(out/'框架预览.png'),1800,1800,'White')
+    for group in ('Tanks','Equipment','Brackets','Boards'):
+        for o in doc.getObject(group).Group:o.ViewObject.Visibility=True
+    view.fitAll();doc.recompute();doc.save()
+    (out/'GUI验证.json').write_text(json.dumps({'saved_native_gui':True,'reopened_depth_recompute':True,'two_native_previews':True},indent=2)+'\n')
+except BaseException:
+    (root/'tmp/freecad/gui-error.txt').write_text(traceback.format_exc())
+    traceback.print_exc()

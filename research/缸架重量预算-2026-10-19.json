@@ -1,0 +1,51 @@
+{
+  "assumptions": {
+    "seawater_kg_per_l": 1.025,
+    "glass_kg_per_l": 2.5,
+    "main_freeboard_mm": [
+      40,
+      20
+    ],
+    "glass_joint_model": "整底，前后通长、侧板夹在前后板间，仅估重"
+  },
+  "main_water_l_before_rock_and_overflow_displacement": [
+    89.216512,
+    94.285632
+  ],
+  "sump_running_water_l_approx": 26.31936,
+  "main_glass_kg": 21.61312,
+  "sump_shell_glass_kg": 11.73216,
+  "sump_baffles_allowance_kg": 2.5,
+  "freshwater_topup_allowance_kg": 2.5,
+  "total_water_kg_estimate_before_displacement": [
+    120.9242688,
+    126.1201168
+  ],
+  "planning_ranges_kg": {
+    "water": [
+      120,
+      130
+    ],
+    "glass_including_baffles": [
+      35,
+      40
+    ],
+    "sand_and_rock": [
+      10,
+      20
+    ],
+    "equipment_and_pipes": [
+      5,
+      10
+    ],
+    "frame_boards_pan_base": [
+      25,
+      45
+    ]
+  },
+  "total_ground_mass_planning_range_kg": [
+    195,
+    245
+  ],
+  "status": "按候选尺寸的保守预算，非称重或结构验证；商家载荷口径未明"
+}

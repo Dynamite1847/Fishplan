@@ -3,3 +3,12 @@
 # Python drawing helpers
 __pycache__/
 *.py[cod]
+
+# Local CAD/PDF working files and FreeCAD recovery backups
+tmp/
+*.FCStd1
+*.FCStd.*
+*.FCBak
+
+# Transient CAD completion signal
+design/freecad-v0.5/建模完成.flag
