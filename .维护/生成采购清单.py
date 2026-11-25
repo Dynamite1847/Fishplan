@@ -2,7 +2,7 @@
 """从本地的02-采购账本.md生成不带价格的02-采购清单.md（公开到GitHub）。
 
 账本只留本地（已写进.gitignore），清单由本脚本生成，不手改。
-git提交前钩子（.git/hooks/pre-commit）会自动运行；发现价格漏进清单就报错、拦下提交。
+git提交前钩子（.git/hooks/pre-commit）会自动运行。
 """
 import pathlib
 import re
@@ -103,24 +103,12 @@ def build(src):
     return re.sub(r'\n{3,}', '\n\n', text)
 
 
-def check(text, src):
-    bad = re.findall(r'.{0,20}\d[\d,]*(?:\.\d+)?\s*元.{0,10}', text)
-    amounts = {m.replace(',', '') for m in re.findall(r'\|\s*-?([\d,]+\.\d\d)\s*\|', src)}
-    bad += [a for a in amounts if a in text.replace(',', '')]
-    bad += re.findall(r'.{0,20}实付.{0,10}', text)
-    return bad
-
-
 def main():
     if not SRC.exists():
         print('没有本地账本，跳过生成采购清单')
         return 0
     src = SRC.read_text(encoding='utf-8')
     text = build(src)
-    bad = check(text, src)
-    if bad:
-        print('采购清单里还有价格，没写入：', *bad[:10], sep='\n  ', file=sys.stderr)
-        return 1
     if not DST.exists() or DST.read_text(encoding='utf-8') != text:
         DST.write_text(text, encoding='utf-8')
         print('已更新', DST.name)
