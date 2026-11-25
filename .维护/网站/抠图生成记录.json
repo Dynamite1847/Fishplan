@@ -1,0 +1,23 @@
+{
+  "mode": "内置image_gen",
+  "assets": {
+    "watch": {
+      "a": "SaltwaterAquarium.com · ORA 商品参考照片，版权归原作者",
+      "u": "https://www.saltwateraquarium.com/captive-bred-yellow-watchman-goby-cryptocentrus-cinctus-ora/",
+      "original": "assets/cutout-reference/watch.jpg",
+      "prompt": "Use case: background-extraction. Edit target: the attached real photograph of Cryptocentrus cinctus. Extract ONLY this single fish as a faithful photographic cutout on genuinely transparent alpha. Remove water, reef, solid background and everything outside the fish. Preserve the exact fish identity, pose, proportions, fin outlines, markings, eye, photographic scales, RGB colors and lighting. Full mouth-to-tail span and all visible fins must be intact. Do not redraw, reconstruct, straighten, stylize, recolor, enhance or invent any part. No background, shadow, text, added fish or added objects. Center with a small transparent margin. Preserve this exact goby's two separate dorsal fins, translucent round caudal fin, small pale blue spots and the precise spotted pattern. Keep its mouth open as photographed and head facing RIGHT.",
+      "generated": "/Users/dongyu/.codex/generated_images/01a1ac45-b8ea-7b40-bce7-a72aa40cb7f5/exec-a882b624-fdac-4ffd-a16b-20fb443f5587.png",
+      "final_png": "/Users/dongyu/ClaudeCode/Fishplan/资料/参考图/鱼抠图/watch-cutout-v1.png",
+      "final_webp": "/Users/dongyu/ClaudeCode/Fishplan/资料/交付/网站/assets/fish-cutouts/watch.webp"
+    },
+    "citr": {
+      "a": "EasternMarine Aquariums，版权归原作者",
+      "u": "https://easternmarineaquariums.co.nz/products/citron-goby",
+      "original": "assets/cutout-reference/citr.jpg",
+      "prompt": "Use case: background-extraction. Edit target: this supplied real Gobiodon citrinus photograph. Extract ONLY the photographed single fish. Genuine transparent alpha everywhere outside the precise fish silhouette. Remove the black water background and the separate bottom-right shop logo entirely as background, with NO matte, glow, blur, shadow or semi-transparent halo. Preserve this exact fish, its original LEFT-facing horizontal pose, yellow-orange and brown coloration, blue face bars and blue dorsal/anal base lines, dark pectoral-base marking, eye, scales, mouth, two dorsal fin shapes, translucent fins and round tail. Keep every visible mouth-to-tail part intact. Do not redraw, recolor, enhance, straighten or invent any anatomy or pattern. Tight centered framing with a small completely transparent margin. Output must look like the original photograph cut out with a clean mask, not an illustration.",
+      "generated": "/Users/dongyu/.codex/generated_images/01a1ac45-b8ea-7b40-bce7-a72aa40cb7f5/exec-50c7ff6b-93ca-45af-94aa-7119332a82d8.png",
+      "final_png": "/Users/dongyu/ClaudeCode/Fishplan/资料/参考图/鱼抠图/citr-cutout-v1.png",
+      "final_webp": "/Users/dongyu/ClaudeCode/Fishplan/资料/交付/网站/assets/fish-cutouts/citr.webp"
+    }
+  }
+}

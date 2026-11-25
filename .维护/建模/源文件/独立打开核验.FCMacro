@@ -1,0 +1,72 @@
+# coding: utf-8
+"""Check a normal command-line open in a fresh GUI process; never save a model."""
+from pathlib import Path
+import os,json,traceback,hashlib
+import FreeCAD as App,FreeCADGui as Gui
+from PySide import QtCore,QtWidgets
+run=Path(os.environ['FISHPLAN_AUDIT_DIR'])
+file=Path(os.environ['FISHPLAN_AUDIT_FILE']).resolve()
+style_file=Path(os.environ['FISHPLAN_AUDIT_STYLES'])
+
+def check():
+    report={'ok':False,'file':str(file),'sha256':hashlib.sha256(file.read_bytes()).hexdigest(),'version':App.Version(),'cache_path':App.getUserCachePath()}
+    try:
+        docs=[d for d in App.listDocuments().values() if Path(d.FileName).resolve()==file]
+        assert len(docs)==1,[(d.Name,d.FileName) for d in App.listDocuments().values()]
+        doc=docs[0];styles=json.loads(style_file.read_text())
+        assert not doc.Partial,'partial document restore'
+        assert len(doc.Objects)==len(styles)+9,(len(doc.Objects),len(styles))
+        shape_count=0;colour_errors=[];visibility_errors=[]
+        for name,st in styles.items():
+            obj=doc.getObject(name);assert obj is not None,name
+            assert obj.Shape.isValid() and not obj.Shape.isNull(),name
+            assert obj.State==['Up-to-date'],(name,obj.State)
+            actual=list(obj.ViewObject.ShapeColor)[:3]
+            # Saved GUI materials quantize RGB to 8-bit components on a cold load.
+            if not all(abs(a-b)<=.5/255+1e-6 for a,b in zip(actual,st['color'])):colour_errors.append({'name':name,'actual':actual,'expected':st['color']})
+            if obj.ViewObject.Visibility!=st.get('visible',True):visibility_errors.append(name)
+            shape_count+=1
+        assert Gui.activeDocument().activeView() is not None
+        report['colour_errors']=colour_errors;report['visibility_errors']=visibility_errors
+        assert not colour_errors,colour_errors
+        assert not visibility_errors,visibility_errors
+        report['partial']=bool(doc.Partial);report['objects']=len(doc.Objects);report['valid_shapes']=shape_count
+        report['visible_shapes']=sum(doc.getObject(n).ViewObject.Visibility for n in styles)
+        # Read actual saved geometry for installation review; do not save the file.
+        def bounds(obj):
+            b=obj.Shape.BoundBox
+            return [round(v,2) for v in (b.XMin,b.YMin,b.ZMin,b.XMax,b.YMax,b.ZMax)]
+        frame=[o for o in doc.Frame.Group if hasattr(o,'Shape') and o.Name.startswith(('Top_','Bottom_','Post_'))]
+        clips=[]
+        for o in doc.Objects:
+            if not o.Name.startswith('Clip') or not hasattr(o,'Shape'):continue
+            distances=sorted((o.Shape.distToShape(b.Shape)[0],b.Name) for b in frame)
+            clips.append({'name':o.Name,'bounds_mm':bounds(o),'nearest_frame':distances[0][1],
+                          'surface_gap_mm':round(distances[0][0],2),
+                          'scope':'管夹整体（含直装底座）至最近型材实体距离；不代替实物配套或承重验收'})
+        report['installation_review']={
+            'pipe_centerlines_mm':{o.Name:json.loads(o.CenterlineMM) for o in doc.Objects if 'CenterlineMM' in o.PropertiesList},
+            'top_frame_bounds_mm':{o.Name:bounds(o) for o in frame if o.Name.startswith('Top_')},
+            'clips':clips,
+            'valve_bounds_mm':{o.Name:bounds(o) for o in doc.Objects if hasattr(o,'Shape') and o.Name in ['GateValveBody','GateHandwheel','ReturnIsolationBody','ReturnFrontValveBody','ReturnRearValveBody','ReturnCheckBody']},
+            'sump_rim_z_mm':round(doc.SumpBack.Shape.BoundBox.ZMax,2),
+            'frame_top_z_mm':max(o.Shape.BoundBox.ZMax for o in frame if o.Name.startswith('Top_')),
+            'legacy_objects_present':[n for n in ['SightRing','SightWindow','SightRotor','SightStraightSpare','ATOTank','ATORail','ATOShelf','BioBag','BioMedia'] if doc.getObject(n)]}
+        fixed=[o for o in doc.Objects if hasattr(o,'Shape') and (o.Name.startswith(('Top_','Bottom_','Post_','Sump')) or o.Name in ['UpperBoard','UpperMat','LowerPP','Display','Overflow','BlackComb','PartitionA','PartitionB','Sediment','AlgaeFirst','PumpSecond'])]
+        fitting_conflicts=[]
+        for o in doc.Objects:
+            if not hasattr(o,'Shape') or not o.Name.startswith(('Union','MainGateUnion','MainTailUnion','EmergencyUnion','ReturnUnion','GateValveBody','GateHandwheel','ReturnIsolation','ReturnFrontValve','ReturnRearValve','ReturnCheck','ReturnTee')):continue
+            for other in fixed:
+                if not o.Shape.BoundBox.intersect(other.Shape.BoundBox):continue
+                volume=o.Shape.common(other.Shape).Volume
+                if volume>.02:fitting_conflicts.append([o.Name,other.Name,round(volume,3)])
+        report['installation_review']['fitting_frame_glass_conflicts']=fitting_conflicts
+        assert not fitting_conflicts,fitting_conflicts
+        report['report_text']=[w.toPlainText() for w in Gui.getMainWindow().findChildren(QtWidgets.QTextEdit) if w.objectName()=='Report view']
+        assert not any(x.strip() for x in report['report_text']),report['report_text']
+        report['ok']=True
+    except:report['error']=traceback.format_exc()
+    run.mkdir(parents=True,exist_ok=True);(run/'独立打开结果.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n')
+    for name in list(App.listDocuments()):App.closeDocument(name)
+    QtCore.QTimer.singleShot(0,Gui.getMainWindow().close)
+QtCore.QTimer.singleShot(1500,check)

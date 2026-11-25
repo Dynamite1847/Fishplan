@@ -1,0 +1,1704 @@
+{
+  "Bottom_X_0": {
+    "color": [
+      0.28,
+      0.31,
+      0.34
+    ],
+    "alpha": 0,
+    "visible": true,
+    "group": "Frame"
+  },
+  "Bottom_X_410": {
+    "color": [
+      0.28,
+      0.31,
+      0.34
+    ],
+    "alpha": 0,
+    "visible": true,
+    "group": "Frame"
+  },
+  "Bottom_Y_0": {
+    "color": [
+      0.28,
+      0.31,
+      0.34
+    ],
+    "alpha": 0,
+    "visible": true,
+    "group": "Frame"
+  },
+  "Bottom_Y_200": {
+    "color": [
+      0.28,
+      0.31,
+      0.34
+    ],
+    "alpha": 0,
+    "visible": true,
+    "group": "Frame"
+  },
+  "Bottom_Y_400": {
+    "color": [
+      0.28,
+      0.31,
+      0.34
+    ],
+    "alpha": 0,
+    "visible": true,
+    "group": "Frame"
+  },
+  "Bottom_Y_560": {
+    "color": [
+      0.28,
+      0.31,
+      0.34
+    ],
+    "alpha": 0,
+    "visible": true,
+    "group": "Frame"
+  },
+  "Top_X_0": {
+    "color": [
+      0.28,
+      0.31,
+      0.34
+    ],
+    "alpha": 0,
+    "visible": true,
+    "group": "Frame"
+  },
+  "Top_X_410": {
+    "color": [
+      0.28,
+      0.31,
+      0.34
+    ],
+    "alpha": 0,
+    "visible": true,
+    "group": "Frame"
+  },
+  "Top_Y_0": {
+    "color": [
+      0.28,
+      0.31,
+      0.34
+    ],
+    "alpha": 0,
+    "visible": true,
+    "group": "Frame"
+  },
+  "Top_Y_200": {
+    "color": [
+      0.28,
+      0.31,
+      0.34
+    ],
+    "alpha": 0,
+    "visible": true,
+    "group": "Frame"
+  },
+  "Top_Y_400": {
+    "color": [
+      0.28,
+      0.31,
+      0.34
+    ],
+    "alpha": 0,
+    "visible": true,
+    "group": "Frame"
+  },
+  "Top_Y_560": {
+    "color": [
+      0.28,
+      0.31,
+      0.34
+    ],
+    "alpha": 0,
+    "visible": true,
+    "group": "Frame"
+  },
+  "Post_0_0": {
+    "color": [
+      0.28,
+      0.31,
+      0.34
+    ],
+    "alpha": 0,
+    "visible": true,
+    "group": "Frame"
+  },
+  "Post_0_410": {
+    "color": [
+      0.28,
+      0.31,
+      0.34
+    ],
+    "alpha": 0,
+    "visible": true,
+    "group": "Frame"
+  },
+  "Post_560_0": {
+    "color": [
+      0.28,
+      0.31,
+      0.34
+    ],
+    "alpha": 0,
+    "visible": true,
+    "group": "Frame"
+  },
+  "Post_560_410": {
+    "color": [
+      0.28,
+      0.31,
+      0.34
+    ],
+    "alpha": 0,
+    "visible": true,
+    "group": "Frame"
+  },
+  "LowerPP": {
+    "color": [
+      0.64,
+      0.66,
+      0.67
+    ],
+    "alpha": 0,
+    "visible": true,
+    "group": "Frame"
+  },
+  "UpperBoard": {
+    "color": [
+      0.19,
+      0.21,
+      0.23
+    ],
+    "alpha": 0,
+    "visible": true,
+    "group": "Frame"
+  },
+  "UpperMat": {
+    "color": [
+      0.07,
+      0.08,
+      0.09
+    ],
+    "alpha": 0,
+    "visible": true,
+    "group": "Frame"
+  },
+  "Display": {
+    "color": [
+      0.62,
+      0.83,
+      0.88
+    ],
+    "alpha": 88,
+    "visible": true,
+    "group": "Glass"
+  },
+  "Overflow": {
+    "color": [
+      0.62,
+      0.83,
+      0.88
+    ],
+    "alpha": 85,
+    "visible": true,
+    "group": "Glass"
+  },
+  "BlackComb": {
+    "color": [
+      0.07,
+      0.08,
+      0.09
+    ],
+    "alpha": 0,
+    "visible": true,
+    "group": "Glass"
+  },
+  "SumpBase": {
+    "color": [
+      0.62,
+      0.83,
+      0.88
+    ],
+    "alpha": 75,
+    "visible": true,
+    "group": "Sump"
+  },
+  "SumpFront": {
+    "color": [
+      0.62,
+      0.83,
+      0.88
+    ],
+    "alpha": 82,
+    "visible": true,
+    "group": "Sump"
+  },
+  "SumpBack": {
+    "color": [
+      0.62,
+      0.83,
+      0.88
+    ],
+    "alpha": 82,
+    "visible": true,
+    "group": "Sump"
+  },
+  "SumpLeft": {
+    "color": [
+      0.62,
+      0.83,
+      0.88
+    ],
+    "alpha": 82,
+    "visible": true,
+    "group": "Sump"
+  },
+  "SumpRight": {
+    "color": [
+      0.62,
+      0.83,
+      0.88
+    ],
+    "alpha": 82,
+    "visible": true,
+    "group": "Sump"
+  },
+  "PartitionA": {
+    "color": [
+      0.62,
+      0.83,
+      0.88
+    ],
+    "alpha": 50,
+    "visible": true,
+    "group": "Sump"
+  },
+  "PartitionB": {
+    "color": [
+      0.62,
+      0.83,
+      0.88
+    ],
+    "alpha": 50,
+    "visible": true,
+    "group": "Sump"
+  },
+  "Sediment": {
+    "color": [
+      0.62,
+      0.83,
+      0.88
+    ],
+    "alpha": 50,
+    "visible": true,
+    "group": "Sump"
+  },
+  "AlgaeFirst": {
+    "color": [
+      0.62,
+      0.83,
+      0.88
+    ],
+    "alpha": 50,
+    "visible": true,
+    "group": "Sump"
+  },
+  "PumpSecond": {
+    "color": [
+      0.62,
+      0.83,
+      0.88
+    ],
+    "alpha": 50,
+    "visible": true,
+    "group": "Sump"
+  },
+  "DryWetTray": {
+    "color": [
+      0.93,
+      0.94,
+      0.93
+    ],
+    "alpha": 0,
+    "visible": true,
+    "group": "Sump"
+  },
+  "SkimmerBody": {
+    "color": [
+      0.93,
+      0.94,
+      0.94
+    ],
+    "alpha": 0,
+    "visible": true,
+    "group": "Equipment"
+  },
+  "SkimmerCup": {
+    "color": [
+      0.62,
+      0.83,
+      0.88
+    ],
+    "alpha": 55,
+    "visible": true,
+    "group": "Equipment"
+  },
+  "SkimmerCupBase": {
+    "color": [
+      0.78,
+      0.8,
+      0.81
+    ],
+    "alpha": 0,
+    "visible": true,
+    "group": "Equipment"
+  },
+  "SkimmerLid": {
+    "color": [
+      0.25,
+      0.28,
+      0.3
+    ],
+    "alpha": 0,
+    "visible": true,
+    "group": "Equipment"
+  },
+  "SkimmerKnob": {
+    "color": [
+      0.72,
+      0.12,
+      0.16
+    ],
+    "alpha": 0,
+    "visible": true,
+    "group": "Equipment"
+  },
+  "MainPump": {
+    "color": [
+      0.23,
+      0.3,
+      0.32
+    ],
+    "alpha": 0,
+    "visible": true,
+    "group": "Equipment"
+  },
+  "PumpFeet": {
+    "color": [
+      0.13,
+      0.15,
+      0.16
+    ],
+    "alpha": 0,
+    "visible": true,
+    "group": "Equipment"
+  },
+  "HeaterBody": {
+    "color": [
+      0.17,
+      0.2,
+      0.23
+    ],
+    "alpha": 0,
+    "visible": true,
+    "group": "Equipment"
+  },
+  "HeaterCover": {
+    "color": [
+      0.8,
+      0.14,
+      0.18
+    ],
+    "alpha": 0,
+    "visible": true,
+    "group": "Equipment"
+  },
+  "HeaterFeet": {
+    "color": [
+      0.17,
+      0.2,
+      0.23
+    ],
+    "alpha": 0,
+    "visible": true,
+    "group": "Equipment"
+  },
+  "BioBlock0": {
+    "color": [
+      0.65,
+      0.59,
+      0.48
+    ],
+    "alpha": 0,
+    "visible": true,
+    "group": "Equipment"
+  },
+  "BioBlock1": {
+    "color": [
+      0.65,
+      0.59,
+      0.48
+    ],
+    "alpha": 0,
+    "visible": true,
+    "group": "Equipment"
+  },
+  "BioBlock2": {
+    "color": [
+      0.65,
+      0.59,
+      0.48
+    ],
+    "alpha": 0,
+    "visible": true,
+    "group": "Equipment"
+  },
+  "BioBlock3": {
+    "color": [
+      0.65,
+      0.59,
+      0.48
+    ],
+    "alpha": 0,
+    "visible": true,
+    "group": "Equipment"
+  },
+  "CoarsePad": {
+    "color": [
+      0.72,
+      0.81,
+      0.82
+    ],
+    "alpha": 0,
+    "visible": true,
+    "group": "Equipment"
+  },
+  "FinePad": {
+    "color": [
+      0.87,
+      0.91,
+      0.9
+    ],
+    "alpha": 0,
+    "visible": true,
+    "group": "Equipment"
+  },
+  "CarbonBag": {
+    "color": [
+      0.25,
+      0.32,
+      0.32
+    ],
+    "alpha": 0,
+    "visible": true,
+    "group": "Equipment"
+  },
+  "BrickGrid71": {
+    "color": [
+      0.44,
+      0.51,
+      0.48
+    ],
+    "alpha": 55,
+    "visible": true,
+    "group": "Equipment"
+  },
+  "BrickGrid106": {
+    "color": [
+      0.44,
+      0.51,
+      0.48
+    ],
+    "alpha": 55,
+    "visible": true,
+    "group": "Equipment"
+  },
+  "PipeReturnFront": {
+    "color": [
+      0.65,
+      0.7,
+      0.72
+    ],
+    "alpha": 0,
+    "visible": true,
+    "group": "Return",
+    "faceColors": [
+      [
+        0.65,
+        0.7,
+        0.72
+      ],
+      [
+        0.65,
+        0.7,
+        0.72
+      ],
+      [
+        0.22,
+        0.24,
+        0.26
+      ],
+      [
+        0.65,
+        0.7,
+        0.72
+      ],
+      [
+        0.65,
+        0.7,
+        0.72
+      ],
+      [
+        0.22,
+        0.24,
+        0.26
+      ],
+      [
+        0.22,
+        0.24,
+        0.26
+      ],
+      [
+        0.65,
+        0.7,
+        0.72
+      ],
+      [
+        0.65,
+        0.7,
+        0.72
+      ],
+      [
+        0.22,
+        0.24,
+        0.26
+      ],
+      [
+        0.22,
+        0.24,
+        0.26
+      ],
+      [
+        0.65,
+        0.7,
+        0.72
+      ],
+      [
+        0.65,
+        0.7,
+        0.72
+      ],
+      [
+        0.22,
+        0.24,
+        0.26
+      ],
+      [
+        0.65,
+        0.7,
+        0.72
+      ],
+      [
+        0.65,
+        0.7,
+        0.72
+      ],
+      [
+        0.65,
+        0.7,
+        0.72
+      ],
+      [
+        0.65,
+        0.7,
+        0.72
+      ],
+      [
+        0.22,
+        0.24,
+        0.26
+      ],
+      [
+        0.65,
+        0.7,
+        0.72
+      ]
+    ]
+  },
+  "ReturnElbow75": {
+    "color": [
+      0.23,
+      0.26,
+      0.28
+    ],
+    "alpha": 0,
+    "visible": true,
+    "group": "Return"
+  },
+  "PipeReturnRear": {
+    "color": [
+      0.65,
+      0.7,
+      0.72
+    ],
+    "alpha": 0,
+    "visible": true,
+    "group": "Return",
+    "faceColors": [
+      [
+        0.65,
+        0.7,
+        0.72
+      ],
+      [
+        0.65,
+        0.7,
+        0.72
+      ],
+      [
+        0.22,
+        0.24,
+        0.26
+      ],
+      [
+        0.65,
+        0.7,
+        0.72
+      ],
+      [
+        0.65,
+        0.7,
+        0.72
+      ],
+      [
+        0.22,
+        0.24,
+        0.26
+      ],
+      [
+        0.22,
+        0.24,
+        0.26
+      ],
+      [
+        0.65,
+        0.7,
+        0.72
+      ],
+      [
+        0.65,
+        0.7,
+        0.72
+      ],
+      [
+        0.22,
+        0.24,
+        0.26
+      ],
+      [
+        0.22,
+        0.24,
+        0.26
+      ],
+      [
+        0.65,
+        0.7,
+        0.72
+      ],
+      [
+        0.65,
+        0.7,
+        0.72
+      ],
+      [
+        0.22,
+        0.24,
+        0.26
+      ],
+      [
+        0.65,
+        0.7,
+        0.72
+      ],
+      [
+        0.65,
+        0.7,
+        0.72
+      ],
+      [
+        0.65,
+        0.7,
+        0.72
+      ],
+      [
+        0.65,
+        0.7,
+        0.72
+      ],
+      [
+        0.22,
+        0.24,
+        0.26
+      ],
+      [
+        0.65,
+        0.7,
+        0.72
+      ]
+    ]
+  },
+  "ReturnElbow390": {
+    "color": [
+      0.23,
+      0.26,
+      0.28
+    ],
+    "alpha": 0,
+    "visible": true,
+    "group": "Return"
+  },
+  "PipeMainTail": {
+    "color": [
+      0.15,
+      0.66,
+      0.78
+    ],
+    "alpha": 22,
+    "visible": true,
+    "group": "DrainMain"
+  },
+  "PipeEmergencyTail": {
+    "color": [
+      0.15,
+      0.66,
+      0.78
+    ],
+    "alpha": 22,
+    "visible": true,
+    "group": "DrainEmergency"
+  },
+  "SedimentTrialWater": {
+    "color": [
+      0.23,
+      0.64,
+      0.85
+    ],
+    "alpha": 80,
+    "visible": false,
+    "group": "Optional"
+  },
+  "MainGateUnion260": {
+    "color": [
+      0.25,
+      0.28,
+      0.3
+    ],
+    "alpha": 0,
+    "visible": true,
+    "group": "DrainMain"
+  },
+  "MainGateUnion380": {
+    "color": [
+      0.25,
+      0.28,
+      0.3
+    ],
+    "alpha": 0,
+    "visible": true,
+    "group": "DrainMain"
+  },
+  "MainTailUnion": {
+    "color": [
+      0.66,
+      0.77,
+      0.8
+    ],
+    "alpha": 8,
+    "visible": true,
+    "group": "DrainMain"
+  },
+  "MainUpperUnion": {
+    "color": [
+      0.25,
+      0.28,
+      0.3
+    ],
+    "alpha": 0,
+    "visible": true,
+    "group": "DrainMain"
+  },
+  "EmergencyUnionUpper": {
+    "color": [
+      0.25,
+      0.28,
+      0.3
+    ],
+    "alpha": 0,
+    "visible": true,
+    "group": "DrainEmergency"
+  },
+  "EmergencyUnionLower": {
+    "color": [
+      0.66,
+      0.77,
+      0.8
+    ],
+    "alpha": 8,
+    "visible": true,
+    "group": "DrainEmergency"
+  },
+  "ReturnUnionPump": {
+    "color": [
+      0.91,
+      0.93,
+      0.92
+    ],
+    "alpha": 0,
+    "visible": true,
+    "group": "Return"
+  },
+  "ReturnUnionFront": {
+    "color": [
+      0.66,
+      0.77,
+      0.8
+    ],
+    "alpha": 8,
+    "visible": true,
+    "group": "Return"
+  },
+  "ReturnUnionRear": {
+    "color": [
+      0.66,
+      0.77,
+      0.8
+    ],
+    "alpha": 8,
+    "visible": true,
+    "group": "Return"
+  },
+  "GateValveBody": {
+    "color": [
+      0.16,
+      0.18,
+      0.2
+    ],
+    "alpha": 0,
+    "visible": true,
+    "group": "DrainMain"
+  },
+  "GateHandwheel": {
+    "color": [
+      0.72,
+      0.12,
+      0.16
+    ],
+    "alpha": 0,
+    "visible": true,
+    "group": "DrainMain"
+  },
+  "ReturnIsolationBody": {
+    "color": [
+      0.16,
+      0.18,
+      0.2
+    ],
+    "alpha": 0,
+    "visible": true,
+    "group": "Return"
+  },
+  "ReturnIsolationHandle": {
+    "color": [
+      0.7,
+      0.18,
+      0.2
+    ],
+    "alpha": 0,
+    "visible": true,
+    "group": "Return"
+  },
+  "ReturnFrontValveBody": {
+    "color": [
+      0.16,
+      0.18,
+      0.2
+    ],
+    "alpha": 0,
+    "visible": true,
+    "group": "Return"
+  },
+  "ReturnFrontValveHandle": {
+    "color": [
+      0.7,
+      0.18,
+      0.2
+    ],
+    "alpha": 0,
+    "visible": true,
+    "group": "Return"
+  },
+  "ReturnRearValveBody": {
+    "color": [
+      0.16,
+      0.18,
+      0.2
+    ],
+    "alpha": 0,
+    "visible": true,
+    "group": "Return"
+  },
+  "ReturnRearValveHandle": {
+    "color": [
+      0.7,
+      0.18,
+      0.2
+    ],
+    "alpha": 0,
+    "visible": true,
+    "group": "Return"
+  },
+  "ReturnCheckBody": {
+    "color": [
+      0.62,
+      0.76,
+      0.79
+    ],
+    "alpha": 12,
+    "visible": true,
+    "group": "Return"
+  },
+  "ReturnCheckUnions": {
+    "color": [
+      0.91,
+      0.93,
+      0.92
+    ],
+    "alpha": 0,
+    "visible": true,
+    "group": "Return"
+  },
+  "ReturnCheckFlap": {
+    "color": [
+      0.35,
+      0.4,
+      0.42
+    ],
+    "alpha": 0,
+    "visible": true,
+    "group": "Return"
+  },
+  "PumpSoftLink": {
+    "color": [
+      0.23,
+      0.3,
+      0.32
+    ],
+    "alpha": 0,
+    "visible": true,
+    "group": "Return"
+  },
+  "BulkheadMain": {
+    "color": [
+      0.23,
+      0.26,
+      0.28
+    ],
+    "alpha": 0,
+    "visible": true,
+    "group": "DrainMain"
+  },
+  "StandpipeMain": {
+    "color": [
+      0.53,
+      0.35,
+      0.66
+    ],
+    "alpha": 0,
+    "visible": true,
+    "group": "DrainMain"
+  },
+  "BulkheadEmergency": {
+    "color": [
+      0.23,
+      0.26,
+      0.28
+    ],
+    "alpha": 0,
+    "visible": true,
+    "group": "DrainEmergency"
+  },
+  "StandpipeEmergency": {
+    "color": [
+      0.53,
+      0.35,
+      0.66
+    ],
+    "alpha": 0,
+    "visible": true,
+    "group": "DrainEmergency"
+  },
+  "ReturnBulkhead75": {
+    "color": [
+      0.23,
+      0.26,
+      0.28
+    ],
+    "alpha": 0,
+    "visible": true,
+    "group": "Return"
+  },
+  "ReturnNozzle75": {
+    "color": [
+      0.65,
+      0.7,
+      0.72
+    ],
+    "alpha": 0,
+    "visible": true,
+    "group": "Return"
+  },
+  "ReturnBulkhead390": {
+    "color": [
+      0.23,
+      0.26,
+      0.28
+    ],
+    "alpha": 0,
+    "visible": true,
+    "group": "Return"
+  },
+  "ReturnNozzle390": {
+    "color": [
+      0.65,
+      0.7,
+      0.72
+    ],
+    "alpha": 0,
+    "visible": true,
+    "group": "Return"
+  },
+  "ReturnTee": {
+    "color": [
+      0.23,
+      0.26,
+      0.28
+    ],
+    "alpha": 0,
+    "visible": true,
+    "group": "Return"
+  },
+  "ClearMainUpper": {
+    "color": [
+      0.15,
+      0.66,
+      0.78
+    ],
+    "alpha": 22,
+    "visible": true,
+    "group": "DrainMain"
+  },
+  "ClearEmergencyUpper": {
+    "color": [
+      0.15,
+      0.66,
+      0.78
+    ],
+    "alpha": 22,
+    "visible": true,
+    "group": "DrainEmergency"
+  },
+  "ClearCommon": {
+    "color": [
+      0.15,
+      0.66,
+      0.78
+    ],
+    "alpha": 22,
+    "visible": true,
+    "group": "Return"
+  },
+  "UnionClearCommon": {
+    "color": [
+      0.91,
+      0.93,
+      0.92
+    ],
+    "alpha": 0,
+    "visible": true,
+    "group": "Return"
+  },
+  "ClearFront": {
+    "color": [
+      0.15,
+      0.66,
+      0.78
+    ],
+    "alpha": 22,
+    "visible": true,
+    "group": "Return"
+  },
+  "UnionClearFront": {
+    "color": [
+      0.66,
+      0.77,
+      0.8
+    ],
+    "alpha": 8,
+    "visible": true,
+    "group": "Return"
+  },
+  "ClearRear": {
+    "color": [
+      0.15,
+      0.66,
+      0.78
+    ],
+    "alpha": 22,
+    "visible": true,
+    "group": "Return"
+  },
+  "UnionClearRear": {
+    "color": [
+      0.66,
+      0.77,
+      0.8
+    ],
+    "alpha": 8,
+    "visible": true,
+    "group": "Return"
+  },
+  "PipeMain02": {
+    "color": [
+      0.53,
+      0.35,
+      0.66
+    ],
+    "alpha": 0,
+    "visible": true,
+    "group": "DrainMain",
+    "faceColors": [
+      [
+        0.53,
+        0.35,
+        0.66
+      ],
+      [
+        0.53,
+        0.35,
+        0.66
+      ],
+      [
+        0.53,
+        0.35,
+        0.66
+      ],
+      [
+        0.53,
+        0.35,
+        0.66
+      ],
+      [
+        0.22,
+        0.24,
+        0.26
+      ],
+      [
+        0.22,
+        0.24,
+        0.26
+      ],
+      [
+        0.53,
+        0.35,
+        0.66
+      ],
+      [
+        0.22,
+        0.24,
+        0.26
+      ],
+      [
+        0.53,
+        0.35,
+        0.66
+      ],
+      [
+        0.53,
+        0.35,
+        0.66
+      ]
+    ]
+  },
+  "PipeMain03": {
+    "color": [
+      0.53,
+      0.35,
+      0.66
+    ],
+    "alpha": 0,
+    "visible": true,
+    "group": "DrainMain",
+    "faceColors": [
+      [
+        0.53,
+        0.35,
+        0.66
+      ],
+      [
+        0.53,
+        0.35,
+        0.66
+      ],
+      [
+        0.53,
+        0.35,
+        0.66
+      ],
+      [
+        0.53,
+        0.35,
+        0.66
+      ]
+    ]
+  },
+  "PipeMain04": {
+    "color": [
+      0.53,
+      0.35,
+      0.66
+    ],
+    "alpha": 0,
+    "visible": true,
+    "group": "DrainMain",
+    "faceColors": [
+      [
+        0.53,
+        0.35,
+        0.66
+      ],
+      [
+        0.53,
+        0.35,
+        0.66
+      ],
+      [
+        0.22,
+        0.24,
+        0.26
+      ],
+      [
+        0.53,
+        0.35,
+        0.66
+      ],
+      [
+        0.53,
+        0.35,
+        0.66
+      ],
+      [
+        0.22,
+        0.24,
+        0.26
+      ],
+      [
+        0.53,
+        0.35,
+        0.66
+      ],
+      [
+        0.53,
+        0.35,
+        0.66
+      ]
+    ]
+  },
+  "PipeEmergency02": {
+    "color": [
+      0.53,
+      0.35,
+      0.66
+    ],
+    "alpha": 0,
+    "visible": true,
+    "group": "DrainEmergency",
+    "faceColors": [
+      [
+        0.53,
+        0.35,
+        0.66
+      ],
+      [
+        0.53,
+        0.35,
+        0.66
+      ],
+      [
+        0.53,
+        0.35,
+        0.66
+      ],
+      [
+        0.53,
+        0.35,
+        0.66
+      ],
+      [
+        0.22,
+        0.24,
+        0.26
+      ],
+      [
+        0.22,
+        0.24,
+        0.26
+      ],
+      [
+        0.53,
+        0.35,
+        0.66
+      ],
+      [
+        0.22,
+        0.24,
+        0.26
+      ],
+      [
+        0.53,
+        0.35,
+        0.66
+      ],
+      [
+        0.53,
+        0.35,
+        0.66
+      ]
+    ]
+  },
+  "PipeEmergency03": {
+    "color": [
+      0.53,
+      0.35,
+      0.66
+    ],
+    "alpha": 0,
+    "visible": true,
+    "group": "DrainEmergency",
+    "faceColors": [
+      [
+        0.53,
+        0.35,
+        0.66
+      ],
+      [
+        0.53,
+        0.35,
+        0.66
+      ],
+      [
+        0.53,
+        0.35,
+        0.66
+      ],
+      [
+        0.53,
+        0.35,
+        0.66
+      ]
+    ]
+  },
+  "PipeEmergency04": {
+    "color": [
+      0.53,
+      0.35,
+      0.66
+    ],
+    "alpha": 0,
+    "visible": true,
+    "group": "DrainEmergency",
+    "faceColors": [
+      [
+        0.53,
+        0.35,
+        0.66
+      ],
+      [
+        0.53,
+        0.35,
+        0.66
+      ],
+      [
+        0.22,
+        0.24,
+        0.26
+      ],
+      [
+        0.53,
+        0.35,
+        0.66
+      ],
+      [
+        0.53,
+        0.35,
+        0.66
+      ],
+      [
+        0.22,
+        0.24,
+        0.26
+      ],
+      [
+        0.53,
+        0.35,
+        0.66
+      ],
+      [
+        0.53,
+        0.35,
+        0.66
+      ]
+    ]
+  },
+  "PipeReturnCommon02": {
+    "color": [
+      0.65,
+      0.7,
+      0.72
+    ],
+    "alpha": 0,
+    "visible": true,
+    "group": "Return",
+    "faceColors": [
+      [
+        0.65,
+        0.7,
+        0.72
+      ],
+      [
+        0.65,
+        0.7,
+        0.72
+      ],
+      [
+        0.65,
+        0.7,
+        0.72
+      ],
+      [
+        0.65,
+        0.7,
+        0.72
+      ],
+      [
+        0.65,
+        0.7,
+        0.72
+      ],
+      [
+        0.65,
+        0.7,
+        0.72
+      ],
+      [
+        0.65,
+        0.7,
+        0.72
+      ],
+      [
+        0.65,
+        0.7,
+        0.72
+      ]
+    ]
+  },
+  "PipeReturnCommon03": {
+    "color": [
+      0.65,
+      0.7,
+      0.72
+    ],
+    "alpha": 0,
+    "visible": true,
+    "group": "Return",
+    "faceColors": [
+      [
+        0.65,
+        0.7,
+        0.72
+      ],
+      [
+        0.65,
+        0.7,
+        0.72
+      ],
+      [
+        0.65,
+        0.7,
+        0.72
+      ],
+      [
+        0.65,
+        0.7,
+        0.72
+      ]
+    ]
+  },
+  "PipeReturnCommon04": {
+    "color": [
+      0.65,
+      0.7,
+      0.72
+    ],
+    "alpha": 0,
+    "visible": true,
+    "group": "Return",
+    "faceColors": [
+      [
+        0.65,
+        0.7,
+        0.72
+      ],
+      [
+        0.65,
+        0.7,
+        0.72
+      ],
+      [
+        0.65,
+        0.7,
+        0.72
+      ],
+      [
+        0.65,
+        0.7,
+        0.72
+      ],
+      [
+        0.65,
+        0.7,
+        0.72
+      ],
+      [
+        0.65,
+        0.7,
+        0.72
+      ],
+      [
+        0.65,
+        0.7,
+        0.72
+      ],
+      [
+        0.65,
+        0.7,
+        0.72
+      ]
+    ]
+  },
+  "ClipMain220": {
+    "color": [
+      0.45,
+      0.59,
+      0.5
+    ],
+    "alpha": 0,
+    "visible": true,
+    "group": "DrainMain"
+  },
+  "ClipMain420": {
+    "color": [
+      0.45,
+      0.59,
+      0.5
+    ],
+    "alpha": 0,
+    "visible": true,
+    "group": "DrainMain"
+  },
+  "ClipEmergency220": {
+    "color": [
+      0.45,
+      0.59,
+      0.5
+    ],
+    "alpha": 0,
+    "visible": true,
+    "group": "DrainEmergency"
+  },
+  "ClipEmergency420": {
+    "color": [
+      0.45,
+      0.59,
+      0.5
+    ],
+    "alpha": 0,
+    "visible": true,
+    "group": "DrainEmergency"
+  },
+  "ClipReturnFront": {
+    "color": [
+      0.45,
+      0.59,
+      0.5
+    ],
+    "alpha": 0,
+    "visible": true,
+    "group": "Return"
+  },
+  "ClipReturnRear": {
+    "color": [
+      0.45,
+      0.59,
+      0.5
+    ],
+    "alpha": 0,
+    "visible": true,
+    "group": "Return"
+  },
+  "PumpBarb": {
+    "color": [
+      0.65,
+      0.7,
+      0.72
+    ],
+    "alpha": 0,
+    "visible": true,
+    "group": "Return"
+  },
+  "HardBarb": {
+    "color": [
+      0.65,
+      0.7,
+      0.72
+    ],
+    "alpha": 0,
+    "visible": true,
+    "group": "Return"
+  },
+  "HoseClamp0": {
+    "color": [
+      0.65,
+      0.7,
+      0.72
+    ],
+    "alpha": 0,
+    "visible": true,
+    "group": "Return"
+  },
+  "HoseClamp1": {
+    "color": [
+      0.65,
+      0.7,
+      0.72
+    ],
+    "alpha": 0,
+    "visible": true,
+    "group": "Return"
+  }
+}

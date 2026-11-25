@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>60缸</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav class="nav"><div class="nav-in">
+  <a class="brand" href="index.html">60缸</a>
+  <div class="nav-links"><a href="#lineup" aria-current="page">鱼</a><a href="#">珊瑚</a><a href="#">养护</a><a href="#">采购</a><a href="#">知识库</a><a href="#">装配</a></div>
+</div></nav>
+
+<header class="hero">
+  <p class="hero-eyebrow">上海 · 客厅海缸</p>
+  <h1>60缸</h1>
+  <p class="hero-sub">600 × 450 × 500 mm 主缸，底滤。<br>计划 9 种 10 条，首批公子小丑一对。</p>
+  <div class="hero-links"><a href="#lineup">当前组合 ›</a><a href="#">鱼类目录 ›</a></div>
+  <div class="pair" aria-hidden="true">
+    <img class="back" src="img/clown.webp" alt="">
+    <img class="front" src="img/clown.webp" alt="">
+  </div>
+  <p class="hero-cap">公子小丑。照片去背景，原图 <a href="https://www.inaturalist.org/taxa/132688" target="_blank" rel="noopener">Francois Libert</a>（CC BY-NC-SA）。</p>
+</header>
+
+<section class="sec soft" id="lineup">
+  <div class="wrap center">
+    <h2 class="h2">当前组合</h2>
+    <p class="lead">按成年体长同比例排列。下方标尺为缸长&nbsp;60&nbsp;cm。</p>
+    <div class="lineup" id="lineup-row"></div>
+    <div class="ruler" id="ruler"><div class="ruler-line"></div><div class="ruler-hl" id="ruler-hl"></div></div>
+    <p class="ruler-cap" id="ruler-cap"></p>
+    <p class="missing" id="missing"></p>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap">
+    <div class="stats" id="stats"></div>
+  </div>
+</section>
+
+<section class="sec dark">
+  <div class="narrow">
+    <h2 class="h2">按活动水层</h2>
+    <p class="lead">从水面到砂床。</p>
+    <dl class="zones" id="zones"></dl>
+  </div>
+</section>
+
+<section class="sec soft">
+  <div class="narrow">
+    <h2 class="h2">进度</h2>
+    <p class="lead">2026 年 11 月 5 日。全部活体尚未购买。</p>
+    <div class="steps">
+      <div class="step now"><p class="step-label">现在</p><h3>装架与底缸实物</h3><p>角码整改、底缸布水、已购设备试摆。主缸在途，底缸已到。</p></div>
+      <div class="step"><p class="step-label">下一步</p><h3>配电与淡水试水</h3><p>自来水跑满一轮，检漏观察 48 小时，通过后全部排掉。</p></div>
+      <div class="step"><p class="step-label">之后</p><h3>检疫桶养水，首批入缸</h3><p>主缸无鱼养水；公子小丑一对先进检疫桶。</p></div>
+    </div>
+    <div class="step-links"><a class="more" href="#">完整时间表 ›</a><a class="more" href="#">采购清单 ›</a></div>
+  </div>
+</section>
+
+<footer class="foot"><div class="narrow">
+  <div class="foot-links"><a href="#">鱼类目录</a><a href="#">珊瑚</a><a href="#">养护</a><a href="#">采购</a><a href="#">知识库</a><a href="#">装配</a><a href="#">决定</a></div>
+  <p>照片来自 iNaturalist，作者与许可见各物种页；去背景为 AI 辅助处理。报价来自水族名录商城，<span id="price-date"></span> 抓取。</p>
+</div></footer>
+
+<script src="data.js"></script>
+<script>
+(() => {
+  const T = window.TANK, fish = T.fish;
+  const $ = id => document.getElementById(id);
+  const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+  const link = f => `detail.html?id=${f.id}`;
+
+  // 同比例排列：有去背景图的，按体长从大到小；一对的画两条
+  const shown = fish.filter(f => f.img).sort((a, b) => b.len - a.len);
+  $('lineup-row').innerHTML = shown.flatMap(f => Array.from({length: f.n}, () =>
+    `<a class="fish" href="${link(f)}" style="--len:${f.len}" data-len="${f.len}" data-name="${esc(f.name)}">
+       <img src="${f.img}" alt="${esc(f.name)}" loading="lazy"><b>${esc(f.name)}</b><span>${esc(f.cm.replace(/（.*）/, ''))} cm</span></a>`)).join('');
+  const missing = fish.filter(f => !f.img);
+  $('missing').textContent = missing.length ? `${missing.map(f => `${f.name}（${f.cm} cm）`).join('、')}暂无去背景照片，未列入上方。` : '';
+
+  const ruler = $('ruler');
+  for (let c = 0; c <= 60; c += 10) ruler.insertAdjacentHTML('beforeend', `<span class="tick" style="left:${c / 60 * 100}%"><i>${c}</i></span>`);
+  const hl = $('ruler-hl'), cap = $('ruler-cap');
+  const capIdle = cap.innerHTML = matchMedia('(hover:hover)').matches ? '指向一条鱼，看它占缸长多少' : '点一条鱼查看资料';
+  document.querySelectorAll('.fish').forEach(el => {
+    const on = () => { const l = +el.dataset.len; hl.style.width = `${Math.min(l, 60) / 60 * 100}%`;
+      cap.innerHTML = `<b>${el.dataset.name}</b> 成年 ${l} cm，约占缸长 ${Math.round(l / 60 * 100)}%`; };
+    const off = () => { hl.style.width = 0; cap.innerHTML = capIdle; };
+    el.addEventListener('mouseenter', on); el.addEventListener('focus', on);
+    el.addEventListener('mouseleave', off); el.addEventListener('blur', off);
+  });
+
+  // 数字
+  const count = fish.reduce((s, f) => s + f.n, 0);
+  const priced = fish.filter(f => f.price), sum = priced.reduce((s, f) => s + f.price.lo * f.n, 0);
+  const noPrice = fish.filter(f => !f.price).map(f => f.name);
+  const big = fish.reduce((a, b) => (b.len > a.len ? b : a));
+  $('stats').innerHTML = [
+    [`${count}<small>条</small>`, `计划组合，${fish.length} 种。`],
+    [`¥${Math.round(sum)}<small>起</small>`, `各品种当日最低报价合计${noPrice.length ? `；${noPrice.join('、')}暂无报价` : ''}。`],
+    [`${big.len}<small>cm</small>`, `组合中最大：${big.name}成年体长，约半个缸长。`],
+  ].map(([n, p]) => `<div class="stat center"><div class="stat-num">${n}</div><p>${p}</p></div>`).join('');
+  $('price-date').textContent = T.date;
+
+  // 水层：从水面到砂床
+  const order = ['巡游', '中层', '中下层', '洞穴', '停栖', '底层'];
+  $('zones').innerHTML = order.map(z => {
+    const fs = fish.filter(f => f.zone === z);
+    if (!fs.length) return '';
+    return `<div class="zone"><dt>${z}</dt><dd>${fs.map(f =>
+      `<a href="${link(f)}">${f.img ? `<img src="${f.img}" alt="">` : ''}${esc(f.name)}${f.n > 1 ? ` <em>× ${f.n}</em>` : ''}</a>`).join('')}</dd></div>`;
+  }).join('');
+})();
+</script>
+</body>
+</html>

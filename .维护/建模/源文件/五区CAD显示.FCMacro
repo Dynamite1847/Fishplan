@@ -1,0 +1,44 @@
+# coding: utf-8
+"""Style and render the staged installation assembly; never touch delivery directly."""
+from pathlib import Path
+import os,json,traceback
+import FreeCAD as App,FreeCADGui as Gui
+from PySide import QtCore
+from pivy import coin
+root=Path(__file__).resolve().parent
+assert '.work' in root.parts
+run=Path(os.environ['FISHPLAN_RUN_DIR'])
+write=os.environ.get('FISHPLAN_WRITE_NATIVE')=='1'
+def execute():
+    try:
+        doc=App.openDocument(str(root/'五区管路总装.FCStd'));App.setActiveDocument(doc.Name)
+        styles=json.loads((root/'五区CAD显示.json').read_text())
+        for g in ['Frame','Glass','Sump','Equipment','DrainMain','DrainEmergency','Return','ATO','Optional']:doc.getObject(g).ViewObject.Visibility=True
+        for n,st in styles.items():
+            o=doc.getObject(n);o.ViewObject.ShapeColor=tuple(st['color']);o.ViewObject.LineColor=(.25,.34,.36);o.ViewObject.LineWidth=1
+            
+            if 'faceColors' in st:o.ViewObject.DiffuseColor=[tuple(c) for c in st['faceColors']]
+            o.ViewObject.Transparency=st['alpha'];o.ViewObject.Visibility=st.get('visible',True);o.ViewObject.DisplayMode='Flat Lines'
+        view=Gui.activeDocument().activeView();view.setCameraType('Orthographic');view.setAnimationEnabled(False)
+        # Empty groups remain visible so per-object visibility is unambiguous.
+        view.viewFront();view.fitAll();Gui.updateGui()
+        if write:doc.save()
+        for name,fn in [('15-CAD正视管路.png',view.viewFront),('16-CAD底缸俯视.png',view.viewTop),('19-CAD右侧管路.png',view.viewRight)]:
+            for n,st in styles.items():
+                doc.getObject(n).ViewObject.Transparency=st['alpha'];doc.getObject(n).ViewObject.DisplayMode='Flat Lines'
+            if name.startswith('16-'):
+                for n in ['UpperBoard','UpperMat','Display','BlackComb']:doc.getObject(n).ViewObject.DisplayMode='Wireframe'
+                for o in doc.Frame.Group:o.ViewObject.DisplayMode='Wireframe';o.ViewObject.LineColor=(.65,.72,.72)
+            fn();view.fitAll()
+            if name.startswith('16-'):view.getCameraNode().height.setValue(820)
+            Gui.updateGui();view.saveImage(str(root/name),1800,1500,'White')
+        report=json.loads((root/'五区CAD验证.json').read_text()) if (root/'五区CAD验证.json').exists() else {'scope':'展示刷新，未重建模型'};report['gui_open_save_reopen']=True
+        report['gui_note']='图形进程加载和显示完成；完整独立冷启动另由固定入口执行'
+        (root/'五区CAD验证.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n')
+        (run/'五区CAD完成.flag').write_text('ok')
+        App.closeDocument(doc.Name)
+    except:
+        (run/'五区CAD显示错误.log').write_text(traceback.format_exc())
+        for n in list(App.listDocuments()):App.closeDocument(n)
+    QtCore.QTimer.singleShot(0,Gui.getMainWindow().close)
+QtCore.QTimer.singleShot(100,execute)

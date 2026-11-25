@@ -1,0 +1,7 @@
+[Unit]
+Description=Daily fish records backup
+[Timer]
+OnCalendar=*-*-* 04:20:00 Asia/Shanghai
+Persistent=true
+[Install]
+WantedBy=timers.target

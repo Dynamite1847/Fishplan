@@ -1,0 +1,106 @@
+/* 装配页：左侧浅灰3D舞台随滚动固定，右侧步骤；管件多为深灰近黑，舞台不用黑底。字级、颜色沿用首页样稿。 */
+.assembly-page button{font:inherit;cursor:pointer}.assembly-page [hidden]{display:none!important}
+.assembly-page button:focus-visible{outline:2px solid var(--link);outline-offset:4px}
+.assembly-page button:disabled{opacity:.3;cursor:default}
+
+/* 工作区：模型 + 步骤 */
+.assembly-work{display:grid;grid-template-columns:minmax(0,1fr) 440px;align-items:start;background:#fff;border-bottom:1px solid var(--line)}
+.assembly-stage{position:sticky;top:48px;height:calc(100vh - 48px);height:calc(100svh - 48px);background:var(--bg2)}
+#assembly-viewport{height:100%;width:100%;position:relative;overflow:hidden;isolation:isolate;touch-action:none}
+#assembly-viewport canvas{position:absolute;inset:0 0 auto;display:block;width:100%;height:calc(100% - 54px)}
+#assembly-status{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:24px;color:var(--gray);background:var(--bg2);z-index:5;font-size:15px;text-align:center}
+#assembly-status button{color:var(--link);border:0;background:transparent;margin:12px}
+.assembly-presets{position:absolute;right:28px;bottom:18px;z-index:4;display:flex;gap:22px}
+.assembly-presets button{border:0;padding:8px 0;color:var(--gray);background:transparent;font-size:13px}
+.assembly-presets button[aria-pressed=true]{color:var(--ink);font-weight:600}
+.assembly-axis{position:absolute;left:28px;bottom:26px;z-index:2;font-size:12px;color:var(--gray);pointer-events:none}
+#assembly-labels{position:absolute;inset:0;z-index:3;pointer-events:none}
+.assembly-marker{position:absolute;transform:translate(-50%,-50%);display:flex;align-items:center;justify-content:center;width:24px;height:24px;border-radius:50%;font:600 12px var(--font);background:var(--link);color:#fff;box-shadow:0 0 0 2px #fff;pointer-events:auto;cursor:pointer}
+.assembly-marker.selected{background:var(--ink)}
+
+/* 右侧步骤栏 */
+.assembly-panel{padding:44px 40px 72px;border-left:1px solid var(--line);min-height:calc(100vh - 48px);min-height:calc(100svh - 48px)}
+.assembly-heading h1{font-size:40px;font-weight:700;letter-spacing:-.015em;line-height:1.1}
+.assembly-heading p{font-size:15px;color:var(--gray);margin-top:8px}
+.assembly-routes{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));margin-top:28px;border:1px solid var(--line)}
+.assembly-routes button{background:#fff;border:0;padding:11px 4px;font-size:14px;color:var(--gray);white-space:nowrap}
+.assembly-routes button+button{border-left:1px solid var(--line)}
+.assembly-routes button[aria-pressed=true]{background:var(--ink);color:#fff}
+.assembly-progress{margin-top:40px;font-size:13px;font-weight:600;color:var(--gray);scroll-margin-top:72px}
+.assembly-progress>div{height:2px;background:var(--line);margin-top:12px}
+.assembly-progress i{display:block;height:100%;background:var(--link);width:0;transition:width .3s}
+.assembly-guide[data-overview=true] .assembly-progress>div{display:none}
+#assembly-instruction{margin-top:20px}
+.assembly-title{font-size:28px;font-weight:700;letter-spacing:-.01em;line-height:1.25}
+.assembly-step-description{font-size:17px;line-height:1.7;margin-top:14px}
+.assembly-sublabel{font-size:13px;font-weight:600;color:var(--gray);margin-top:32px}
+.assembly-checks{padding-left:18px;font-size:15px;line-height:1.7;margin-top:10px}
+.assembly-checks li+li{margin-top:6px}
+.assembly-page .prices{margin-top:12px;font-size:14px}
+.assembly-page .prices th{padding-bottom:10px}
+.assembly-page .prices td{line-height:1.55;padding:12px 12px 12px 0}
+.assembly-page .prices td:first-child{white-space:normal;font-size:15px}
+.assembly-page .prices td:last-child{padding-right:0}
+.assembly-page .prices code{font:12px var(--font);color:var(--gray)}
+.assembly-page .prices button{color:var(--link);font-size:14px;border:0;background:transparent;text-align:left;padding:0;line-height:1.6}
+.assembly-objectdetails{margin-top:24px;font-size:13px;color:var(--gray)}
+.assembly-objectdetails summary{cursor:pointer}
+.assembly-objectbuttons{margin-top:10px;display:flex;flex-wrap:wrap;gap:4px 20px}
+.assembly-objectbuttons button{font-size:14px;padding:6px 0;border:0;background:transparent;color:var(--link)}
+.assembly-objectbuttons b{color:var(--gray);margin-right:8px;font-size:12px}
+.assembly-overview{margin-top:24px;border-top:1px solid var(--line)}
+.assembly-overview button{display:grid;grid-template-columns:1fr auto;gap:2px 16px;width:100%;padding:18px 0;border:0;border-bottom:1px solid var(--line);background:transparent;text-align:left;color:var(--ink)}
+.assembly-overview b{font-size:19px;font-weight:600}
+.assembly-overview span{grid-column:1;font-size:14px;color:var(--gray)}
+.assembly-overview i{grid-column:2;grid-row:1/3;align-self:center;font-style:normal;font-size:14px;color:var(--link)}
+.assembly-stepnav{display:flex;justify-content:space-between;align-items:center;gap:16px;margin-top:36px}
+.assembly-stepnav button{font-size:15px;color:var(--link);padding:10px 0;background:transparent;border:0}
+.assembly-stepnav .assembly-next{background:var(--link);color:#fff;padding:11px 26px}
+.assembly-stepnav .assembly-next:disabled{background:var(--line);color:var(--gray);opacity:1}
+.assembly-stepdetails{margin-top:44px;border-top:1px solid var(--line);padding-top:20px}
+.assembly-steps-label{font-size:13px;font-weight:600;color:var(--gray);display:flex;justify-content:space-between}
+.assembly-stepdetails ol{list-style:none;margin-top:8px}
+.assembly-stepdetails button{display:flex;align-items:baseline;gap:14px;width:100%;padding:10px 0;font-size:14px;line-height:1.5;text-align:left;background:transparent;border:0;border-bottom:1px solid var(--line);color:var(--gray)}
+.assembly-stepdetails b{font-weight:500;font-size:12px;min-width:18px}
+.assembly-stepdetails button[aria-current=step]{color:var(--link);font-weight:600}
+
+/* 零件说明（在模型上点选后出现） */
+.assembly-part{position:absolute;left:24px;bottom:64px;max-width:360px;z-index:4;padding:18px 36px 16px 18px;color:var(--ink);background:#fff;border:1px solid var(--line);font-size:14px;line-height:1.65}
+.assembly-part h3{font-size:17px;font-weight:600;margin-bottom:6px}
+.assembly-part p{margin-bottom:10px}
+.assembly-part-meta,.assembly-part details{font-size:12px;color:var(--gray)}
+.assembly-part button{font-size:13px;color:var(--link);border:0;background:transparent;padding:6px 0}
+.assembly-part-jump{margin-left:18px}
+.assembly-part #assembly-clear{position:absolute;right:8px;top:4px;font-size:22px;color:var(--gray)}
+
+/* 参考资料 */
+.assembly-ref{background:#fff;padding-top:80px;padding-bottom:0}
+.assembly-ref:last-of-type{padding-bottom:100px}
+.assembly-h2{font-size:32px;font-weight:700;letter-spacing:-.01em}
+.assembly-ref .assembly-sublabel{font-size:17px;color:var(--ink);margin-top:44px}
+.assembly-swatch{display:inline-block;vertical-align:-1px;margin-right:10px;width:12px;height:12px;border:1px solid var(--line)}
+.assembly-notes .prices td:first-child{width:160px}
+#assembly-revision{font-size:12px;color:var(--gray)}
+.assembly-error{padding:30px;text-align:center;font-size:15px}
+
+@media(hover:hover){.assembly-page button:not(:disabled):hover{color:var(--link)}.assembly-routes button[aria-pressed=true]:hover,.assembly-stepnav .assembly-next:not(:disabled):hover{color:#fff}.assembly-stepnav .assembly-next:not(:disabled):hover{background:#0077ed}.assembly-overview button:hover b{color:var(--link)}}
+@media(max-width:1100px){.assembly-work{grid-template-columns:minmax(0,1fr) 380px}.assembly-panel{padding:36px 28px 64px}}
+@media(max-width:734px){
+  .assembly-work{display:block}
+  .assembly-stage{top:48px;height:44vh;height:44svh;z-index:5;border-bottom:1px solid var(--line)}
+  #assembly-viewport canvas{height:calc(100% - 40px)}
+  .assembly-presets{right:16px;bottom:6px;gap:18px}.assembly-presets button{font-size:12px}
+  .assembly-axis{left:16px;bottom:16px;font-size:11px}
+  .assembly-part{left:12px;right:12px;bottom:44px;max-width:none;font-size:13px}
+  .assembly-panel{padding:28px 20px 56px;border-left:0;min-height:0}
+  .assembly-heading h1{font-size:28px}
+  .assembly-routes{margin-top:20px}.assembly-routes button{font-size:13px;padding:11px 0}
+  .assembly-progress{margin-top:28px;scroll-margin-top:calc(48px + 44svh + 12px)}
+  .assembly-title{font-size:23px}
+  .assembly-step-description{font-size:16px}
+  .assembly-page .prices td{font-size:13px;padding:11px 8px 11px 0}.assembly-page .prices td:first-child{font-size:14px}
+  .assembly-ref{padding-top:56px}.assembly-h2{font-size:26px}
+  .assembly-notes .prices td:first-child{width:84px}
+  .assembly-stock .prices{table-layout:fixed}.assembly-stock .prices th:first-child{width:24%}.assembly-stock .prices th:nth-child(2),.assembly-stock .prices th:nth-child(3),.assembly-stock .prices th:nth-child(4){width:12%}.assembly-stock .prices td{overflow-wrap:anywhere}
+}
+@media(prefers-reduced-motion:reduce){.assembly-page *{animation:none!important;transition:none!important;scroll-behavior:auto!important}}

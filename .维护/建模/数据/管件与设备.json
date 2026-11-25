@@ -1,0 +1,1027 @@
+{
+  "pipe_standard": "公制PVC-U，20/25按管外径；不与DN或玻璃孔径混用",
+  "items": [
+    {
+      "id": "D01",
+      "name": "25上下水直接（穿缸接头完整套装）",
+      "qty": 2,
+      "install_qty": 2,
+      "spare_qty": 0,
+      "included_qty": 0,
+      "unit": "套",
+      "note": "用户确认只有贴玻璃的固定螺母，无独立活接；两路各另设孔下深灰活接，保持玻璃密封不动。"
+    },
+    {
+      "id": "R01",
+      "name": "20自带弯头回水穿缸套装",
+      "qty": 2,
+      "install_qty": 2,
+      "spare_qty": 0,
+      "included_qty": 0,
+      "unit": "套",
+      "note": "用户2026-11-04明确确认：主缸回水穿缸接头自带弯头。两口复用套装转向，不再各加独立90°；接口和孔位按实物。",
+      "included_elbow_user_confirmed": true
+    },
+    {
+      "id": "R02",
+      "name": "20回水嘴/鸭嘴＋匹配转接",
+      "qty": 2,
+      "install_qty": 2,
+      "spare_qty": 0,
+      "included_qty": 0,
+      "unit": "套",
+      "note": "两嘴各1；模型嘴口下缘距外底457、中心463为候选，真实嘴型与玻璃孔位必须匹配，禁止按占位开孔"
+    },
+    {
+      "id": "D02",
+      "name": "25近黑灰微调阀（红把手，不带活接）",
+      "qty": 1,
+      "install_qty": 1,
+      "spare_qty": 0,
+      "included_qty": 0,
+      "unit": "套",
+      "note": "用户确认近黑灰阀体、红把手；两端各另配25灰活接，计入D03。"
+    },
+    {
+      "id": "V01",
+      "name": "20深灰双活接球阀",
+      "qty": 3,
+      "install_qty": 3,
+      "spare_qty": 0,
+      "included_qty": 0,
+      "unit": "套",
+      "note": "3只：主管1、侧面前后竖管各1；沿用原双活接阀方案，阀自带拆卸端不重复计入独立活接。"
+    },
+    {
+      "id": "V02",
+      "name": "20白色＋透明双活接止回阀",
+      "qty": 1,
+      "install_qty": 1,
+      "spare_qty": 0,
+      "included_qty": 0,
+      "unit": "套",
+      "note": "竖直向上，分流前三通下方；白色端、透明观察体，停泵按未封住验收。"
+    },
+    {
+      "id": "D03",
+      "name": "25独立活接：灰4＋透明3",
+      "qty": 7,
+      "install_qty": 6,
+      "spare_qty": 1,
+      "included_qty": 0,
+      "unit": "只",
+      "note": "灰4：两孔下各1、微调阀两端各1；透明2：两尾管各1；余透明1备用。"
+    },
+    {
+      "id": "R04",
+      "name": "20独立活接：透明4＋白2＋灰3",
+      "qty": 9,
+      "install_qty": 6,
+      "spare_qty": 3,
+      "included_qty": 0,
+      "unit": "只",
+      "note": "透明4用于两支路观察段两端，白2用于主管观察段两端，灰3备用。三球阀及止回自带8个拆卸端另计，不当独立活接库存。"
+    },
+    {
+      "id": "D04",
+      "name": "25紫色直管，同系列公制PVC-U",
+      "qty": 3,
+      "install_qty": 1.886,
+      "spare_qty": 0,
+      "included_qty": 0,
+      "unit": "m",
+      "note": "两路斜向中心线约2.554m扣透明0.668m，含阀及管件占位，非下料单。"
+    },
+    {
+      "id": "R03",
+      "name": "20浅灰色直管，同系列公制PVC-U",
+      "qty": 3,
+      "install_qty": 1.927,
+      "spare_qty": 0,
+      "included_qty": 0,
+      "unit": "m",
+      "note": "柜内主管加两支路名义中心线2.307减透明0.380，软接另列；含阀件，不是下料单"
+    },
+    {
+      "id": "D06",
+      "name": "25灰色承插90°弯头",
+      "qty": 8,
+      "install_qty": 4,
+      "spare_qty": 4,
+      "included_qty": 0,
+      "unit": "只",
+      "note": "两下水各2只，旋转首个90°直接斜向左后；库存8余4。"
+    },
+    {
+      "id": "R06",
+      "name": "20灰色承插90°弯头",
+      "qty": 8,
+      "install_qty": 6,
+      "spare_qty": 2,
+      "included_qty": 0,
+      "unit": "只",
+      "note": "两支路各3只独立90°；两缸口自带弯头计入R01套装，库存8余2。"
+    },
+    {
+      "id": "R05",
+      "name": "20灰色等径三通",
+      "qty": 2,
+      "install_qty": 1,
+      "spare_qty": 1,
+      "included_qty": 0,
+      "unit": "只",
+      "note": "柜顶分流1、备用1，不合并两下水。"
+    },
+    {
+      "id": "D07",
+      "name": "25下水入口护罩（选配，本轮不买）",
+      "qty": 0,
+      "install_qty": 0,
+      "spare_qty": 0,
+      "included_qty": 0,
+      "unit": "只",
+      "note": "已有鱼梳，助手撤回默认主备各买1只；本轮0。鱼梳不能完全排除螺或顶部异物，后续按实际吸口及通流情况另定；原CAD粗栅仅占位。"
+    },
+    {
+      "id": "R07a",
+      "name": "内径20mm减振软管",
+      "qty": 0.3,
+      "install_qty": 0.222,
+      "spare_qty": 0,
+      "included_qty": 0,
+      "unit": "m",
+      "note": "泵水平转180°后软管模型弧长约222mm，最小中心曲率半径约42mm，备0.3m试弯裁用；实际不折扁并留宝塔套接量。"
+    },
+    {
+      "id": "R07b",
+      "name": "泵端原装适配20mm内径软管的接头",
+      "qty": 1,
+      "install_qty": 1,
+      "spare_qty": 0,
+      "included_qty": 0,
+      "unit": "套",
+      "note": "用户补充18W泵接头16/20/25，当前模型选20软接；随泵已有则另买0，不让泵端套错误的20承插/螺纹件"
+    },
+    {
+      "id": "R07b2",
+      "name": "20mm软管宝塔×外径20管承插转接",
+      "qty": 1,
+      "install_qty": 1,
+      "spare_qty": 0,
+      "included_qty": 0,
+      "unit": "只",
+      "note": "硬管端转接1只；软管内径20与硬管外径20分别标注，不互相当作同一接口"
+    },
+    {
+      "id": "R07c",
+      "name": "适配所购软管外径的防脱卡箍",
+      "qty": 2,
+      "install_qty": 2,
+      "spare_qty": 0,
+      "included_qty": 0,
+      "unit": "只",
+      "note": "2只。按内径20/壁厚2假设软管外径24选配，真实壁厚不同只调整卡箍；夹径不按软管内径20购买"
+    },
+    {
+      "id": "M01a",
+      "name": "25管夹",
+      "qty": 4,
+      "install_qty": 4,
+      "spare_qty": 0,
+      "included_qty": 0,
+      "unit": "只",
+      "note": "两下水各2只，安装目标由3改4；实买数未核，若只有3只仅补1只"
+    },
+    {
+      "id": "M01b",
+      "name": "20管夹",
+      "qty": 3,
+      "install_qty": 2,
+      "spare_qty": 1,
+      "included_qty": 0,
+      "unit": "只",
+      "note": "前后各1贴右侧顶部450方向梁底槽；安装2只，原备料3只留1备用"
+    },
+    {
+      "id": "M01c",
+      "name": "4040槽型匹配支臂/安装板",
+      "qty": 0,
+      "install_qty": 0,
+      "spare_qty": 0,
+      "included_qty": 0,
+      "unit": "套",
+      "note": "用户确认已买直装夹底座直接贴型材；不另加短支座/吊杆，按实际中心高放样"
+    },
+    {
+      "id": "M01d",
+      "name": "匹配4040槽口的T形螺母＋螺栓",
+      "qty": 0,
+      "install_qty": 0,
+      "spare_qty": 0,
+      "included_qty": 0,
+      "unit": "组",
+      "note": "撤回旧版每夹另配独立支臂及双螺栓的预设采购；用户选直接挂型材款。缺少必要固定附件或夹点离架较远时，按实物再配，不预购10套支臂/20组紧固件。"
+    },
+    {
+      "id": "M02a",
+      "name": "与所选管材配套的PVC-U专用胶水",
+      "qty": 1,
+      "install_qty": 1,
+      "spare_qty": 0,
+      "included_qty": 0,
+      "unit": "小罐",
+      "note": "按厂家工艺与固化说明；密封胶垫与活接密封面不涂胶"
+    },
+    {
+      "id": "M02a2",
+      "name": "所选胶水同体系清洁剂/预处理材料",
+      "qty": 1,
+      "install_qty": 1,
+      "spare_qty": 0,
+      "included_qty": 0,
+      "unit": "小瓶/组",
+      "note": "按厂家要求配套；不虚构品牌、现价或统一固化时长"
+    },
+    {
+      "id": "M02a3",
+      "name": "无绒擦拭纸",
+      "qty": 1,
+      "install_qty": 1,
+      "spare_qty": 0,
+      "included_qty": 0,
+      "unit": "包",
+      "note": "接合面清洁与擦余胶"
+    },
+    {
+      "id": "M02a4",
+      "name": "涂胶小刷",
+      "qty": 1,
+      "install_qty": 1,
+      "spare_qty": 0,
+      "included_qty": 0,
+      "unit": "把",
+      "note": "胶水盖自带刷则另购0"
+    },
+    {
+      "id": "M02b",
+      "name": "硬质PVC-U管裁管剪",
+      "qty": 1,
+      "install_qty": 1,
+      "spare_qty": 0,
+      "included_qty": 0,
+      "unit": "把",
+      "note": "用户已买剪和锯；实际口径能力按现有工具，透明管按商家要求用锯，不重复采购。"
+    },
+    {
+      "id": "M02b2",
+      "name": "倒角/去毛刺工具或小锉刀",
+      "qty": 1,
+      "install_qty": 1,
+      "spare_qty": 0,
+      "included_qty": 0,
+      "unit": "套",
+      "note": "管口内外去毛刺、外缘倒角；已有锉刀可用，不重复买"
+    },
+    {
+      "id": "M02b3",
+      "name": "卷尺＋细头记号笔",
+      "qty": 1,
+      "install_qty": 1,
+      "spare_qty": 0,
+      "included_qty": 0,
+      "unit": "套",
+      "note": "量管长、插入深度并标接头方向；已有则买0"
+    },
+    {
+      "id": "M02c",
+      "name": "螺纹密封辅料",
+      "qty": 0,
+      "install_qty": 0,
+      "spare_qty": 0,
+      "included_qty": 0,
+      "unit": "卷",
+      "note": "仅最终采用需密封的管螺纹时按厂家要求补；胶垫密封的穿缸锁紧螺纹不缠生料带"
+    },
+    {
+      "id": "M01e",
+      "name": "6个直装管夹配套软衬（按实际款式）",
+      "qty": 7,
+      "install_qty": 6,
+      "spare_qty": 1,
+      "included_qty": 0,
+      "unit": "套",
+      "note": "按6处实际管夹配套软衬，已含不重买"
+    },
+    {
+      "id": "M01f",
+      "name": "主泵隔振脚垫",
+      "qty": 1,
+      "install_qty": 1,
+      "spare_qty": 0,
+      "included_qty": 0,
+      "unit": "套",
+      "note": "4mm为模型占位，1套；泵随带且满足安装则另买0，实际承托/材质/厚度核后调泵与软接"
+    },
+    {
+      "id": "CL25",
+      "name": "25透明PVC-U直管，同制式/通径配套",
+      "qty": 1,
+      "install_qty": 0.544,
+      "spare_qty": 0,
+      "included_qty": 0,
+      "unit": "m",
+      "note": "主排孔下透明100＋末端透明264＋应急左侧透明180，均为模型本体布局值；裁长计真实承插，保留1m备料"
+    },
+    {
+      "id": "CL20",
+      "name": "20透明PVC-U直管，同制式/通径配套",
+      "qty": 1,
+      "install_qty": 0.38,
+      "spare_qty": 0,
+      "included_qty": 0,
+      "unit": "m",
+      "note": "柜内主管100、前后竖直同高各140；模型本体共0.380m，非裁切长度"
+    },
+    {
+      "id": "R08",
+      "name": "20灰色直接",
+      "qty": 1,
+      "install_qty": 0,
+      "spare_qty": 1,
+      "included_qty": 0,
+      "unit": "只",
+      "note": "整管及既有活接可完成连接，直接1只备用，不为消耗库存增加接头。"
+    }
+  ],
+  "segments": [
+    {
+      "circuit": "Main",
+      "segment": 1,
+      "from_mm": [
+        660,
+        160,
+        976
+      ],
+      "to_mm": [
+        660,
+        160,
+        840
+      ],
+      "centerline_mm": 136.0,
+      "cut_length_mm": null
+    },
+    {
+      "circuit": "Main",
+      "segment": 2,
+      "from_mm": [
+        660,
+        160,
+        840
+      ],
+      "to_mm": [
+        85,
+        335,
+        840
+      ],
+      "centerline_mm": 601.041,
+      "cut_length_mm": null
+    },
+    {
+      "circuit": "Main",
+      "segment": 3,
+      "from_mm": [
+        85,
+        335,
+        840
+      ],
+      "to_mm": [
+        85,
+        335,
+        256
+      ],
+      "centerline_mm": 584.0,
+      "cut_length_mm": null
+    },
+    {
+      "circuit": "Emergency",
+      "segment": 1,
+      "from_mm": [
+        660,
+        280,
+        976
+      ],
+      "to_mm": [
+        660,
+        280,
+        840
+      ],
+      "centerline_mm": 136.0,
+      "cut_length_mm": null
+    },
+    {
+      "circuit": "Emergency",
+      "segment": 2,
+      "from_mm": [
+        660,
+        280,
+        840
+      ],
+      "to_mm": [
+        115,
+        375,
+        840
+      ],
+      "centerline_mm": 553.218,
+      "cut_length_mm": null
+    },
+    {
+      "circuit": "Emergency",
+      "segment": 3,
+      "from_mm": [
+        115,
+        375,
+        840
+      ],
+      "to_mm": [
+        115,
+        375,
+        296
+      ],
+      "centerline_mm": 544.0,
+      "cut_length_mm": null
+    },
+    {
+      "circuit": "ReturnCommon",
+      "segment": 1,
+      "from_mm": [
+        538,
+        225,
+        350
+      ],
+      "to_mm": [
+        538,
+        225,
+        740
+      ],
+      "centerline_mm": 390.0,
+      "cut_length_mm": null
+    },
+    {
+      "circuit": "ReturnFront",
+      "segment": 1,
+      "from_mm": [
+        538,
+        225,
+        740
+      ],
+      "to_mm": [
+        538,
+        75,
+        740
+      ],
+      "centerline_mm": 150.0,
+      "cut_length_mm": null
+    },
+    {
+      "circuit": "ReturnFront",
+      "segment": 2,
+      "from_mm": [
+        538,
+        75,
+        740
+      ],
+      "to_mm": [
+        538,
+        75,
+        838
+      ],
+      "centerline_mm": 98.0,
+      "cut_length_mm": null
+    },
+    {
+      "circuit": "ReturnFront",
+      "segment": 3,
+      "from_mm": [
+        538,
+        75,
+        838
+      ],
+      "to_mm": [
+        635,
+        75,
+        838
+      ],
+      "centerline_mm": 97.0,
+      "cut_length_mm": null
+    },
+    {
+      "circuit": "ReturnFront",
+      "segment": 4,
+      "from_mm": [
+        635,
+        75,
+        838
+      ],
+      "to_mm": [
+        635,
+        75,
+        1389
+      ],
+      "centerline_mm": 551.0,
+      "cut_length_mm": null
+    },
+    {
+      "circuit": "ReturnFront",
+      "segment": 5,
+      "from_mm": [
+        635,
+        75,
+        1389
+      ],
+      "to_mm": [
+        580,
+        75,
+        1389
+      ],
+      "centerline_mm": 55.0,
+      "cut_length_mm": null
+    },
+    {
+      "circuit": "ReturnRear",
+      "segment": 1,
+      "from_mm": [
+        538,
+        225,
+        740
+      ],
+      "to_mm": [
+        538,
+        390,
+        740
+      ],
+      "centerline_mm": 165.0,
+      "cut_length_mm": null
+    },
+    {
+      "circuit": "ReturnRear",
+      "segment": 2,
+      "from_mm": [
+        538,
+        390,
+        740
+      ],
+      "to_mm": [
+        538,
+        390,
+        838
+      ],
+      "centerline_mm": 98.0,
+      "cut_length_mm": null
+    },
+    {
+      "circuit": "ReturnRear",
+      "segment": 3,
+      "from_mm": [
+        538,
+        390,
+        838
+      ],
+      "to_mm": [
+        635,
+        390,
+        838
+      ],
+      "centerline_mm": 97.0,
+      "cut_length_mm": null
+    },
+    {
+      "circuit": "ReturnRear",
+      "segment": 4,
+      "from_mm": [
+        635,
+        390,
+        838
+      ],
+      "to_mm": [
+        635,
+        390,
+        1389
+      ],
+      "centerline_mm": 551.0,
+      "cut_length_mm": null
+    },
+    {
+      "circuit": "ReturnRear",
+      "segment": 5,
+      "from_mm": [
+        635,
+        390,
+        1389
+      ],
+      "to_mm": [
+        580,
+        390,
+        1389
+      ],
+      "centerline_mm": 55.0,
+      "cut_length_mm": null
+    }
+  ],
+  "backpack_internal_standpipes_mm": {
+    "Main": 262,
+    "Emergency": 422,
+    "basis": "模型占位高度；入口按背包运行水面现场定长"
+  },
+  "valves": {
+    "ball20": 3,
+    "fine_gate25": 1,
+    "check20": 1,
+    "total": 5,
+    "emergency_valves": 0
+  },
+  "elbows": {
+    "25_install": 4,
+    "25_spare": 4,
+    "20_install": 6,
+    "20_spare": 2,
+    "20_included_in_return_sets": 2,
+    "basis": "两下水各2独立90°；上水两支路各3独立90°，两缸口复用套装弯头。"
+  },
+  "union_deduction": {
+    "25_detachable_points": 6,
+    "25_included_in_gate_sight": 0,
+    "25_separate_buy": 0,
+    "20_detachable_points": 14,
+    "20_included_in_3balls_1check": 8,
+    "20_separate_buy": 0,
+    "supplier_scope_verified": false,
+    "rule": "现有独立25活接7装6余透明1；20活接9装6余灰3。不新增采购；阀套装自带拆卸端不重复计库存。",
+    "25_included_in_gate": 0,
+    "25_included_in_sight": 0,
+    "25_separate_stock": 7,
+    "20_separate_stock": 9
+  },
+  "pipe_buy_m": {
+    "25": 4,
+    "20": 4,
+    "breakdown": {
+      "25_opaque": 3,
+      "25_clear": 1,
+      "20_opaque": 3,
+      "20_clear": 1
+    },
+    "colour_stock_split_pending": false,
+    "colours": {
+      "25_opaque": "紫色",
+      "20_opaque": "浅灰色",
+      "25_clear": "透明",
+      "20_clear": "透明"
+    }
+  },
+  "pump_interface_assumption": {
+    "authorization": "用户2026-10-21补充CN-S600 18W接头16/20/25；当前模型与清单仍用20软接，软管内径/宝塔外径和硬管外径实际配合待验",
+    "selected_return_hard_pipe_od_mm": 20,
+    "selected_hose_id_mm": 20,
+    "hose_wall_model_mm": 2,
+    "hose_od_model_mm": 24,
+    "path": "泵原装匹配20软管接头→内径20软管→20软管宝塔×外径20承插转接→外径20硬管→20活接",
+    "if_different": "修正泵端接头及对应软管/卡箍；不把未经核实的泵螺纹当成20承插口",
+    "manufacturer_verified": false,
+    "user_reported_adapter_sizes_mm": [
+      16,
+      20,
+      25
+    ],
+    "plan_rotation_deg": 180,
+    "modeled_outlet_mm": [
+      436,
+      313,
+      188
+    ]
+  },
+  "date": "2026-11-04",
+  "status": "用户已补实物颜色/数量；布局更新为斜向双下水、上水缸侧向下，末端接泵。未记作实物安装验收。",
+  "documents": {
+    "scheme": "05-缸体与设备方案.md",
+    "purchase": "02-采购账本.md",
+    "tasks": "01-待办.md"
+  },
+  "model_purchase_centerline_m": {
+    "pipe25_total": 2.554259,
+    "pipe20_total": 2.307,
+    "not_cut_lengths": true,
+    "pipe20_soft_hose_approx": 0.222
+  },
+  "equipment_dimensions": [
+    {
+      "item": "CN-S600 18W",
+      "l_d_h_mm": [
+        170,
+        70,
+        128
+      ],
+      "basis": "用户提供泵体尺寸，完整带接头外形未验",
+      "interface": "用户补充接头16/20/25，本模型用内径20软管的匹配泵接头"
+    },
+    {
+      "item": "MJ-SK2200二代",
+      "l_d_h_mm": [
+        175,
+        171,
+        474
+      ],
+      "basis": "原厂整机规格；用户底座165×165",
+      "interface": "内置蛋分自循环，不接主20/25硬管",
+      "water_depth_mm": [
+        160,
+        200
+      ]
+    },
+    {
+      "item": "老渔匠圣盾二代300W低水位版",
+      "l_d_h_mm": [
+        190,
+        25,
+        74
+      ],
+      "basis": "已购商品图原标高×宽×厚74×190×25；CAD含10高脚位总84高，脚位未核",
+      "interface": "不接20/25水管；安装方向、最低水位、海水适用与线缆/控制器按实物"
+    },
+    {
+      "item": "贝森BESSN补水器",
+      "l_d_h_mm": null,
+      "basis": "已购商品图未提供机身尺寸，禁止猜尺寸",
+      "interface": "保留套装原配软管/泵接头，不改接20/25；夹持壁厚≤12，挂点到设定水位约20～145，需核隔板挂点/下沉支架"
+    },
+    {
+      "item": "20球阀×3",
+      "model_body_length_mm": 80,
+      "model_body_od_mm": 54,
+      "basis": "CAD包络，实际具体SKU和完整手柄外形待核",
+      "interface": "20×20承插双活接"
+    },
+    {
+      "item": "20止回阀",
+      "model_body_length_mm": 70,
+      "model_body_od_mm": 58,
+      "basis": "CAD含接头包络，实际SKU待核",
+      "interface": "20×20承插双活接，竖直向上"
+    },
+    {
+      "item": "25主排微调阀",
+      "model_assembled_l_d_h_mm": [
+        156,
+        110,
+        52
+      ],
+      "basis": "CAD阀＋两端活接朝前装配包络；具体候选系列82长/112高需按安装方向和实际附件另核",
+      "interface": "25×25承插"
+    }
+  ],
+  "obsolete_model_items": [
+    "旋转视窗/备用模块",
+    "左侧补水箱及平台",
+    "旧滤材袋和数量",
+    "部分管夹/承板垫层占位",
+    "应急末端落右后回水格"
+  ],
+  "zone_contents": [
+    {
+      "zone": "左后接水缓冲",
+      "contents": [
+        "主排末端",
+        "独立应急出口"
+      ],
+      "keep_clear": "放气、吸污，不填棉砖"
+    },
+    {
+      "zone": "左前物理/菌床",
+      "contents": [
+        "粗棉一层",
+        "羊绒细棉一层",
+        "浸没普通纳米砖4块，两组双层",
+        "首鱼前启用的活性炭袋，棉后上层砖上方用开孔网格托起约10mm，薄摊浸没、四周留缝"
+      ],
+      "keep_clear": "正常主流先穿粗/细棉；砖浸没并持续换水，不强制所有水穿砖。炭袋对准棉后落水，让一股水持续穿袋；必要用可拆实心侧挡导流，保留高位安全溢流，不塞棉封原出口。"
+    },
+    {
+      "zone": "中间设备",
+      "contents": [
+        "SK2200预留",
+        "已买低水位加热棒"
+      ],
+      "keep_clear": "吸排水、取杯、整机拆洗"
+    },
+    {
+      "zone": "右前藻区",
+      "contents": [
+        "硝化检查后按氮磷启用钢丝藻"
+      ],
+      "keep_clear": "不临时塞满砖"
+    },
+    {
+      "zone": "右后回水",
+      "contents": [
+        "主泵",
+        "补水探头"
+      ],
+      "keep_clear": "不填棉料，留拆泵通道"
+    }
+  ],
+  "scope": "只含配管安装/备料及模型参数；付款/到货/单项订单状态不在本表维护。过滤材料在05-缸体与设备方案.md和02-采购账本.md。",
+  "standpipe_review_20261028": {
+    "recommendation": "双管Herbie：主排抬高并充分淹没、1只微调阀；应急独立高位无阀。现有低位主排仅旧模型占位。",
+    "trial_main_inlet_below_overflow_operating_water_mm": 150,
+    "trial_overflow_water_below_emergency_lip_mm": 10,
+    "dimensions_are_trial_relative_not_cut_lengths": true,
+    "dedicated_water_change_drain_added": false,
+    "emergency_valves": 0,
+    "total_valves": 5,
+    "native_cad_changed": true,
+    "sources": [
+      "https://gmacreef.com/herbie-overflow-reef-tank-plumbing-method-basics/",
+      "https://g1.redseafish.com/how-to-clean-and-adjust-the-reefer-downflow-valve/",
+      "https://help.waterboxaquariums.com/en-US/articles/troubleshooting-26086"
+    ],
+    "main_sump_outlet_below_its_chamber_operating_water_mm": 20,
+    "drains_joined": false,
+    "drain_merge_tee_qty": 0,
+    "generic_silencer_purchase_qty": 0,
+    "return_tee20_qty_unchanged": 1,
+    "silencer_rule": "不把带进气孔的Durso消音帽混用于满管虹吸主排；先试水定位吸气/夹气/溅水再选专用品。",
+    "emergency_sump_outlet_above_receiving_chamber_operating_water_mm": [
+      10,
+      20
+    ],
+    "main_sump_outlet_chamber": "左后接水缓冲",
+    "emergency_sump_outlet_chamber": "左后接水缓冲",
+    "filter_clog_bypass": "低于缸沿的安全溢流通道回中间仓；堵棉测试验证，不依赖应急落泵格绕过"
+  },
+  "pipe_clip_layout": [
+    {
+      "id": "Main220",
+      "group": "DrainMain",
+      "pipeAxisMM": [
+        220,
+        293.9130434782609,
+        840
+      ],
+      "anchorFrame": "Top_Y_200",
+      "frameContactGapMM": 0.0,
+      "directMounted": true,
+      "baseToAxisMM": 20,
+      "status": "直装款式用户确认；中心高20为暂定放样值"
+    },
+    {
+      "id": "Main420",
+      "group": "DrainMain",
+      "pipeAxisMM": [
+        420,
+        233.04347826086956,
+        840
+      ],
+      "anchorFrame": "Top_Y_400",
+      "frameContactGapMM": 0.0,
+      "directMounted": true,
+      "baseToAxisMM": 20,
+      "status": "直装款式用户确认；中心高20为暂定放样值"
+    },
+    {
+      "id": "Emergency220",
+      "group": "DrainEmergency",
+      "pipeAxisMM": [
+        220,
+        356.697247706422,
+        840
+      ],
+      "anchorFrame": "Top_Y_200",
+      "frameContactGapMM": 0.0,
+      "directMounted": true,
+      "baseToAxisMM": 20,
+      "status": "直装款式用户确认；中心高20为暂定放样值"
+    },
+    {
+      "id": "Emergency420",
+      "group": "DrainEmergency",
+      "pipeAxisMM": [
+        420,
+        321.8348623853211,
+        840
+      ],
+      "anchorFrame": "Top_Y_400",
+      "frameContactGapMM": 0.0,
+      "directMounted": true,
+      "baseToAxisMM": 20,
+      "status": "直装款式用户确认；中心高20为暂定放样值"
+    },
+    {
+      "id": "ReturnFront",
+      "group": "Return",
+      "pipeAxisMM": [
+        580,
+        75,
+        838
+      ],
+      "anchorFrame": "Top_Y_560",
+      "frameContactGapMM": 0.0,
+      "directMounted": true,
+      "baseToAxisMM": 22,
+      "status": "直装款式用户确认；中心高20为暂定放样值"
+    },
+    {
+      "id": "ReturnRear",
+      "group": "Return",
+      "pipeAxisMM": [
+        580,
+        390,
+        838
+      ],
+      "anchorFrame": "Top_Y_560",
+      "frameContactGapMM": 0.0,
+      "directMounted": true,
+      "baseToAxisMM": 22,
+      "status": "直装款式用户确认；中心高20为暂定放样值"
+    }
+  ],
+  "observation_sections": 7,
+  "actual_fittings_finish": {
+    "union25": "灰4＋透明3，装灰4透明2，余透明1",
+    "union20": "透明4＋白2＋灰3，装透明4白2，余灰3",
+    "gate25": "近黑灰阀体＋红把手",
+    "check20": "白＋透明",
+    "drain_fittings": "近黑灰",
+    "ball20": "深灰"
+  },
+  "stock_color_allocation": [
+    {
+      "name": "25灰色90°",
+      "stock": 8,
+      "install": 4,
+      "spare": 4,
+      "position": "主排、应急各2"
+    },
+    {
+      "name": "20灰色90°",
+      "stock": 8,
+      "install": 6,
+      "spare": 2,
+      "position": "前后支路各3；缸口复用套装弯头"
+    },
+    {
+      "name": "20灰色三通",
+      "stock": 2,
+      "install": 1,
+      "spare": 1,
+      "position": "柜顶前后分流"
+    },
+    {
+      "name": "25灰色活接",
+      "stock": 4,
+      "install": 4,
+      "spare": 0,
+      "position": "两孔下各1、微调阀两端各1"
+    },
+    {
+      "name": "25透明活接",
+      "stock": 3,
+      "install": 2,
+      "spare": 1,
+      "position": "两尾管各1"
+    },
+    {
+      "name": "20透明活接",
+      "stock": 4,
+      "install": 4,
+      "spare": 0,
+      "position": "前后透明段两端，各2"
+    },
+    {
+      "name": "20白色活接",
+      "stock": 2,
+      "install": 2,
+      "spare": 0,
+      "position": "主管透明段两端"
+    },
+    {
+      "name": "20灰色活接",
+      "stock": 3,
+      "install": 0,
+      "spare": 3,
+      "position": "备用"
+    },
+    {
+      "name": "20灰色直接",
+      "stock": 1,
+      "install": 0,
+      "spare": 1,
+      "position": "备用"
+    },
+    {
+      "name": "20深灰球阀",
+      "stock": 3,
+      "install": 3,
+      "spare": 0,
+      "position": "主管1、前后侧面竖管各1"
+    }
+  ]
+}

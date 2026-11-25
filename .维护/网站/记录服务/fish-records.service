@@ -1,0 +1,21 @@
+[Unit]
+Description=Fish aquarium records API
+After=network.target
+[Service]
+Type=simple
+User=fish-records
+Group=fish-records
+WorkingDirectory=/opt/fish-records
+Environment=FISH_RECORDS_DATA=/var/lib/fish-records
+Environment=FISH_RECORDS_ORIGIN=https://dystudio.fun
+ExecStart=/usr/bin/python3 /opt/fish-records/server.py
+Restart=on-failure
+RestartSec=3
+UMask=0077
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=true
+ReadWritePaths=/var/lib/fish-records
+[Install]
+WantedBy=multi-user.target

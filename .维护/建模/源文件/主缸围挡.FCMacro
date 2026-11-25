@@ -1,0 +1,371 @@
+# coding: utf-8
+"""Build and inspect the independent, dimensioned rim-guard assembly."""
+import json
+import os
+import traceback
+from pathlib import Path
+
+import FreeCAD as App
+import FreeCADGui as Gui
+import Import
+import MeshPart
+import Part
+from PySide import QtCore
+from pivy import coin  # Registers the camera node type returned by FreeCAD.
+
+V = App.Vector
+run = Path(os.environ['FISHPLAN_GUARD_RUN'])
+stem = '主缸防跳围挡'
+RIM = 500
+SEAT_BRIDGE = 2
+PANEL_HEIGHT = 200
+BASE = RIM + SEAT_BRIDGE
+TOP = BASE + PANEL_HEIGHT
+GLASS = (.54, .76, .80)
+PMMA = (.087, .095, .106)
+NYLON = (.19, .21, .23)
+RUBBER = (.09, .10, .11)
+LIGHT = (.17, .18, .20)
+FAN = (.26, .28, .30)
+
+
+def box(length, depth, height, x, y, z):
+    return Part.makeBox(length, depth, height, V(x, y, z))
+
+
+def cylinder(radius, length, x, y, z, direction=(0, 0, 1)):
+    return Part.makeCylinder(radius, length, V(x, y, z), V(*direction))
+
+
+def rounds(shape, radius, along):
+    axis = {'x': 'XLength', 'y': 'YLength', 'z': 'ZLength'}[along]
+    edges = [e for e in shape.Edges if abs(getattr(e.BoundBox, axis) - e.Length) < 1e-5]
+    return shape.makeFillet(radius, edges)
+
+
+def add(doc, group, name, label, shape, color, alpha=0, note=''):
+    obj = doc.addObject('Part::Feature', name)
+    obj.Label = label
+    obj.Shape = shape
+    if note:
+        obj.addProperty('App::PropertyString', 'DesignBasis', '设计依据')
+        obj.DesignBasis = note
+    group.addObject(obj)
+    style = obj.ViewObject
+    style.ShapeColor = color
+    style.LineColor = tuple(max(.05, n * .68) for n in color)
+    style.Transparency = alpha
+    style.DisplayMode = 'Flat Lines'
+    style.LineWidth = 1.0
+    return obj
+
+
+def make_group(doc, name, label):
+    group = doc.addObject('App::DocumentObjectGroup', name)
+    group.Label = label
+    return group
+
+
+def front_panel():
+    return box(612, 4, 216, -6, -6, 486)
+
+
+def corner(x, y, sx, sy):
+    a = box(4, 20, 196, x + min(0, 4*sx), y + min(0, 20*sy), 504)
+    b = box(20, 4, 196, x + min(0, 20*sx), y + min(0, 4*sy), 504)
+    return a.fuse(b).removeSplitter()
+
+
+def saddle(x, y, angle):
+    # Local glass spans X=0..8. Pads reduce the 9.2 mm slot to nominal 8.2 mm.
+    shape = box(16, 24, 35, -2, -12, 485)
+    shape = shape.cut(box(9.2,26,17,-.6,-13,484))
+    shape.rotate(V(),V(0,0,1),angle)
+    shape.translate(V(x,y,0))
+    return shape
+
+
+def hook(cx, z):
+    # Four mm PMMA hook plate. Mounted shank sits 12 mm above the large entry.
+    plate=box(22,4,32,cx-11,4,z-22)
+    entry=cylinder(4.3,6,cx,3,z-12,(0,1,0))
+    throat=box(4.6,6,12,cx-2.3,3,z-12).fuse(cylinder(2.3,6,cx,3,z,(0,1,0)))
+    return plate.cut(entry.fuse(throat)).removeSplitter()
+
+
+def fish_print(cx,cz,length,height):
+    # Original monochrome graphic, not engraved through the opaque board.
+    pts=[(-.5,0),(-.30,.26),(-.12,.5),(.12,.46),(.4,.16),(.5,0),(.4,-.16),(.12,-.46),(-.12,-.5),(-.3,-.26),(-.5,0)]
+    wire=Part.makePolygon([V(cx+x*length,-6.06,cz+z*height) for x,z in pts])
+    body=Part.Face(wire).extrude(V(0,.05,0))
+    tail=Part.Face(Part.makePolygon([V(cx-.37*length,-6.06,cz),V(cx-.68*length,-6.06,cz+.27*height),V(cx-.62*length,-6.06,cz),V(cx-.68*length,-6.06,cz-.27*height),V(cx-.37*length,-6.06,cz)])).extrude(V(0,.05,0))
+    return body.fuse(tail).removeSplitter()
+
+
+def print_stroke(points, width=.6):
+    shapes=[]
+    for (x,z),(xx,zz) in zip(points,points[1:]):
+        d=V(xx-x,0,zz-z); length=d.Length
+        side=V(-d.z,0,d.x);side.normalize();side.multiply(width/2)
+        a=V(x,-6.07,z);b=V(xx,-6.07,zz)
+        wire=Part.makePolygon([a+side,b+side,b-side,a-side,a+side])
+        shapes.append(Part.Face(wire).extrude(V(0,.05,0)))
+    return Part.makeCompound(shapes)
+
+
+def lamp_arm():
+    # Lower installation profile. The official bracket drawing sets the 160 mm arm datum.
+    radius = 82
+    cy, cz = 379, RIM + 160 - radius
+    p0 = V(300, cy + radius, RIM + 24)
+    p1 = V(300, cy + radius, cz)
+    p2 = V(300, cy, cz + radius)
+    pm = V(300, cy + radius / 2 ** .5, cz + radius / 2 ** .5)
+    p3 = V(300, 299, cz + radius)
+    path = Part.Wire([Part.makeLine(p0, p1), Part.Arc(p1, pm, p2).toShape(), Part.makeLine(p2, p3)])
+    yz = [(288, p0.y - 3, p0.z), (312, p0.y - 3, p0.z), (312, p0.y + 3, p0.z), (288, p0.y + 3, p0.z)]
+    section = Part.makePolygon([V(*point) for point in yz + [yz[0]]])
+    return path.makePipeShell([section], True, True)
+
+
+def fan_housing():
+    shell = rounds(box(280, 57, 66, 1, 420, TOP + 2), 15, 'x')
+    # The 193 mm value on the listing is shown at the outlet. Its datum is independent of the feet.
+    outlet = rounds(box(193, 9, 14, 82, 419, TOP + 6), 3, 'y')
+    shell = shell.cut(outlet)
+    slots = [box(3.2, 25, 6, 73 + index * 7.3, 431, TOP + 64) for index in range(26)]
+    return shell.cut(Part.makeCompound(slots)).removeSplitter()
+
+
+def fan_foot(x):
+    body = box(20, 65, 29, x, 415, TOP - 25)
+    # Listing shows a 25 mm open throat and separately specifies up to 20 mm installed wall thickness.
+    opening = box(22, 25, 26, x - 1, 434, TOP - 26)
+    return body.cut(opening).fuse(cylinder(4.6, 17, x + 10, 477, TOP - 15, (0, 1, 0))).removeSplitter()
+
+
+def bounds(shape):
+    b = shape.BoundBox
+    return [round(n, 3) for n in (b.XMin, b.YMin, b.ZMin, b.XMax, b.YMax, b.ZMax)]
+
+
+def set_view(view, outward):
+    direction = V(*outward)
+    direction.normalize()
+    right = V(1,0,0) if abs(direction.z) > .99 else V(0, 0, 1).cross(direction)
+    up = direction.cross(right)
+    orientation = App.Rotation(right, up, direction, 'ZXY')
+    view.setCameraOrientation(orientation.Q)
+    view.fitAll()
+    Gui.updateGui()
+
+
+def build():
+    doc = App.newDocument('TankRimGuard')
+    doc.Label = '主缸围挡｜内连框、12 mm 提脱前板、低位后风扇｜设计评审'
+    reference = make_group(doc, 'Tank', '01 主缸与右背包')
+    panels = make_group(doc, 'Panels', '02 黑色亚克力围挡')
+    mounts = make_group(doc, 'Mounts', '03 转角、软垫座与遮缝片')
+    lamp = make_group(doc, 'Lamp', '04 L290 低位、原厂遮光罩')
+    fan = make_group(doc, 'Fan', '05 UF-300 低位后装｜选配')
+    artwork = make_group(doc, 'Artwork', '06 原创灰银鱼群印刷｜非镂空')
+    context = make_group(doc, 'Context', '07 铝架、底缸与设备位置参照')
+    sources = App.openDocument(os.environ['FISHPLAN_GUARD_REFERENCE'])
+    for name, label, color, alpha in [
+        ('Display', '主缸 600 × 450 × 500｜8 mm 玻璃', GLASS, 88),
+        ('Overflow', '右侧背包 120 × 240', GLASS, 82),
+        ('BlackComb', '右侧鱼梳', PMMA, 0),
+    ]:
+        shape = sources.getObject(name).Shape.copy()
+        shape.translate(V(0, 0, -926))
+        add(doc, reference, name, label, shape, color, alpha)
+    for groupname in ('Frame','Sump','Equipment'):
+        for source in sources.getObject(groupname).Group:
+            if not hasattr(source,'Shape'): continue
+            shape=source.Shape.copy(); shape.translate(V(0,0,-926))
+            add(doc,context,'Ref'+source.Name,source.Label,shape,source.ViewObject.ShapeColor,65 if groupname=='Sump' else 0)
+    App.closeDocument(sources.Name)
+    App.setActiveDocument(doc.Name)
+    add(doc, reference, 'Water', '运行水面约 Z470', box(584, 434, .8, 8, 8, 469.2), (.26, .59, .65), 79)
+
+    rightboard=box(4,450,216,602,0,486)
+    # Lower skirt clears the external right overflow, not the upper enclosure wall.
+    overflow=doc.Overflow.Shape.BoundBox
+    rightboard=rightboard.cut(box(8,overflow.YLength+6,18,600,overflow.YMin-3,485))
+    board_shapes = [
+        ('Front','前板 612 × 216 × 4｜上提12后前取',front_panel(),4),
+        ('Left','左板 450 × 216 × 4',box(4,450,216,-6,0,486),4),
+        ('Right','右板 450 × 216 × 4｜裙边避让右背包',rightboard,4),
+        ('RearLeft','左后板 269 × 216 × 4',box(269,4,216,-6,452,486),4),
+        ('RearRight','右后板 269 × 216 × 4',box(269,4,216,337,452,486),4),
+    ]
+    for name,label,shape,thickness in board_shapes:
+        obj=add(doc,panels,name,label,shape,PMMA)
+        obj.addProperty('App::PropertyLength','NominalThickness','加工尺寸');obj.NominalThickness=thickness
+    # Rear corners are bonded on both legs. Front posts remain with the U assembly.
+    for index,(x,sx) in enumerate(((-2,1),(602,-1)),1):
+        add(doc,mounts,f'RearCorner{index}','后角双面粘接PMMA角件｜20×20×4',corner(x,452,sx,-1),NYLON,
+            note='同材亚克力专用胶粘两条腿；前板取下后保留U框。加工方按胶粘工艺做试样。')
+    add(doc,mounts,'RearBridge','后顶连接梁｜跨灯架开口',box(604,12,16,-2,440,686),NYLON)
+    for x in (-2,594):
+        add(doc,mounts,'SideRib'+str(x).replace('-','N'),'侧板内侧上沿加强条',box(8,432,10,x,8,690),NYLON)
+    for side,cx,x in [('L',10,-2),('R',590,578)]:
+        add(doc,mounts,'FrontPost'+side,'前角固定立条｜连接侧板',box(24,22,184,x,8,510),NYLON)
+        for level,z in enumerate((550,660),1):
+            add(doc,mounts,f'Hook{side}{level}','前板背面钥匙孔挂片',hook(cx,z),NYLON)
+            # Side wings attach hook plate to panel without blocking the entry/head.
+            for xx in (cx-11,cx+8):
+                add(doc,mounts,f'HookSpacer{side}{level}{xx}','挂片背胶连接脚',box(3,6,32,xx,-2,z-22),NYLON)
+            pin=cylinder(2,9,cx,4,z,(0,1,0)).fuse(cylinder(3.8,2,cx,2,z,(0,1,0)))
+            add(doc,mounts,f'Pin{side}{level}','隐藏M4蘑菇头挂点｜埋入固定立条',pin,(.45,.47,.49),note='孔中心上提12后对准Ø8.6入口；螺纹表达省略。')
+        # Closed latch allows <1 mm lift; rotates in XY clear of the top hook.
+        add(doc,mounts,'Latch'+side,'内侧90°旋扣｜先旋开再提板',box(10,22,3,cx-5,4,671),(.36,.38,.40))
+        add(doc,mounts,'LatchPivot'+side,'旋扣尼龙轴',cylinder(2.5,8,cx,21,668),NYLON)
+    for i,(x,y,a) in enumerate(((0,48,0),(0,394,0),(600,48,180),(600,402,180),(45,450,-90),(238,450,-90),(374,450,-90),(551,450,-90)),1):
+        add(doc,mounts,f'Seat{i:02d}','隐藏缸沿鞍座｜两侧0.5软垫',saddle(x,y,a),NYLON,
+            note='9.2槽配0.5+0.5硅胶垫适配名义8玻璃。载荷由鞍座上桥传到玻璃顶，不靠摩擦悬挂。')
+    for name,x in [('L',250),('R',314)]:
+        add(doc,mounts,'LightSeal'+name,'背部可调遮缝片｜适配实际灯臂',box(36,3,146,x,456,540),PMMA)
+    # Fan mounts to its own low rail, two triangular brackets transfer to rear saddles.
+    add(doc,mounts,'FanRail','风扇夹持横板｜260×42×6，顶部Z576',box(260,6,42,25,393,534),NYLON)
+    for i,x in enumerate((45,238),1):
+        w=Part.makePolygon([V(x,399,534),V(x,452,502),V(x,452,576),V(x,399,576),V(x,399,534)])
+        add(doc,mounts,'FanBracket'+str(i),'独立风扇托臂｜连接后鞍座与夹持板',Part.Face(w).extrude(V(8,0,0)),NYLON,
+            note='位置方案；风扇重量、夹脚跨度和打印方向定下后做承载试样；不压灯夹。')
+    # Front print: quiet silver fish school and coral outline. Exact same solids appear in CAD.
+    for i,(cx,cz,l,h) in enumerate(((110,617,69,38),(174,642,43,24),(228,620,31,18),(263,650,25,14),(304,631,22,12),(339,654,18,10),(366,638,14,8)),1):
+        add(doc,artwork,'FishPrint'+str(i),'灰银鱼群UV印刷',fish_print(cx,cz,l,h),(.55,.57,.59))
+    for i,points in enumerate(([(300,505),(364,513),(406,530),(448,524),(483,543),(521,534),(570,548)],[(455,516),(451,535),(456,559),(451,582)],[(454,548),(433,560),(425,578)],[(455,561),(474,574),(482,596)],[(452,573),(436,585),(439,604)],[(520,520),(523,545),(515,566),(518,588)],[(521,550),(539,567),(548,571)],[(517,564),(501,575),(497,590)],[(536,535),(555,553),(557,578)]),1):
+        add(doc,artwork,'CoralPrint'+str(i),'珊瑚线稿UV印刷',print_stroke(points, .8),(.32,.35,.38))
+    clamp = box(68, 18, 73, 266, 450, 465).fuse(box(68, 12, 41, 266, 430, 465)).fuse(
+        box(68, 38, 18, 266, 430, 500)).removeSplitter()
+    add(doc, lamp, 'LampClamp', 'L290 玻璃夹｜原厂宽 68、高 73', clamp, LIGHT)
+    add(doc, lamp, 'LampArm', 'L290 低位弧臂｜官方组合标注 160', lamp_arm(), LIGHT,
+        note='外宽和曲线按原厂图形表达。160 是组合侧视的标注，不能直接作为缸沿到灯体最高点。')
+    head = rounds(box(246, 197, 32, 177, 105, 648), 7, 'z')
+    vents = [box(3, 34, 3, 247 + index * 6, 185, 678) for index in range(18)]
+    add(doc, lamp, 'LampHead', 'L290 灯体｜原厂 246 × 197 × 32', head.cut(Part.makeCompound(vents)), LIGHT,
+        note='低位组合使用灯顶高出缸沿 180 mm 的保守模型包络。')
+    hood = rounds(box(260, 211, 35, 170, 98, 628), 6, 'z').cut(rounds(box(247, 198, 37, 176.5, 104.5, 627), 5, 'z'))
+    add(doc, lamp, 'Hood', 'L290 原厂遮光罩｜外形占位', hood, (.12, .13, .145),
+        note='根据原厂产品外观建外壳包络，外罩未公布机械图，不可拿本模型代做灯罩。')
+    add(doc, lamp, 'LampLens', '灯珠透镜面', box(204, 157, 1.8, 198, 123, 646.2), (.36, .48, .58))
+
+    add(doc, fan, 'FanShell', 'UF-300 风扇｜商品图长 280、机身深 57、总高 93', fan_housing(), FAN,
+        note='旋钮突出另画。19.3 cm 尺寸线对应前出风口区域，两脚的外缘跨度未标注。')
+    add(doc, fan, 'FanOutlet', 'UF-300 出风口 193｜向水面', box(192, 2, 12, 82.5, 425, TOP + 7), PMMA)
+    add(doc, fan, 'FanControls', 'UF-300 温控面板', rounds(box(1.5, 36, 43, -.5, 430, TOP + 15), 4, 'x'), (.15, .32, .64))
+    for index, x in enumerate((30, 236), 1):
+        add(doc, fan, f'FanFoot{index}', f'UF-300 第 {index} 夹脚｜位置占位', fan_foot(x), LIGHT,
+            note='夹脚 X 位置仅用于验证布置；商品图没有夹脚外跨，实际须量。')
+
+    for obj in fan.Group:
+        obj.Placement.Base=V(11,-50,-126)
+    doc.recompute()
+    view = Gui.activeDocument().activeView()
+    view.setCameraType('Orthographic')
+    view.setAnimationEnabled(False)
+    geometry=[o for o in doc.Objects if o.isDerivedFrom('Part::Feature')]
+    Import.export([reference,panels,mounts,lamp,fan,artwork,context],str(run/(stem+'.step')))
+    set_view(view,(0,-1,.0001))
+    view.saveImage(str(run/'围挡总装正视底图.png'),1600,2000,'White')
+    # Local views retain glass and overflow, plus full-system reference above.
+    for obj in context.Group: obj.ViewObject.Visibility=False
+    set_view(view,(0,-1,.0001))
+    view.saveImage(str(run/'围挡正视底图.png'),1800,1500,'White')
+    set_view(view,(0,1,.0001))
+    view.saveImage(str(run/'围挡背视.png'),1800,1500,'White')
+    set_view(view,(0,0,1))
+    view.saveImage(str(run/'围挡俯视底图.png'),1800,1500,'White')
+    set_view(view,(-.6,-1,.45))
+    view.saveImage(str(run/'围挡背装总装.png'),1800,1500,'White')
+    # Service state, with exactly the movable panel, hook plates and artwork removed forwards.
+    moving=[doc.Front]+list(artwork.Group)+[o for o in mounts.Group if o.Name.startswith(('Hook','HookSpacer'))]
+    for o in moving:o.Placement.Base+=V(0,-125,12)
+    for o in (doc.LatchL,doc.LatchR):o.ViewObject.Visibility=False
+    set_view(view,(-.6,-1,.45))
+    view.saveImage(str(run/'围挡快拆底图.png'),1800,1500,'White')
+    for o in moving:o.Placement.Base-=V(0,-125,12)
+    for o in (doc.LatchL,doc.LatchR):o.ViewObject.Visibility=True
+    for o in (doc.Right,doc.Left):o.ViewObject.Visibility=False
+    set_view(view,(1,0,0))
+    camera=view.getCameraNode()
+    (run/'侧剖相机.json').write_text(json.dumps({'center':list(camera.position.getValue().getValue()),'height_mm':camera.height.getValue()}))
+    view.saveImage(str(run/'围挡右视底图.png'),1700,1460,'White')
+    for o in (doc.Right,doc.Left):o.ViewObject.Visibility=True
+    # Detailed mechanism only, with adjacent glass/side/front for context.
+    prior={o.Name:o.ViewObject.Visibility for o in geometry}
+    keep={'Front','Left','FrontPostL','HookL2','PinL2','LatchL','LatchPivotL'}
+    keep.update(o.Name for o in mounts.Group if o.Name.startswith('HookSpacerL2'))
+    for o in geometry:o.ViewObject.Visibility=o.Name in keep
+    # Hide full boards only for a very local mechanical view; stubs are added temporarily.
+    doc.Front.ViewObject.Visibility=False;doc.Left.ViewObject.Visibility=False
+    a=add(doc,mounts,'DetailFront','局部前板剖去，仅示挂片连接脚',box(28,4,7,-4,-6,632),PMMA)
+    b=add(doc,mounts,'DetailSide','局部侧板',box(4,28,48,36,8,640),PMMA)
+    # Avoid fitting entire 184 mm post in this isolated view.
+    doc.FrontPostL.ViewObject.Visibility=False
+    c=add(doc,mounts,'DetailPost','局部立条｜向右分解42',box(24,22,48,40,8,640),NYLON)
+    for o in (doc.PinL2,doc.LatchL,doc.LatchPivotL):o.Placement.Base+=V(42,0,0)
+    set_view(view,(.15,-1,.35))
+    view.saveImage(str(run/'围挡挂接细节底图.png'),1400,1400,'White')
+    for o in (doc.PinL2,doc.LatchL,doc.LatchPivotL):o.Placement.Base-=V(42,0,0)
+    for o in (a,b,c):doc.removeObject(o.Name)
+    for o in geometry:o.ViewObject.Visibility=prior[o.Name]
+    for o in context.Group:o.ViewObject.Visibility=True
+    set_view(view,(0,-1,.0001));doc.recompute();doc.saveAs(str(run/(stem+'.FCStd')))
+    report={
+        'shape_count':len(geometry),'panel_top_above_rim_mm':TOP-RIM,
+        'lamp_top_above_rim_mm':doc.LampHead.Shape.BoundBox.ZMax-RIM,
+        'fan_outlet_above_water_mm':doc.FanOutlet.Shape.BoundBox.Center.z-470,
+        'front_release_lift_mm':12,
+        'acrylic_area_m2':{name:shape.Volume/thickness/1e6 for name,_,shape,thickness in board_shapes},
+        'bounds_mm':{o.Name:bounds(o.Shape) for o in geometry},
+    }
+    (run/'围挡建模结果.json').write_text(json.dumps(report,ensure_ascii=False,indent=2))
+
+
+def audit():
+    matching=[d for d in App.listDocuments().values() if Path(d.FileName).resolve()==(run/(stem+'.FCStd')).resolve()]
+    assert len(matching)==1
+    doc=matching[0];assert not doc.Partial
+    shapes=[o for o in doc.Objects if o.isDerivedFrom('Part::Feature')]
+    assert all(not o.Shape.isNull() and o.Shape.isValid() for o in shapes)
+    step=Part.read(str(run/(stem+'.step')))
+    solid_count=sum(len(o.Shape.Solids) for o in shapes)
+    assert step.isValid() and len(step.Solids)==solid_count,(len(step.Solids),solid_count)
+    assert abs(doc.RearRight.Shape.BoundBox.XMin-doc.RearLeft.Shape.BoundBox.XMax-74)<1e-4
+    assert doc.FanShell.Shape.common(doc.LampHead.Shape).Volume<1e-5
+    assert doc.FanShell.Shape.common(doc.Hood.Shape).Volume<1e-5
+    for panel in ('Left','Right','RearLeft','RearRight'):
+        assert doc.FanShell.Shape.common(doc.getObject(panel).Shape).Volume<1e-5,panel
+    assert doc.Front.Shape.common(doc.Display.Shape).Volume<1e-5
+    assert doc.Right.Shape.common(doc.Overflow.Shape).Volume<1e-5
+    # Check shanks in narrow slot and heads release through enlarged entry after 12 mm lift.
+    for side in ('L','R'):
+        for level in (1,2):
+            hookpart=doc.getObject(f'Hook{side}{level}').Shape
+            pin=doc.getObject(f'Pin{side}{level}').Shape
+            assert hookpart.common(pin).Volume<1e-5
+            released=hookpart.copy();released.translate(V(0,0,12))
+            for advance in (0,-3,-8,-14,-22):
+                part=released.copy();part.translate(V(0,advance,0))
+                assert part.common(pin).Volume<1e-5,(side,level,advance)
+    # U-frame connection surfaces must touch their neighbors.
+    pairs=[('RearCorner1','Left'),('RearCorner1','RearLeft'),('RearCorner2','Right'),('RearCorner2','RearRight'),('RearBridge','RearLeft'),('RearBridge','RearRight'),('FrontPostL','Left'),('FrontPostR','Right')]
+    for a,b in pairs:assert doc.getObject(a).Shape.distToShape(doc.getObject(b).Shape)[0]<1e-5,(a,b)
+    cache=Path(App.getUserCachePath()).resolve();assert cache==(run/'audit-cache').resolve()
+    (run/'围挡冷启动结果.json').write_text(json.dumps({'ok':True,'partial':False,'valid_shapes':len(shapes),'step_solids':solid_count,'front_release_lift_mm':12,'u_frame_contact_pairs':len(pairs),'cache_path':str(cache)},ensure_ascii=False,indent=2))
+
+
+def execute():
+    try:
+        if os.environ.get('FISHPLAN_GUARD_AUDIT')=='1':audit()
+        else:build()
+    except Exception:
+        (run/'围挡错误.log').write_text(traceback.format_exc())
+    finally:
+        for name in list(App.listDocuments()):App.closeDocument(name)
+        QtCore.QTimer.singleShot(0,Gui.getMainWindow().close)
+
+
+QtCore.QTimer.singleShot(1100,execute)

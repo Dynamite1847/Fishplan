@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>60缸</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav class="nav"><div class="nav-in">
+  <a class="brand" href="index.html">60缸</a>
+  <div class="nav-links"><a href="index.html#lineup" aria-current="page">鱼</a><a href="#">珊瑚</a><a href="#">养护</a><a href="#">采购</a><a href="#">知识库</a><a href="#">装配</a></div>
+</div></nav>
+<main id="main"></main>
+<footer class="foot"><div class="narrow">
+  <div class="foot-links"><a href="index.html">60缸</a><a href="#">鱼类目录</a><a href="#">珊瑚</a><a href="#">养护</a><a href="#">采购</a></div>
+  <p>报价来自水族名录商城，<span id="price-date"></span> 抓取；规格以店家标注为准。</p>
+</div></footer>
+<script src="data.js"></script>
+<script>
+(() => {
+  const T = window.TANK;
+  const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+  const id = new URLSearchParams(location.search).get('id') || 'clown';
+  const f = T.fish.find(x => x.id === id) || T.fish.find(x => x.id === 'clown');
+  document.title = `${f.name} · 60缸`;
+  document.getElementById('price-date').textContent = T.date;
+
+  const specs = [
+    ['成年体长', `${f.cm.replace(/（.*）/, '')} cm${/标准体长/.test(f.cm) ? '（标准体长，不含尾鳍）' : ''}`],
+    ['活动水层', f.zone], ['性格', f.tem], ['珊瑚', f.coral], ['清洁虾', f.shrimp],
+    ['本缸数量', f.n > 1 ? `${f.n} 条（一对）` : '1 条'],
+  ];
+  const rows = f.price ? f.price.rows : [];
+  const price = rows.length ? `
+    <section class="sec soft"><div class="narrow">
+      <h2 class="h2">店家报价</h2>
+      <p class="lead">${f.price.shops} 家店有这个品种，当日最低 ¥${f.price.lo}。</p>
+      <table class="prices">
+        <thead><tr><th>价格</th><th>规格</th><th>店铺</th><th class="hide-s">鱼单更新</th></tr></thead>
+        <tbody>${rows.map(r => `<tr><td>¥${r.p}</td><td>${esc(r.size || '未标')}<div class="sub">${esc(r.name)}${r.note ? ` · ${esc(r.note)}` : ''}</div></td>
+          <td>${esc(r.shop)}<div class="sub">${esc(r.loc)}</div></td><td class="hide-s">${esc(r.date)}</td></tr>`).join('')}</tbody>
+      </table>
+      <p class="note">只列库存不为 0 的前 ${rows.length} 条，按价格排序。规格多为体长 cm，店家写法不统一。</p>
+    </div></section>` : `
+    <section class="sec soft"><div class="narrow"><h2 class="h2">店家报价</h2><p class="lead">水族名录商城暂无这个品种。</p></div></section>`;
+
+  document.getElementById('main').innerHTML = `
+    <header class="sp-hero">
+      <p class="hero-eyebrow">${esc(f.zone)} · 成年 ${esc(f.cm.replace(/（.*）/, ''))} cm</p>
+      <h1>${esc(f.name)}</h1>
+      <p class="sp-sci">${esc(f.sci)}${f.alias ? `<span style="font-style:normal">　·　${esc(f.alias)}</span>` : ''}</p>
+      ${f.img ? `<img class="sp-img" src="${f.img}" alt="${esc(f.name)}">` : `<img class="sp-photo" src="${f.photo}" alt="${esc(f.name)}">`}
+    </header>
+    <section class="sec"><div class="narrow">
+      <h2 class="h2">规格</h2>
+      <dl class="specs">${specs.map(([k, v]) => `<div class="spec"><dt>${k}</dt><dd>${esc(v)}</dd></div>`).join('')}</dl>
+    </div></section>
+    ${price}
+    <section class="sec"><div class="narrow">
+      <h2 class="h2">说明</h2>
+      <p class="body-text" style="margin-top:32px">${esc(f.note)}</p>
+    </div></section>
+    <section class="sec soft"><div class="narrow center">
+      <h2 class="h2">原始照片</h2>
+      <img class="sp-photo" src="${f.photo}" alt="${esc(f.name)}的原始照片" style="margin-top:40px">
+      ${f.credit ? `<p class="credit">${esc(f.credit.a)} · <a href="${f.credit.u}" target="_blank" rel="noopener">iNaturalist</a></p>` : ''}
+      <a class="more back" href="index.html#lineup">回到当前组合 ›</a>
+    </div></section>`;
+})();
+</script>
+</body>
+</html>

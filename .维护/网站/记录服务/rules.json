@@ -1,0 +1,9 @@
+{
+  "version": "20261106-records-v1",
+  "tanks": {"qt": {"name": "检疫桶", "volume_l": 20.75}, "main": {"name": "主缸", "volume_l": null}},
+  "cards": {"nh3_salifert": ["<0.15", 0.25, 0.5, 1, 1.5, ">2"], "no2": [0, 0.005, 0.01, 0.025, 0.1, 0.5], "no3": [0, 2, 5, 10, 25, 50, 100]},
+  "cycling": {"nh3_high": 2, "no2_pass": 0.1, "no2_top": 0.5, "dilution_factor": 6, "no2_feed_below": 3, "feed_wait_days": 3, "check_hours": 24, "check_latest_hours": 30, "check_rounds": 2, "fresh_hours": 24, "low_buffer_change": [0.25, 0.3]},
+  "limits": {"kh": [6, 7], "ph_min": 7.8, "salinity_green": [1.025, 1.026], "salinity_yellow": [1.024, 1.027], "temperature_cycling_green": [24, 29], "temperature_cycling_yellow": [22, 30], "temperature_animals_green": [25, 26], "temperature_animals_yellow": [24, 27], "no3_green_max": 10, "no3_red_min": 50},
+  "doses": {"solution_percent": 1, "initial_ml_per_l": 0.382, "feed_ml_per_l": 0.382, "check_ml_per_l": 0.764, "prime_ml_per_l": 0.025, "prime_interference_hours": 24, "animal_nh3_half_change_at": 1, "animal_change_low": 0.3333333333333333, "animal_change_high": 0.5, "weekly_change": 0.25},
+  "notes": {"nh3_salifert": "在这桶海水里读数偏低，仅供参考", "dose": "仅适用于本项目1%氯化铵水，毫升数按密度约1g/mL换算；有动物时停用。", "authority": "提示照网站养护规则自动计算，最后以“检疫桶养水”页为准。"}
+}

@@ -1,0 +1,10 @@
+# Preserve binary deliverables and avoid text diffs of PDF object streams.
+*.pdf binary
+*.FCStd binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+
+# Generated CAD exchange files may contain exporter-controlled spacing.
+*.step -whitespace
+*.dxf -whitespace

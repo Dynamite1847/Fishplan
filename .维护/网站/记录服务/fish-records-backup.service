@@ -1,0 +1,12 @@
+[Unit]
+Description=Back up fish records SQLite database
+[Service]
+Type=oneshot
+User=fish-records
+Group=fish-records
+UMask=0077
+ExecStart=/usr/bin/python3 /opt/fish-records/backup.py
+NoNewPrivileges=true
+ProtectSystem=strict
+ProtectHome=true
+ReadWritePaths=/var/lib/fish-records /var/backups/fish-records

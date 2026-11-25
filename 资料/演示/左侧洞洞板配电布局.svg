@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="860" viewBox="0 0 980 860">
+<rect width="980" height="860" fill="#f5f7f8"/>
+<style>text{font-family:'PingFang SC','Microsoft YaHei',sans-serif;fill:#25353d}.title{font-size:25px;font-weight:600}.note{font-size:16px}.label{font-size:19px;font-weight:600}.num{font-size:24px;font-weight:bold;fill:white}</style>
+<text x="45" y="45" class="title">左侧洞洞板：从过道侧看</text><text x="45" y="74" class="note">布局建议 · 按已买6位插排约272×100mm · 位置未实装确认</text>
+<defs><pattern id="holes" width="20" height="20" patternUnits="userSpaceOnUse"><circle cx="10" cy="10" r="2" fill="#d4dce0"/></pattern></defs>
+<path d="M105 115 H355 L410 170 V715 L355 770 H105 L50 715 V170 Z" fill="white" stroke="#84949c" stroke-width="3"/>
+<path d="M105 115 H355 L410 170 V715 L355 770 H105 L50 715 V170 Z" fill="url(#holes)"/>
+<text x="65" y="104" class="note">前</text><text x="375" y="104" class="note">后</text>
+<rect x="76" y="195" width="302" height="70" rx="9" fill="#243f4b"/>
+<text x="99" y="237" style="font-size:19px;fill:white">6位插排 272×100mm</text>
+<circle cx="58" cy="229" r="17" fill="#d0804e"/><text x="51" y="237" class="num">1</text>
+<rect x="85" y="326" width="115" height="64" rx="7" fill="#c7dce0" stroke="#527e86"/><rect x="222" y="326" width="116" height="64" rx="7" fill="#c7dce0" stroke="#527e86"/>
+<circle cx="58" cy="355" r="17" fill="#527e86"/><text x="51" y="363" class="num">2</text>
+<rect x="85" y="418" width="112" height="64" rx="7" fill="#d9dfe3" stroke="#758894"/><rect x="222" y="418" width="116" height="64" rx="7" fill="#d9dfe3" stroke="#758894"/>
+<path d="M372 285 V650" stroke="#6a929b" stroke-width="10" fill="none"/>
+<circle cx="397" cy="416" r="17" fill="#527e86"/><text x="390" y="424" class="num">3</text>
+<path d="M354 288 V306 Q354 322 339 322 Q323 322 323 306 V265 M294 288 V306 Q294 322 279 322 Q263 322 263 306 V265" stroke="#d0804e" stroke-width="4" fill="none"/>
+<circle cx="397" cy="301" r="17" fill="#d0804e"/><text x="390" y="309" class="num">4</text>
+<path d="M65 510 H395" stroke="#b5bec3" stroke-width="2" stroke-dasharray="6 6"/><text x="85" y="544" class="note">底缸上沿约在这一带（仅作位置参照）</text>
+<text x="86" y="648" class="note">下半部保留余线与维护空间</text>
+<text x="86" y="676" class="note">余线宽松折返，不紧盘电源线</text>
+<text x="490" y="165" class="label">1　插排：高位横放，插孔朝过道</text>
+<text x="490" y="198" class="note">上边距板顶约100mm，前后各留约48mm。</text><text x="490" y="225" class="note">总开关尽量朝柜前；外壳尺寸以实物复测。</text><text x="490" y="252" class="note">插拔方向留约80～100mm手部空间。</text>
+<text x="490" y="321" class="label">2　控制器与电源：分开固定</text>
+<text x="490" y="354" class="note">控制器常用按钮靠前；电源适配器独立挂架。</text><text x="490" y="381" class="note">电源间先留约20～30mm，散热按本品说明。</text><text x="490" y="408" class="note">电源和市电接头优先留在底缸上沿以上。</text>
+<text x="490" y="477" class="label">3　后沿走线：分束、可拆</text>
+<text x="490" y="510" class="note">电源线与低压/探头线分束固定。</text><text x="490" y="537" class="note">每个插头、控制器两端贴同名标签。</text><text x="490" y="564" class="note">保留拆泵、提蛋分杯所需的活动余量。</text>
+<text x="490" y="633" class="label">4　每条湿设备线：先下垂，再到插头</text>
+<text x="490" y="666" class="note">低点低于插孔/接头，让沿线的水先滴落。</text><text x="490" y="693" class="note">不能用一束总线的弯代替每条线的滴水弯。</text>
+<text x="45" y="817" class="note">板名义368×818mm；插排约272×100mm。分区示意非钻孔模板；固定孔按底座实物放样。</text>
+</svg>
